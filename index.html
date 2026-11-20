@@ -39,6 +39,8 @@ input[type=range]{flex:1;min-width:0;width:100%;accent-color:var(--acc)}
 canvas{width:auto;max-width:100%;max-height:calc(100vh - 20px)}
 .panel{margin-top:0;max-height:calc(100vh - 20px);overflow:auto}
 }
+.out{background:transparent;border:2px solid var(--acc);color:#d9ccff;font-weight:600}
+.out:hover{background:rgba(139,92,246,.15)}
 </style>
 </head>
 <body>
@@ -69,8 +71,8 @@ canvas{width:auto;max-width:100%;max-height:calc(100vh - 20px)}
     <label class="nr"><span>Top</span><input type="range" id="rF0" min="0" max="100" value="0"><b id="vF0">0%</b></label>
     <label class="nr"><span>Bottom</span><input type="range" id="rF1" min="0" max="100" value="0"><b id="vF1">0%</b></label>
     <div class="row two" style="margin-top:14px">
+      <button class="out" id="bBlank">Download blank frame</button>
       <button class="pri" id="bSave">Download PNG</button>
-      <button class="pri" id="bBlank">Download blank frame</button>
     </div>
   </div>
 </div>

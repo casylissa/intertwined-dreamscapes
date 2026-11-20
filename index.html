@@ -39,6 +39,7 @@ input[type=range]{flex:1;min-width:0;width:100%;accent-color:var(--acc)}
 canvas{width:auto;max-width:100%;max-height:calc(100vh - 20px)}
 .panel{margin-top:0;max-height:calc(100vh - 20px);overflow:auto}
 }
+.credit{margin-top:16px;padding-top:10px;border-top:1px solid var(--line);color:var(--mut);font-size:12px;line-height:1.5;text-align:center;opacity:.8}
 .out{background:transparent;border:2px solid var(--acc);color:#d9ccff;font-weight:600}
 .out:hover{background:rgba(139,92,246,.15)}
 </style>
@@ -75,6 +76,7 @@ canvas{width:auto;max-width:100%;max-height:calc(100vh - 20px)}
       <button class="out" id="bBlank">Download blank frame</button>
       <button class="pri" id="bSave">Download PNG</button>
     </div>
+    <div class="credit">Ported from the Xiaohongshu widget “梦境交织生成器 (Dream Weaving Generator)” by 老铁工具包. Not affiliated with the original author or miHoYo.<br>Artwork, frame and characters © miHoYo / HoYoverse. All rights belong to their respective owners. Unofficial, non-commercial fan project.</div>
   </div>
 </div>
 <input type="file" id="fImg" accept="image/*" hidden>

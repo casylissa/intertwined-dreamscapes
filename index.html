@@ -19,6 +19,9 @@ label{display:flex;align-items:center;gap:10px;color:var(--mut);margin-top:10px}
 label span{min-width:72px}
 label b{min-width:44px;text-align:right;color:var(--tx);font-weight:500}
 input[type=range]{flex:1;accent-color:var(--acc)}
+.pk{background:#181028}
+.pk.has{background:#5b46a8;border-color:#8b5cf6}
+.pk.sel{border-color:#c4b5fd}
 </style>
 </head>
 <body>
@@ -26,7 +29,10 @@ input[type=range]{flex:1;accent-color:var(--acc)}
   <div id="stage"><canvas id="cv"></canvas></div>
   <div class="panel">
     <div class="row">
-      <button class="pri" id="bPick">Choose image</button>
+      <button id="bTop" class="pk">Top image</button>
+      <button id="bBot" class="pk">Bottom image</button>
+    </div>
+    <div class="row" style="margin-top:8px">
       <button id="bFit">Fit</button>
       <button id="bFlip">Flip</button>
       <button id="bSave">Download PNG</button>
@@ -93,7 +99,7 @@ function render(hint=true){
 }
 function ui(){
   const z=zones[sel];
-  $('#bPick').textContent=`Choose image · Zone ${sel+1}`;
+  [['#bTop',0],['#bBot',1]].forEach(([s,i])=>{$(s).className='pk'+(zones[i]&&zones[i].img?' has':'')+(sel===i?' sel':'')});
   const has=!!(z&&z.img);
   ['rZoom','rRot','rOp'].forEach(id=>$('#'+id).disabled=!has);
   if(has){
@@ -102,8 +108,10 @@ function ui(){
   $('#vZoom').textContent=$('#rZoom').value+'%';$('#vRot').textContent=$('#rRot').value+'°';$('#vOp').textContent=$('#rOp').value+'%';
   render();
 }
-$('#bPick').onclick=()=>$('#fImg').click();
-$('#fImg').onchange=e=>{const f=e.target.files[0];e.target.value='';load(sel,f)};
+let pickIdx=0;
+const pick=i=>{pickIdx=sel=i;ui();$('#fImg').click()};
+$('#bTop').onclick=()=>pick(0);$('#bBot').onclick=()=>pick(1);
+$('#fImg').onchange=e=>{const f=e.target.files[0];e.target.value='';load(pickIdx,f)};
 function load(i,f){if(!f||!f.type.startsWith('image/'))return;const r=new FileReader();
   r.onload=()=>{const im=new Image();im.onload=()=>{const z=zones[i];z.img=im;z.rot=0;z.fl=1;fit(z);sel=i;ui()};im.src=r.result};r.readAsDataURL(f)}
 $('#rZoom').oninput=e=>{const z=zones[sel];z.s=e.target.value/100*cover(z);$('#vZoom').textContent=e.target.value+'%';render()};
@@ -134,7 +142,7 @@ cv.onpointermove=e=>{
   render();
 };
 const up=e=>{ptrs.delete(e.pointerId);
-  if(drag&&drag.t==='tap'&&!moved)$('#fImg').click();
+  if(drag&&drag.t==='tap'&&!moved){pickIdx=sel;$('#fImg').click()}
   if(!ptrs.size){drag=null;ui()}};
 cv.onpointerup=up;cv.onpointercancel=up;
 cv.onwheel=e=>{const z=zones[sel];if(!z||!z.img)return;e.preventDefault();z.s*=Math.exp(-e.deltaY*.001);ui()};

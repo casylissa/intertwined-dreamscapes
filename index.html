@@ -16,12 +16,10 @@ canvas{width:100%;height:auto;display:block;touch-action:none}
 button{background:#2a1f4a;color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:9px 14px;font:inherit;cursor:pointer}
 button.pri{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:600}
 label{display:flex;align-items:center;gap:10px;color:var(--mut);margin-top:10px}
-label span{min-width:72px}
+label span{min-width:104px}
 label b{min-width:44px;text-align:right;color:var(--tx);font-weight:500}
 input[type=range]{flex:1;accent-color:var(--acc)}
-.pk{background:#181028}
-.pk.has{background:#5b46a8;border-color:#8b5cf6}
-.pk.sel{border-color:#c4b5fd}
+.sec{margin-top:14px;color:var(--mut);font-size:13px}
 </style>
 </head>
 <body>
@@ -29,18 +27,23 @@ input[type=range]{flex:1;accent-color:var(--acc)}
   <div id="stage"><canvas id="cv"></canvas></div>
   <div class="panel">
     <div class="row">
-      <button id="bTop" class="pk">Top image</button>
-      <button id="bBot" class="pk">Bottom image</button>
+      <button class="pri" id="bTop">Choose top image</button>
+      <button class="pri" id="bBot">Choose bottom image</button>
     </div>
     <div class="row" style="margin-top:8px">
       <button id="bFit">Fit</button>
       <button id="bFlip">Flip</button>
-      <button id="bSave">Download PNG</button>
-      <button id="bBlank">Download blank frame</button>
     </div>
     <label><span>Zoom</span><input type="range" id="rZoom" min="20" max="400" value="100"><b id="vZoom">100%</b></label>
     <label><span>Rotate</span><input type="range" id="rRot" min="-180" max="180" value="0"><b id="vRot">0°</b></label>
     <label><span>Opacity</span><input type="range" id="rOp" min="0" max="100" value="100"><b id="vOp">100%</b></label>
+    <div class="sec">Feather border</div>
+    <label><span>Top</span><input type="range" id="rF0" min="0" max="100" value="0"><b id="vF0">0%</b></label>
+    <label><span>Bottom</span><input type="range" id="rF1" min="0" max="100" value="0"><b id="vF1">0%</b></label>
+    <div class="row" style="margin-top:14px">
+      <button class="pri" id="bSave">Download PNG</button>
+      <button class="pri" id="bBlank">Download blank frame</button>
+    </div>
   </div>
 </div>
 <input type="file" id="fImg" accept="image/*" hidden>
@@ -66,12 +69,20 @@ function init(){
     for(let i=0;i<W*H;i++)if(Math.round(lab[i*4]/100)===k)md.data[i*4+3]=255;
     const b=ZB[k-1],x0=b[0],y0=b[1],x1=b[2],y1=b[3];
     mx.putImageData(md,0,0);
-    zones.push({mask:m,bb:{x0,y0,x1,y1},img:null,cx:0,cy:0,s:1,rot:0,op:1,fl:1});
+    zones.push({mask:m,bb:{x0,y0,x1,y1},img:null,cx:0,cy:0,s:1,rot:0,op:1,fl:1,fe:0,fc:null,fk:''});
   }
   ui();
 }
 function zoneAt(x,y){x=Math.round(x);y=Math.round(y);if(x<0||y<0||x>=W||y>=H)return -1;return Math.round(lab[(y*W+x)*4]/100)-1}
 const cover=z=>Math.max((z.bb.x1-z.bb.x0)/z.img.width,(z.bb.y1-z.bb.y0)/z.img.height);
+function src(z){
+  const f=Math.round(z.fe/100*.5*Math.min(z.img.width,z.img.height));if(f<1)return z.img;
+  const k=f+'|'+z.img.src.length;if(z.fc&&z.fk===k)return z.fc;
+  const w=z.img.width,h=z.img.height,c=document.createElement('canvas');c.width=w;c.height=h;const x=c.getContext('2d');
+  x.drawImage(z.img,0,0);x.globalCompositeOperation='destination-in';
+  let g=x.createLinearGradient(0,0,w,0);const a=Math.min(.5,f/w);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(a,'#000');g.addColorStop(1-a,'#000');g.addColorStop(1,'rgba(0,0,0,0)');x.fillStyle=g;x.fillRect(0,0,w,h);
+  g=x.createLinearGradient(0,0,0,h);const b=Math.min(.5,f/h);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(b,'#000');g.addColorStop(1-b,'#000');g.addColorStop(1,'rgba(0,0,0,0)');x.fillStyle=g;x.fillRect(0,0,w,h);
+  z.fc=c;z.fk=k;return c}
 function fit(z){const b=z.bb,w=b.x1-b.x0,h=b.y1-b.y0,r=z.rot*Math.PI/180,c=Math.abs(Math.cos(r)),s=Math.abs(Math.sin(r));
   z.s=Math.max((w*c+h*s)/z.img.width,(w*s+h*c)/z.img.height);z.cx=(b.x0+b.x1)/2;z.cy=(b.y0+b.y1)/2}
 
@@ -82,7 +93,7 @@ function render(hint=true){
     tx.drawImage(bg,0,0,W,H);
     if(z.img){
       tx.save();tx.globalAlpha=z.op;tx.translate(z.cx,z.cy);tx.rotate(z.rot*Math.PI/180);tx.scale(z.fl,1);
-      tx.drawImage(z.img,-z.img.width*z.s/2,-z.img.height*z.s/2,z.img.width*z.s,z.img.height*z.s);tx.restore();
+      tx.drawImage(src(z),-z.img.width*z.s/2,-z.img.height*z.s/2,z.img.width*z.s,z.img.height*z.s);tx.restore();
     }
     tx.globalCompositeOperation='destination-in';tx.drawImage(z.mask,0,0);
     ctx.drawImage(tc,0,0);
@@ -99,9 +110,9 @@ function render(hint=true){
 }
 function ui(){
   const z=zones[sel];
-  [['#bTop',0],['#bBot',1]].forEach(([s,i])=>{$(s).className='pk'+(zones[i]&&zones[i].img?' has':'')+(sel===i?' sel':'')});
   const has=!!(z&&z.img);
   ['rZoom','rRot','rOp'].forEach(id=>$('#'+id).disabled=!has);
+  [0,1].forEach(i=>{const q=zones[i];$('#rF'+i).disabled=!(q&&q.img);$('#rF'+i).value=q?q.fe:0;$('#vF'+i).textContent=(q?q.fe:0)+'%'});
   if(has){
     $('#rZoom').value=Math.round(z.s/cover(z)*100);$('#rRot').value=z.rot;$('#rOp').value=Math.round(z.op*100);
   }
@@ -113,12 +124,13 @@ const pick=i=>{pickIdx=sel=i;ui();$('#fImg').click()};
 $('#bTop').onclick=()=>pick(0);$('#bBot').onclick=()=>pick(1);
 $('#fImg').onchange=e=>{const f=e.target.files[0];e.target.value='';load(pickIdx,f)};
 function load(i,f){if(!f||!f.type.startsWith('image/'))return;const r=new FileReader();
-  r.onload=()=>{const im=new Image();im.onload=()=>{const z=zones[i];z.img=im;z.rot=0;z.fl=1;fit(z);sel=i;ui()};im.src=r.result};r.readAsDataURL(f)}
+  r.onload=()=>{const im=new Image();im.onload=()=>{const z=zones[i];z.img=im;z.fc=null;z.rot=0;z.fl=1;fit(z);sel=i;ui()};im.src=r.result};r.readAsDataURL(f)}
 $('#rZoom').oninput=e=>{const z=zones[sel];z.s=e.target.value/100*cover(z);$('#vZoom').textContent=e.target.value+'%';render()};
 $('#rRot').oninput=e=>{zones[sel].rot=+e.target.value;$('#vRot').textContent=e.target.value+'°';render()};
 $('#rOp').oninput=e=>{zones[sel].op=e.target.value/100;$('#vOp').textContent=e.target.value+'%';render()};
 $('#bSave').onclick=()=>{render(false);cv.toBlob(b=>{const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='framed.png';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1500);render()},'image/png')};
 
+[0,1].forEach(i=>$('#rF'+i).oninput=e=>{const q=zones[i];if(!q||!q.img)return;q.fe=+e.target.value;$('#vF'+i).textContent=q.fe+'%';render()});
 $('#bFit').onclick=()=>{const z=zones[sel];if(z&&z.img){fit(z);ui()}};
 $('#bFlip').onclick=()=>{const z=zones[sel];if(z&&z.img){z.fl*=-1;render()}};
 $('#bBlank').onclick=()=>{const c=document.createElement('canvas');c.width=W;c.height=H;c.getContext('2d').drawImage(frame,0,0,W,H);

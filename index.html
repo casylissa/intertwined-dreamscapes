@@ -15,32 +15,60 @@ canvas{width:100%;height:auto;display:block;touch-action:none}
 .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 button{background:#2a1f4a;color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:9px 14px;font:inherit;cursor:pointer}
 button.pri{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:600}
-label{display:flex;align-items:center;gap:10px;color:var(--mut);margin-top:10px}
-label span{min-width:104px}
-label b{min-width:44px;text-align:right;color:var(--tx);font-weight:500}
-input[type=range]{flex:1;accent-color:var(--acc)}
+label{display:flex;align-items:center;gap:8px;color:var(--mut);margin-top:10px;min-width:0}
+label span{width:92px;flex:none;white-space:nowrap}
+label b{flex:none;min-width:40px;text-align:right;color:var(--tx);font-weight:500}
+input[type=range]{flex:1;min-width:0;width:100%;accent-color:var(--acc)}
 .sec{margin-top:14px;color:var(--mut);font-size:13px}
+.two{flex-wrap:nowrap}
+.two button{flex:1 1 0;min-width:0;padding:10px 6px;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.acc{margin-top:12px;border-top:1px solid var(--line);padding-top:8px}
+.acc summary{cursor:pointer;color:var(--tx);padding:6px 0;font-weight:600;display:flex;align-items:center;justify-content:space-between;list-style:none}
+.acc summary::-webkit-details-marker{display:none}
+.acc .t::before{content:'\25B8  '}
+.acc[open] .t::before{content:'\25BE  '}
+.hd{display:flex;align-items:center;justify-content:space-between}
+.ic{padding:5px 7px;line-height:0;border-radius:8px;flex:none}
+#bAll{display:inline-flex;align-items:center;gap:6px}
+.selbar{margin-top:12px;color:var(--mut);font-size:13px}
+.selbar b{color:var(--tx);font-weight:600}
+.nr{padding-right:36px}
+@media(min-width:900px){
+.wrap{max-width:1500px;display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:14px;align-items:start}
+#stage{position:sticky;top:10px;display:flex;justify-content:center;background:#0b0816}
+canvas{width:auto;max-width:100%;max-height:calc(100vh - 20px)}
+.panel{margin-top:0;max-height:calc(100vh - 20px);overflow:auto}
+}
 </style>
 </head>
 <body>
 <div class="wrap">
   <div id="stage"><canvas id="cv"></canvas></div>
   <div class="panel">
-    <div class="row">
+    <div class="row two">
       <button class="pri" id="bTop">Choose top image</button>
       <button class="pri" id="bBot">Choose bottom image</button>
     </div>
+    <div class="selbar">Selected: <b id="selName">Top image</b></div>
     <div class="row" style="margin-top:8px">
       <button id="bFit">Fit</button>
       <button id="bFlip">Flip</button>
+      <button id="bAll" title="Reset everything for the selected image"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg> Reset all</button>
     </div>
     <label><span>Zoom</span><input type="range" id="rZoom" min="20" max="400" value="100"><b id="vZoom">100%</b></label>
     <label><span>Rotate</span><input type="range" id="rRot" min="-180" max="180" value="0"><b id="vRot">0°</b></label>
     <label><span>Opacity</span><input type="range" id="rOp" min="0" max="100" value="100"><b id="vOp">100%</b></label>
+    <details class="acc"><summary><span class="t">Adjust</span></summary>
+      <label><span>Brightness</span><input type="range" id="a_br" min="0" max="200" value="100"><b id="v_br">100%</b></label>
+      <label><span>Contrast</span><input type="range" id="a_co" min="0" max="200" value="100"><b id="v_co">100%</b></label>
+      <label><span>Saturation</span><input type="range" id="a_sa" min="0" max="200" value="100"><b id="v_sa">100%</b></label>
+      <label><span>Hue</span><input type="range" id="a_hu" min="-180" max="180" value="0"><b id="v_hu">0°</b></label>
+      <label><span>Blur</span><input type="range" id="a_bl" min="0" max="20" value="0"><b id="v_bl">0</b></label>
+    </details>
     <div class="sec">Feather border</div>
-    <label><span>Top</span><input type="range" id="rF0" min="0" max="100" value="0"><b id="vF0">0%</b></label>
-    <label><span>Bottom</span><input type="range" id="rF1" min="0" max="100" value="0"><b id="vF1">0%</b></label>
-    <div class="row" style="margin-top:14px">
+    <label class="nr"><span>Top</span><input type="range" id="rF0" min="0" max="100" value="0"><b id="vF0">0%</b></label>
+    <label class="nr"><span>Bottom</span><input type="range" id="rF1" min="0" max="100" value="0"><b id="vF1">0%</b></label>
+    <div class="row two" style="margin-top:14px">
       <button class="pri" id="bSave">Download PNG</button>
       <button class="pri" id="bBlank">Download blank frame</button>
     </div>
@@ -69,19 +97,28 @@ function init(){
     for(let i=0;i<W*H;i++)if(Math.round(lab[i*4]/100)===k)md.data[i*4+3]=255;
     const b=ZB[k-1],x0=b[0],y0=b[1],x1=b[2],y1=b[3];
     mx.putImageData(md,0,0);
-    zones.push({mask:m,bb:{x0,y0,x1,y1},img:null,cx:0,cy:0,s:1,rot:0,op:1,fl:1,fe:0,fc:null,fk:''});
+    zones.push({mask:m,bb:{x0,y0,x1,y1},img:null,cx:0,cy:0,s:1,rot:0,op:1,fl:1,fe:0,fc:null,fk:'',br:100,co:100,sa:100,hu:0,bl:0});
   }
   ui();
 }
 function zoneAt(x,y){x=Math.round(x);y=Math.round(y);if(x<0||y<0||x>=W||y>=H)return -1;return Math.round(lab[(y*W+x)*4]/100)-1}
-const cover=z=>Math.max((z.bb.x1-z.bb.x0)/z.img.width,(z.bb.y1-z.bb.y0)/z.img.height);
+const cover=z=>Math.max(Math.max(...zones.map(q=>q.bb.x1-q.bb.x0))/z.img.width,Math.max(...zones.map(q=>q.bb.y1-q.bb.y0))/z.img.height);
 function src(z){
-  const f=Math.round(z.fe/100*.5*Math.min(z.img.width,z.img.height));if(f<1)return z.img;
-  const k=f+'|'+z.img.src.length;if(z.fc&&z.fk===k)return z.fc;
-  const w=z.img.width,h=z.img.height,c=document.createElement('canvas');c.width=w;c.height=h;const x=c.getContext('2d');
-  x.drawImage(z.img,0,0);x.globalCompositeOperation='destination-in';
-  let g=x.createLinearGradient(0,0,w,0);const a=Math.min(.5,f/w);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(a,'#000');g.addColorStop(1-a,'#000');g.addColorStop(1,'rgba(0,0,0,0)');x.fillStyle=g;x.fillRect(0,0,w,h);
-  g=x.createLinearGradient(0,0,0,h);const b=Math.min(.5,f/h);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(b,'#000');g.addColorStop(1-b,'#000');g.addColorStop(1,'rgba(0,0,0,0)');x.fillStyle=g;x.fillRect(0,0,w,h);
+  const adj=z.br!==100||z.co!==100||z.sa!==100||z.hu!==0||z.bl>0;
+  const iw=z.img.width,ih=z.img.height,sc=Math.min(1,2400/Math.max(iw,ih));
+  const f=Math.round(z.fe/100*.5*Math.min(iw,ih)*sc);
+  if(f<1&&!adj)return z.img;
+  const k=[f,z.br,z.co,z.sa,z.hu,z.bl].join('|');if(z.fc&&z.fk===k)return z.fc;
+  const w=Math.round(iw*sc),h=Math.round(ih*sc),c=document.createElement('canvas');c.width=w;c.height=h;const x=c.getContext('2d');
+  if(adj&&'filter' in x){x.filter=`brightness(${z.br}%) contrast(${z.co}%) saturate(${z.sa}%) hue-rotate(${z.hu}deg) blur(${(z.bl*Math.min(w,h)/1000).toFixed(2)}px)`;x.drawImage(z.img,0,0,w,h);x.filter='none'}
+  else{x.drawImage(z.img,0,0,w,h);
+    if(adj){const d=x.getImageData(0,0,w,h),p=d.data,B=z.br/100,C=z.co/100,S=z.sa/100;
+      for(let i=0;i<p.length;i+=4){let r=p[i]*B,g=p[i+1]*B,b=p[i+2]*B;const l=.299*r+.587*g+.114*b;
+        r=l+(r-l)*S;g=l+(g-l)*S;b=l+(b-l)*S;p[i]=(r-128)*C+128;p[i+1]=(g-128)*C+128;p[i+2]=(b-128)*C+128}
+      x.putImageData(d,0,0)}}
+  if(f>=1){x.globalCompositeOperation='destination-in';
+    let g=x.createLinearGradient(0,0,w,0);const a=Math.min(.5,f/w);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(a,'#000');g.addColorStop(1-a,'#000');g.addColorStop(1,'rgba(0,0,0,0)');x.fillStyle=g;x.fillRect(0,0,w,h);
+    g=x.createLinearGradient(0,0,0,h);const b=Math.min(.5,f/h);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(b,'#000');g.addColorStop(1-b,'#000');g.addColorStop(1,'rgba(0,0,0,0)');x.fillStyle=g;x.fillRect(0,0,w,h)}
   z.fc=c;z.fk=k;return c}
 function fit(z){const b=z.bb,w=b.x1-b.x0,h=b.y1-b.y0,r=z.rot*Math.PI/180,c=Math.abs(Math.cos(r)),s=Math.abs(Math.sin(r));
   z.s=Math.max((w*c+h*s)/z.img.width,(w*s+h*c)/z.img.height);z.cx=(b.x0+b.x1)/2;z.cy=(b.y0+b.y1)/2}
@@ -110,8 +147,11 @@ function render(hint=true){
 }
 function ui(){
   const z=zones[sel];
+  $('#selName').textContent=sel===0?'Top image':'Bottom image';
   const has=!!(z&&z.img);
+  document.querySelectorAll('.rb').forEach(b=>b.disabled=!has);
   ['rZoom','rRot','rOp'].forEach(id=>$('#'+id).disabled=!has);
+  ADJ.forEach(([k,u])=>{const e=$('#a_'+k);e.disabled=!has;e.value=has?z[k]:e.defaultValue;$('#v_'+k).textContent=e.value+u});
   [0,1].forEach(i=>{const q=zones[i];$('#rF'+i).disabled=!(q&&q.img);$('#rF'+i).value=q?q.fe:0;$('#vF'+i).textContent=(q?q.fe:0)+'%'});
   if(has){
     $('#rZoom').value=Math.round(z.s/cover(z)*100);$('#rRot').value=z.rot;$('#rOp').value=Math.round(z.op*100);
@@ -119,12 +159,20 @@ function ui(){
   $('#vZoom').textContent=$('#rZoom').value+'%';$('#vRot').textContent=$('#rRot').value+'°';$('#vOp').textContent=$('#rOp').value+'%';
   render();
 }
+const ADJ=[['br','%'],['co','%'],['sa','%'],['hu','°'],['bl','']];
+ADJ.forEach(([k,u])=>$('#a_'+k).oninput=e=>{const z=zones[sel];if(!z||!z.img)return;z[k]=+e.target.value;$('#v_'+k).textContent=e.target.value+u;render()});
+const ADJ0={br:100,co:100,sa:100,hu:0,bl:0};
+const withImg=fn=>e=>{if(e){e.preventDefault();e.stopPropagation()}const z=zones[sel];if(z&&z.img){fn(z);ui()}};
+const IC='<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>';
+const RS={rZoom:z=>{const x=z.cx,y=z.cy;fit(z);z.cx=x;z.cy=y},rRot:z=>{z.rot=0},rOp:z=>{z.op=1},a_br:z=>{z.br=100},a_co:z=>{z.co=100},a_sa:z=>{z.sa=100},a_hu:z=>{z.hu=0},a_bl:z=>{z.bl=0}};
+Object.entries(RS).forEach(([id,fn])=>{const b=document.createElement('button');b.className='ic rb';b.title='Reset';b.innerHTML=IC;b.onclick=withImg(fn);$('#'+id).closest('label').appendChild(b)});
+$('#bAll').onclick=withImg(z=>{Object.assign(z,ADJ0);z.fe=0;z.rot=0;z.fl=1;z.op=1;fit(z)});
 let pickIdx=0;
 const pick=i=>{pickIdx=sel=i;ui();$('#fImg').click()};
 $('#bTop').onclick=()=>pick(0);$('#bBot').onclick=()=>pick(1);
 $('#fImg').onchange=e=>{const f=e.target.files[0];e.target.value='';load(pickIdx,f)};
 function load(i,f){if(!f||!f.type.startsWith('image/'))return;const r=new FileReader();
-  r.onload=()=>{const im=new Image();im.onload=()=>{const z=zones[i];z.img=im;z.fc=null;z.rot=0;z.fl=1;fit(z);sel=i;ui()};im.src=r.result};r.readAsDataURL(f)}
+  r.onload=()=>{const im=new Image();im.onload=()=>{const z=zones[i];z.img=im;z.fc=null;Object.assign(z,{br:100,co:100,sa:100,hu:0,bl:0});z.rot=0;z.fl=1;fit(z);sel=i;ui()};im.src=r.result};r.readAsDataURL(f)}
 $('#rZoom').oninput=e=>{const z=zones[sel];z.s=e.target.value/100*cover(z);$('#vZoom').textContent=e.target.value+'%';render()};
 $('#rRot').oninput=e=>{zones[sel].rot=+e.target.value;$('#vRot').textContent=e.target.value+'°';render()};
 $('#rOp').oninput=e=>{zones[sel].op=e.target.value/100;$('#vOp').textContent=e.target.value+'%';render()};

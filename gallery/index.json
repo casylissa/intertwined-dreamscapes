@@ -1,3269 +1,3269 @@
 {
  "hsr": [
   {
-   "g": "Acheron",
+   "g": "",
    "n": "Character Acheron Eidolon 1",
-   "f": "hsr/Acheron/Character Acheron Eidolon 1.png"
+   "f": "hsr/Character Acheron Eidolon 1.png"
   },
   {
-   "g": "Acheron",
+   "g": "",
    "n": "Character Acheron Eidolon 2",
-   "f": "hsr/Acheron/Character Acheron Eidolon 2.png"
+   "f": "hsr/Character Acheron Eidolon 2.png"
   },
   {
-   "g": "Acheron",
+   "g": "",
    "n": "Character Acheron Eidolon 3",
-   "f": "hsr/Acheron/Character Acheron Eidolon 3.png"
+   "f": "hsr/Character Acheron Eidolon 3.png"
   },
   {
-   "g": "Acheron",
+   "g": "",
    "n": "Character Acheron Eidolon 4",
-   "f": "hsr/Acheron/Character Acheron Eidolon 4.png"
+   "f": "hsr/Character Acheron Eidolon 4.png"
   },
   {
-   "g": "Acheron",
+   "g": "",
    "n": "Character Acheron Eidolon 5",
-   "f": "hsr/Acheron/Character Acheron Eidolon 5.png"
+   "f": "hsr/Character Acheron Eidolon 5.png"
   },
   {
-   "g": "Acheron",
+   "g": "",
    "n": "Character Acheron Eidolon 6",
-   "f": "hsr/Acheron/Character Acheron Eidolon 6.png"
+   "f": "hsr/Character Acheron Eidolon 6.png"
   },
   {
-   "g": "Acheron",
+   "g": "",
    "n": "Character Acheron Portrait",
-   "f": "hsr/Acheron/Character Acheron Portrait.png"
+   "f": "hsr/Character Acheron Portrait.png"
   },
   {
-   "g": "Aeon ★ Aha Star Lotto",
-   "n": "Character Aeon ★ Aha Star Lotto Portrait",
-   "f": "hsr/Aeon ★ Aha Star Lotto/Character Aeon ★ Aha Star Lotto Portrait.png"
-  },
-  {
-   "g": "Aeon ★ Aha",
+   "g": "",
    "n": "Character Aeon ★ Aha Eidolon 1",
-   "f": "hsr/Aeon ★ Aha/Character Aeon ★ Aha Eidolon 1.png"
+   "f": "hsr/Character Aeon ★ Aha Eidolon 1.png"
   },
   {
-   "g": "Aeon ★ Aha",
+   "g": "",
    "n": "Character Aeon ★ Aha Eidolon 2",
-   "f": "hsr/Aeon ★ Aha/Character Aeon ★ Aha Eidolon 2.png"
+   "f": "hsr/Character Aeon ★ Aha Eidolon 2.png"
   },
   {
-   "g": "Aeon ★ Aha",
+   "g": "",
    "n": "Character Aeon ★ Aha Eidolon 3",
-   "f": "hsr/Aeon ★ Aha/Character Aeon ★ Aha Eidolon 3.png"
+   "f": "hsr/Character Aeon ★ Aha Eidolon 3.png"
   },
   {
-   "g": "Aeon ★ Aha",
+   "g": "",
    "n": "Character Aeon ★ Aha Eidolon 4",
-   "f": "hsr/Aeon ★ Aha/Character Aeon ★ Aha Eidolon 4.png"
+   "f": "hsr/Character Aeon ★ Aha Eidolon 4.png"
   },
   {
-   "g": "Aeon ★ Aha",
+   "g": "",
    "n": "Character Aeon ★ Aha Eidolon 5",
-   "f": "hsr/Aeon ★ Aha/Character Aeon ★ Aha Eidolon 5.png"
+   "f": "hsr/Character Aeon ★ Aha Eidolon 5.png"
   },
   {
-   "g": "Aeon ★ Aha",
+   "g": "",
    "n": "Character Aeon ★ Aha Eidolon 6",
-   "f": "hsr/Aeon ★ Aha/Character Aeon ★ Aha Eidolon 6.png"
+   "f": "hsr/Character Aeon ★ Aha Eidolon 6.png"
   },
   {
-   "g": "Aeon ★ Aha",
+   "g": "",
    "n": "Character Aeon ★ Aha Portrait",
-   "f": "hsr/Aeon ★ Aha/Character Aeon ★ Aha Portrait.png"
+   "f": "hsr/Character Aeon ★ Aha Portrait.png"
   },
   {
-   "g": "Aglaea",
+   "g": "",
+   "n": "Character Aeon ★ Aha Star Lotto Portrait",
+   "f": "hsr/Character Aeon ★ Aha Star Lotto Portrait.png"
+  },
+  {
+   "g": "",
    "n": "Character Aglaea Eidolon 1",
-   "f": "hsr/Aglaea/Character Aglaea Eidolon 1.png"
+   "f": "hsr/Character Aglaea Eidolon 1.png"
   },
   {
-   "g": "Aglaea",
+   "g": "",
    "n": "Character Aglaea Eidolon 2",
-   "f": "hsr/Aglaea/Character Aglaea Eidolon 2.png"
+   "f": "hsr/Character Aglaea Eidolon 2.png"
   },
   {
-   "g": "Aglaea",
+   "g": "",
    "n": "Character Aglaea Eidolon 3",
-   "f": "hsr/Aglaea/Character Aglaea Eidolon 3.png"
+   "f": "hsr/Character Aglaea Eidolon 3.png"
   },
   {
-   "g": "Aglaea",
+   "g": "",
    "n": "Character Aglaea Eidolon 4",
-   "f": "hsr/Aglaea/Character Aglaea Eidolon 4.png"
+   "f": "hsr/Character Aglaea Eidolon 4.png"
   },
   {
-   "g": "Aglaea",
+   "g": "",
    "n": "Character Aglaea Eidolon 5",
-   "f": "hsr/Aglaea/Character Aglaea Eidolon 5.png"
+   "f": "hsr/Character Aglaea Eidolon 5.png"
   },
   {
-   "g": "Aglaea",
+   "g": "",
    "n": "Character Aglaea Eidolon 6",
-   "f": "hsr/Aglaea/Character Aglaea Eidolon 6.png"
+   "f": "hsr/Character Aglaea Eidolon 6.png"
   },
   {
-   "g": "Aglaea",
+   "g": "",
    "n": "Character Aglaea Portrait",
-   "f": "hsr/Aglaea/Character Aglaea Portrait.png"
+   "f": "hsr/Character Aglaea Portrait.png"
   },
   {
-   "g": "Anaxa",
+   "g": "",
    "n": "Character Anaxa Eidolon 1",
-   "f": "hsr/Anaxa/Character Anaxa Eidolon 1.png"
+   "f": "hsr/Character Anaxa Eidolon 1.png"
   },
   {
-   "g": "Anaxa",
+   "g": "",
    "n": "Character Anaxa Eidolon 2",
-   "f": "hsr/Anaxa/Character Anaxa Eidolon 2.png"
+   "f": "hsr/Character Anaxa Eidolon 2.png"
   },
   {
-   "g": "Anaxa",
+   "g": "",
    "n": "Character Anaxa Eidolon 3",
-   "f": "hsr/Anaxa/Character Anaxa Eidolon 3.png"
+   "f": "hsr/Character Anaxa Eidolon 3.png"
   },
   {
-   "g": "Anaxa",
+   "g": "",
    "n": "Character Anaxa Eidolon 4",
-   "f": "hsr/Anaxa/Character Anaxa Eidolon 4.png"
+   "f": "hsr/Character Anaxa Eidolon 4.png"
   },
   {
-   "g": "Anaxa",
+   "g": "",
    "n": "Character Anaxa Eidolon 5",
-   "f": "hsr/Anaxa/Character Anaxa Eidolon 5.png"
+   "f": "hsr/Character Anaxa Eidolon 5.png"
   },
   {
-   "g": "Anaxa",
+   "g": "",
    "n": "Character Anaxa Eidolon 6",
-   "f": "hsr/Anaxa/Character Anaxa Eidolon 6.png"
+   "f": "hsr/Character Anaxa Eidolon 6.png"
   },
   {
-   "g": "Anaxa",
+   "g": "",
    "n": "Character Anaxa Portrait",
-   "f": "hsr/Anaxa/Character Anaxa Portrait.png"
+   "f": "hsr/Character Anaxa Portrait.png"
   },
   {
-   "g": "Archer",
+   "g": "",
    "n": "Character Archer Eidolon 1",
-   "f": "hsr/Archer/Character Archer Eidolon 1.png"
+   "f": "hsr/Character Archer Eidolon 1.png"
   },
   {
-   "g": "Archer",
+   "g": "",
    "n": "Character Archer Eidolon 2",
-   "f": "hsr/Archer/Character Archer Eidolon 2.png"
+   "f": "hsr/Character Archer Eidolon 2.png"
   },
   {
-   "g": "Archer",
+   "g": "",
    "n": "Character Archer Eidolon 3",
-   "f": "hsr/Archer/Character Archer Eidolon 3.png"
+   "f": "hsr/Character Archer Eidolon 3.png"
   },
   {
-   "g": "Archer",
+   "g": "",
    "n": "Character Archer Eidolon 4",
-   "f": "hsr/Archer/Character Archer Eidolon 4.png"
+   "f": "hsr/Character Archer Eidolon 4.png"
   },
   {
-   "g": "Archer",
+   "g": "",
    "n": "Character Archer Eidolon 5",
-   "f": "hsr/Archer/Character Archer Eidolon 5.png"
+   "f": "hsr/Character Archer Eidolon 5.png"
   },
   {
-   "g": "Archer",
+   "g": "",
    "n": "Character Archer Eidolon 6",
-   "f": "hsr/Archer/Character Archer Eidolon 6.png"
+   "f": "hsr/Character Archer Eidolon 6.png"
   },
   {
-   "g": "Archer",
+   "g": "",
    "n": "Character Archer Portrait",
-   "f": "hsr/Archer/Character Archer Portrait.png"
+   "f": "hsr/Character Archer Portrait.png"
   },
   {
-   "g": "Argenti",
+   "g": "",
    "n": "Character Argenti Eidolon 1",
-   "f": "hsr/Argenti/Character Argenti Eidolon 1.png"
+   "f": "hsr/Character Argenti Eidolon 1.png"
   },
   {
-   "g": "Argenti",
+   "g": "",
    "n": "Character Argenti Eidolon 2",
-   "f": "hsr/Argenti/Character Argenti Eidolon 2.png"
+   "f": "hsr/Character Argenti Eidolon 2.png"
   },
   {
-   "g": "Argenti",
+   "g": "",
    "n": "Character Argenti Eidolon 3",
-   "f": "hsr/Argenti/Character Argenti Eidolon 3.png"
+   "f": "hsr/Character Argenti Eidolon 3.png"
   },
   {
-   "g": "Argenti",
+   "g": "",
    "n": "Character Argenti Eidolon 4",
-   "f": "hsr/Argenti/Character Argenti Eidolon 4.png"
+   "f": "hsr/Character Argenti Eidolon 4.png"
   },
   {
-   "g": "Argenti",
+   "g": "",
    "n": "Character Argenti Eidolon 5",
-   "f": "hsr/Argenti/Character Argenti Eidolon 5.png"
+   "f": "hsr/Character Argenti Eidolon 5.png"
   },
   {
-   "g": "Argenti",
+   "g": "",
    "n": "Character Argenti Eidolon 6",
-   "f": "hsr/Argenti/Character Argenti Eidolon 6.png"
+   "f": "hsr/Character Argenti Eidolon 6.png"
   },
   {
-   "g": "Argenti",
+   "g": "",
    "n": "Character Argenti Portrait",
-   "f": "hsr/Argenti/Character Argenti Portrait.png"
+   "f": "hsr/Character Argenti Portrait.png"
   },
   {
-   "g": "Arlan",
+   "g": "",
    "n": "Character Arlan Eidolon 1",
-   "f": "hsr/Arlan/Character Arlan Eidolon 1.png"
+   "f": "hsr/Character Arlan Eidolon 1.png"
   },
   {
-   "g": "Arlan",
+   "g": "",
    "n": "Character Arlan Eidolon 2",
-   "f": "hsr/Arlan/Character Arlan Eidolon 2.png"
+   "f": "hsr/Character Arlan Eidolon 2.png"
   },
   {
-   "g": "Arlan",
+   "g": "",
    "n": "Character Arlan Eidolon 3",
-   "f": "hsr/Arlan/Character Arlan Eidolon 3.png"
+   "f": "hsr/Character Arlan Eidolon 3.png"
   },
   {
-   "g": "Arlan",
+   "g": "",
    "n": "Character Arlan Eidolon 4",
-   "f": "hsr/Arlan/Character Arlan Eidolon 4.png"
+   "f": "hsr/Character Arlan Eidolon 4.png"
   },
   {
-   "g": "Arlan",
+   "g": "",
    "n": "Character Arlan Eidolon 5",
-   "f": "hsr/Arlan/Character Arlan Eidolon 5.png"
+   "f": "hsr/Character Arlan Eidolon 5.png"
   },
   {
-   "g": "Arlan",
+   "g": "",
    "n": "Character Arlan Eidolon 6",
-   "f": "hsr/Arlan/Character Arlan Eidolon 6.png"
+   "f": "hsr/Character Arlan Eidolon 6.png"
   },
   {
-   "g": "Arlan",
+   "g": "",
    "n": "Character Arlan Portrait",
-   "f": "hsr/Arlan/Character Arlan Portrait.png"
+   "f": "hsr/Character Arlan Portrait.png"
   },
   {
-   "g": "Ashveil",
+   "g": "",
    "n": "Character Ashveil Eidolon 1",
-   "f": "hsr/Ashveil/Character Ashveil Eidolon 1.png"
+   "f": "hsr/Character Ashveil Eidolon 1.png"
   },
   {
-   "g": "Ashveil",
+   "g": "",
    "n": "Character Ashveil Eidolon 2",
-   "f": "hsr/Ashveil/Character Ashveil Eidolon 2.png"
+   "f": "hsr/Character Ashveil Eidolon 2.png"
   },
   {
-   "g": "Ashveil",
+   "g": "",
    "n": "Character Ashveil Eidolon 3",
-   "f": "hsr/Ashveil/Character Ashveil Eidolon 3.png"
+   "f": "hsr/Character Ashveil Eidolon 3.png"
   },
   {
-   "g": "Ashveil",
+   "g": "",
    "n": "Character Ashveil Eidolon 4",
-   "f": "hsr/Ashveil/Character Ashveil Eidolon 4.png"
+   "f": "hsr/Character Ashveil Eidolon 4.png"
   },
   {
-   "g": "Ashveil",
+   "g": "",
    "n": "Character Ashveil Eidolon 5",
-   "f": "hsr/Ashveil/Character Ashveil Eidolon 5.png"
+   "f": "hsr/Character Ashveil Eidolon 5.png"
   },
   {
-   "g": "Ashveil",
+   "g": "",
    "n": "Character Ashveil Eidolon 6",
-   "f": "hsr/Ashveil/Character Ashveil Eidolon 6.png"
+   "f": "hsr/Character Ashveil Eidolon 6.png"
   },
   {
-   "g": "Ashveil",
+   "g": "",
    "n": "Character Ashveil Portrait",
-   "f": "hsr/Ashveil/Character Ashveil Portrait.png"
+   "f": "hsr/Character Ashveil Portrait.png"
   },
   {
-   "g": "Asta",
+   "g": "",
    "n": "Character Asta Eidolon 1",
-   "f": "hsr/Asta/Character Asta Eidolon 1.png"
+   "f": "hsr/Character Asta Eidolon 1.png"
   },
   {
-   "g": "Asta",
+   "g": "",
    "n": "Character Asta Eidolon 2",
-   "f": "hsr/Asta/Character Asta Eidolon 2.png"
+   "f": "hsr/Character Asta Eidolon 2.png"
   },
   {
-   "g": "Asta",
+   "g": "",
    "n": "Character Asta Eidolon 3",
-   "f": "hsr/Asta/Character Asta Eidolon 3.png"
+   "f": "hsr/Character Asta Eidolon 3.png"
   },
   {
-   "g": "Asta",
+   "g": "",
    "n": "Character Asta Eidolon 4",
-   "f": "hsr/Asta/Character Asta Eidolon 4.png"
+   "f": "hsr/Character Asta Eidolon 4.png"
   },
   {
-   "g": "Asta",
+   "g": "",
    "n": "Character Asta Eidolon 5",
-   "f": "hsr/Asta/Character Asta Eidolon 5.png"
+   "f": "hsr/Character Asta Eidolon 5.png"
   },
   {
-   "g": "Asta",
+   "g": "",
    "n": "Character Asta Eidolon 6",
-   "f": "hsr/Asta/Character Asta Eidolon 6.png"
+   "f": "hsr/Character Asta Eidolon 6.png"
   },
   {
-   "g": "Asta",
+   "g": "",
    "n": "Character Asta Portrait",
-   "f": "hsr/Asta/Character Asta Portrait.png"
+   "f": "hsr/Character Asta Portrait.png"
   },
   {
-   "g": "Aventurine • Waveflair",
-   "n": "Character Aventurine • Waveflair Eidolon 1",
-   "f": "hsr/Aventurine • Waveflair/Character Aventurine • Waveflair Eidolon 1.png"
-  },
-  {
-   "g": "Aventurine • Waveflair",
-   "n": "Character Aventurine • Waveflair Eidolon 2",
-   "f": "hsr/Aventurine • Waveflair/Character Aventurine • Waveflair Eidolon 2.png"
-  },
-  {
-   "g": "Aventurine • Waveflair",
-   "n": "Character Aventurine • Waveflair Eidolon 3",
-   "f": "hsr/Aventurine • Waveflair/Character Aventurine • Waveflair Eidolon 3.png"
-  },
-  {
-   "g": "Aventurine • Waveflair",
-   "n": "Character Aventurine • Waveflair Eidolon 4",
-   "f": "hsr/Aventurine • Waveflair/Character Aventurine • Waveflair Eidolon 4.png"
-  },
-  {
-   "g": "Aventurine • Waveflair",
-   "n": "Character Aventurine • Waveflair Eidolon 5",
-   "f": "hsr/Aventurine • Waveflair/Character Aventurine • Waveflair Eidolon 5.png"
-  },
-  {
-   "g": "Aventurine • Waveflair",
-   "n": "Character Aventurine • Waveflair Eidolon 6",
-   "f": "hsr/Aventurine • Waveflair/Character Aventurine • Waveflair Eidolon 6.png"
-  },
-  {
-   "g": "Aventurine • Waveflair",
-   "n": "Character Aventurine • Waveflair Portrait",
-   "f": "hsr/Aventurine • Waveflair/Character Aventurine • Waveflair Portrait.png"
-  },
-  {
-   "g": "Aventurine",
+   "g": "",
    "n": "Character Aventurine Eidolon 1",
-   "f": "hsr/Aventurine/Character Aventurine Eidolon 1.png"
+   "f": "hsr/Character Aventurine Eidolon 1.png"
   },
   {
-   "g": "Aventurine",
+   "g": "",
    "n": "Character Aventurine Eidolon 2",
-   "f": "hsr/Aventurine/Character Aventurine Eidolon 2.png"
+   "f": "hsr/Character Aventurine Eidolon 2.png"
   },
   {
-   "g": "Aventurine",
+   "g": "",
    "n": "Character Aventurine Eidolon 3",
-   "f": "hsr/Aventurine/Character Aventurine Eidolon 3.png"
+   "f": "hsr/Character Aventurine Eidolon 3.png"
   },
   {
-   "g": "Aventurine",
+   "g": "",
    "n": "Character Aventurine Eidolon 4",
-   "f": "hsr/Aventurine/Character Aventurine Eidolon 4.png"
+   "f": "hsr/Character Aventurine Eidolon 4.png"
   },
   {
-   "g": "Aventurine",
+   "g": "",
    "n": "Character Aventurine Eidolon 5",
-   "f": "hsr/Aventurine/Character Aventurine Eidolon 5.png"
+   "f": "hsr/Character Aventurine Eidolon 5.png"
   },
   {
-   "g": "Aventurine",
+   "g": "",
    "n": "Character Aventurine Eidolon 6",
-   "f": "hsr/Aventurine/Character Aventurine Eidolon 6.png"
+   "f": "hsr/Character Aventurine Eidolon 6.png"
   },
   {
-   "g": "Aventurine",
+   "g": "",
    "n": "Character Aventurine Portrait",
-   "f": "hsr/Aventurine/Character Aventurine Portrait.png"
+   "f": "hsr/Character Aventurine Portrait.png"
   },
   {
-   "g": "Bailu",
+   "g": "",
+   "n": "Character Aventurine • Waveflair Eidolon 1",
+   "f": "hsr/Character Aventurine • Waveflair Eidolon 1.png"
+  },
+  {
+   "g": "",
+   "n": "Character Aventurine • Waveflair Eidolon 2",
+   "f": "hsr/Character Aventurine • Waveflair Eidolon 2.png"
+  },
+  {
+   "g": "",
+   "n": "Character Aventurine • Waveflair Eidolon 3",
+   "f": "hsr/Character Aventurine • Waveflair Eidolon 3.png"
+  },
+  {
+   "g": "",
+   "n": "Character Aventurine • Waveflair Eidolon 4",
+   "f": "hsr/Character Aventurine • Waveflair Eidolon 4.png"
+  },
+  {
+   "g": "",
+   "n": "Character Aventurine • Waveflair Eidolon 5",
+   "f": "hsr/Character Aventurine • Waveflair Eidolon 5.png"
+  },
+  {
+   "g": "",
+   "n": "Character Aventurine • Waveflair Eidolon 6",
+   "f": "hsr/Character Aventurine • Waveflair Eidolon 6.png"
+  },
+  {
+   "g": "",
+   "n": "Character Aventurine • Waveflair Portrait",
+   "f": "hsr/Character Aventurine • Waveflair Portrait.png"
+  },
+  {
+   "g": "",
    "n": "Character Bailu Eidolon 1",
-   "f": "hsr/Bailu/Character Bailu Eidolon 1.png"
+   "f": "hsr/Character Bailu Eidolon 1.png"
   },
   {
-   "g": "Bailu",
+   "g": "",
    "n": "Character Bailu Eidolon 2",
-   "f": "hsr/Bailu/Character Bailu Eidolon 2.png"
+   "f": "hsr/Character Bailu Eidolon 2.png"
   },
   {
-   "g": "Bailu",
+   "g": "",
    "n": "Character Bailu Eidolon 3",
-   "f": "hsr/Bailu/Character Bailu Eidolon 3.png"
+   "f": "hsr/Character Bailu Eidolon 3.png"
   },
   {
-   "g": "Bailu",
+   "g": "",
    "n": "Character Bailu Eidolon 4",
-   "f": "hsr/Bailu/Character Bailu Eidolon 4.png"
+   "f": "hsr/Character Bailu Eidolon 4.png"
   },
   {
-   "g": "Bailu",
+   "g": "",
    "n": "Character Bailu Eidolon 5",
-   "f": "hsr/Bailu/Character Bailu Eidolon 5.png"
+   "f": "hsr/Character Bailu Eidolon 5.png"
   },
   {
-   "g": "Bailu",
+   "g": "",
    "n": "Character Bailu Eidolon 6",
-   "f": "hsr/Bailu/Character Bailu Eidolon 6.png"
+   "f": "hsr/Character Bailu Eidolon 6.png"
   },
   {
-   "g": "Bailu",
+   "g": "",
    "n": "Character Bailu Portrait",
-   "f": "hsr/Bailu/Character Bailu Portrait.png"
+   "f": "hsr/Character Bailu Portrait.png"
   },
   {
-   "g": "Black Swan",
+   "g": "",
    "n": "Character Black Swan Eidolon 1",
-   "f": "hsr/Black Swan/Character Black Swan Eidolon 1.png"
+   "f": "hsr/Character Black Swan Eidolon 1.png"
   },
   {
-   "g": "Black Swan",
+   "g": "",
    "n": "Character Black Swan Eidolon 2",
-   "f": "hsr/Black Swan/Character Black Swan Eidolon 2.png"
+   "f": "hsr/Character Black Swan Eidolon 2.png"
   },
   {
-   "g": "Black Swan",
+   "g": "",
    "n": "Character Black Swan Eidolon 3",
-   "f": "hsr/Black Swan/Character Black Swan Eidolon 3.png"
+   "f": "hsr/Character Black Swan Eidolon 3.png"
   },
   {
-   "g": "Black Swan",
+   "g": "",
    "n": "Character Black Swan Eidolon 4",
-   "f": "hsr/Black Swan/Character Black Swan Eidolon 4.png"
+   "f": "hsr/Character Black Swan Eidolon 4.png"
   },
   {
-   "g": "Black Swan",
+   "g": "",
    "n": "Character Black Swan Eidolon 5",
-   "f": "hsr/Black Swan/Character Black Swan Eidolon 5.png"
+   "f": "hsr/Character Black Swan Eidolon 5.png"
   },
   {
-   "g": "Black Swan",
+   "g": "",
    "n": "Character Black Swan Eidolon 6",
-   "f": "hsr/Black Swan/Character Black Swan Eidolon 6.png"
+   "f": "hsr/Character Black Swan Eidolon 6.png"
   },
   {
-   "g": "Black Swan",
+   "g": "",
    "n": "Character Black Swan Portrait",
-   "f": "hsr/Black Swan/Character Black Swan Portrait.png"
+   "f": "hsr/Character Black Swan Portrait.png"
   },
   {
-   "g": "Blade",
+   "g": "",
    "n": "Character Blade Eidolon 1",
-   "f": "hsr/Blade/Character Blade Eidolon 1.png"
+   "f": "hsr/Character Blade Eidolon 1.png"
   },
   {
-   "g": "Blade",
+   "g": "",
    "n": "Character Blade Eidolon 2",
-   "f": "hsr/Blade/Character Blade Eidolon 2.png"
+   "f": "hsr/Character Blade Eidolon 2.png"
   },
   {
-   "g": "Blade",
+   "g": "",
    "n": "Character Blade Eidolon 3",
-   "f": "hsr/Blade/Character Blade Eidolon 3.png"
+   "f": "hsr/Character Blade Eidolon 3.png"
   },
   {
-   "g": "Blade",
+   "g": "",
    "n": "Character Blade Eidolon 4",
-   "f": "hsr/Blade/Character Blade Eidolon 4.png"
+   "f": "hsr/Character Blade Eidolon 4.png"
   },
   {
-   "g": "Blade",
+   "g": "",
    "n": "Character Blade Eidolon 5",
-   "f": "hsr/Blade/Character Blade Eidolon 5.png"
+   "f": "hsr/Character Blade Eidolon 5.png"
   },
   {
-   "g": "Blade",
+   "g": "",
    "n": "Character Blade Eidolon 6",
-   "f": "hsr/Blade/Character Blade Eidolon 6.png"
+   "f": "hsr/Character Blade Eidolon 6.png"
   },
   {
-   "g": "Blade",
+   "g": "",
    "n": "Character Blade Portrait",
-   "f": "hsr/Blade/Character Blade Portrait.png"
+   "f": "hsr/Character Blade Portrait.png"
   },
   {
-   "g": "Boothill",
+   "g": "",
    "n": "Character Boothill Eidolon 1",
-   "f": "hsr/Boothill/Character Boothill Eidolon 1.png"
+   "f": "hsr/Character Boothill Eidolon 1.png"
   },
   {
-   "g": "Boothill",
+   "g": "",
    "n": "Character Boothill Eidolon 2",
-   "f": "hsr/Boothill/Character Boothill Eidolon 2.png"
+   "f": "hsr/Character Boothill Eidolon 2.png"
   },
   {
-   "g": "Boothill",
+   "g": "",
    "n": "Character Boothill Eidolon 3",
-   "f": "hsr/Boothill/Character Boothill Eidolon 3.png"
+   "f": "hsr/Character Boothill Eidolon 3.png"
   },
   {
-   "g": "Boothill",
+   "g": "",
    "n": "Character Boothill Eidolon 4",
-   "f": "hsr/Boothill/Character Boothill Eidolon 4.png"
+   "f": "hsr/Character Boothill Eidolon 4.png"
   },
   {
-   "g": "Boothill",
+   "g": "",
    "n": "Character Boothill Eidolon 5",
-   "f": "hsr/Boothill/Character Boothill Eidolon 5.png"
+   "f": "hsr/Character Boothill Eidolon 5.png"
   },
   {
-   "g": "Boothill",
+   "g": "",
    "n": "Character Boothill Eidolon 6",
-   "f": "hsr/Boothill/Character Boothill Eidolon 6.png"
+   "f": "hsr/Character Boothill Eidolon 6.png"
   },
   {
-   "g": "Boothill",
+   "g": "",
    "n": "Character Boothill Portrait",
-   "f": "hsr/Boothill/Character Boothill Portrait.png"
+   "f": "hsr/Character Boothill Portrait.png"
   },
   {
-   "g": "Bronya",
+   "g": "",
    "n": "Character Bronya Eidolon 1",
-   "f": "hsr/Bronya/Character Bronya Eidolon 1.png"
+   "f": "hsr/Character Bronya Eidolon 1.png"
   },
   {
-   "g": "Bronya",
+   "g": "",
    "n": "Character Bronya Eidolon 2",
-   "f": "hsr/Bronya/Character Bronya Eidolon 2.png"
+   "f": "hsr/Character Bronya Eidolon 2.png"
   },
   {
-   "g": "Bronya",
+   "g": "",
    "n": "Character Bronya Eidolon 3",
-   "f": "hsr/Bronya/Character Bronya Eidolon 3.png"
+   "f": "hsr/Character Bronya Eidolon 3.png"
   },
   {
-   "g": "Bronya",
+   "g": "",
    "n": "Character Bronya Eidolon 4",
-   "f": "hsr/Bronya/Character Bronya Eidolon 4.png"
+   "f": "hsr/Character Bronya Eidolon 4.png"
   },
   {
-   "g": "Bronya",
+   "g": "",
    "n": "Character Bronya Eidolon 5",
-   "f": "hsr/Bronya/Character Bronya Eidolon 5.png"
+   "f": "hsr/Character Bronya Eidolon 5.png"
   },
   {
-   "g": "Bronya",
+   "g": "",
    "n": "Character Bronya Eidolon 6",
-   "f": "hsr/Bronya/Character Bronya Eidolon 6.png"
+   "f": "hsr/Character Bronya Eidolon 6.png"
   },
   {
-   "g": "Bronya",
+   "g": "",
    "n": "Character Bronya Portrait",
-   "f": "hsr/Bronya/Character Bronya Portrait.png"
+   "f": "hsr/Character Bronya Portrait.png"
   },
   {
-   "g": "Castorice Gossamer Flutter",
-   "n": "Character Castorice Gossamer Flutter Portrait",
-   "f": "hsr/Castorice Gossamer Flutter/Character Castorice Gossamer Flutter Portrait.png"
-  },
-  {
-   "g": "Castorice",
+   "g": "",
    "n": "Character Castorice Eidolon 1",
-   "f": "hsr/Castorice/Character Castorice Eidolon 1.png"
+   "f": "hsr/Character Castorice Eidolon 1.png"
   },
   {
-   "g": "Castorice",
+   "g": "",
    "n": "Character Castorice Eidolon 2",
-   "f": "hsr/Castorice/Character Castorice Eidolon 2.png"
+   "f": "hsr/Character Castorice Eidolon 2.png"
   },
   {
-   "g": "Castorice",
+   "g": "",
    "n": "Character Castorice Eidolon 3",
-   "f": "hsr/Castorice/Character Castorice Eidolon 3.png"
+   "f": "hsr/Character Castorice Eidolon 3.png"
   },
   {
-   "g": "Castorice",
+   "g": "",
    "n": "Character Castorice Eidolon 4",
-   "f": "hsr/Castorice/Character Castorice Eidolon 4.png"
+   "f": "hsr/Character Castorice Eidolon 4.png"
   },
   {
-   "g": "Castorice",
+   "g": "",
    "n": "Character Castorice Eidolon 5",
-   "f": "hsr/Castorice/Character Castorice Eidolon 5.png"
+   "f": "hsr/Character Castorice Eidolon 5.png"
   },
   {
-   "g": "Castorice",
+   "g": "",
    "n": "Character Castorice Eidolon 6",
-   "f": "hsr/Castorice/Character Castorice Eidolon 6.png"
+   "f": "hsr/Character Castorice Eidolon 6.png"
   },
   {
-   "g": "Castorice",
+   "g": "",
+   "n": "Character Castorice Gossamer Flutter Portrait",
+   "f": "hsr/Character Castorice Gossamer Flutter Portrait.png"
+  },
+  {
+   "g": "",
    "n": "Character Castorice Portrait",
-   "f": "hsr/Castorice/Character Castorice Portrait.png"
+   "f": "hsr/Character Castorice Portrait.png"
   },
   {
-   "g": "Cerydra",
+   "g": "",
    "n": "Character Cerydra Eidolon 1",
-   "f": "hsr/Cerydra/Character Cerydra Eidolon 1.png"
+   "f": "hsr/Character Cerydra Eidolon 1.png"
   },
   {
-   "g": "Cerydra",
+   "g": "",
    "n": "Character Cerydra Eidolon 2",
-   "f": "hsr/Cerydra/Character Cerydra Eidolon 2.png"
+   "f": "hsr/Character Cerydra Eidolon 2.png"
   },
   {
-   "g": "Cerydra",
+   "g": "",
    "n": "Character Cerydra Eidolon 3",
-   "f": "hsr/Cerydra/Character Cerydra Eidolon 3.png"
+   "f": "hsr/Character Cerydra Eidolon 3.png"
   },
   {
-   "g": "Cerydra",
+   "g": "",
    "n": "Character Cerydra Eidolon 4",
-   "f": "hsr/Cerydra/Character Cerydra Eidolon 4.png"
+   "f": "hsr/Character Cerydra Eidolon 4.png"
   },
   {
-   "g": "Cerydra",
+   "g": "",
    "n": "Character Cerydra Eidolon 5",
-   "f": "hsr/Cerydra/Character Cerydra Eidolon 5.png"
+   "f": "hsr/Character Cerydra Eidolon 5.png"
   },
   {
-   "g": "Cerydra",
+   "g": "",
    "n": "Character Cerydra Eidolon 6",
-   "f": "hsr/Cerydra/Character Cerydra Eidolon 6.png"
+   "f": "hsr/Character Cerydra Eidolon 6.png"
   },
   {
-   "g": "Cerydra",
+   "g": "",
    "n": "Character Cerydra Portrait",
-   "f": "hsr/Cerydra/Character Cerydra Portrait.png"
+   "f": "hsr/Character Cerydra Portrait.png"
   },
   {
-   "g": "Cipher",
+   "g": "",
    "n": "Character Cipher Eidolon 1",
-   "f": "hsr/Cipher/Character Cipher Eidolon 1.png"
+   "f": "hsr/Character Cipher Eidolon 1.png"
   },
   {
-   "g": "Cipher",
+   "g": "",
    "n": "Character Cipher Eidolon 2",
-   "f": "hsr/Cipher/Character Cipher Eidolon 2.png"
+   "f": "hsr/Character Cipher Eidolon 2.png"
   },
   {
-   "g": "Cipher",
+   "g": "",
    "n": "Character Cipher Eidolon 3",
-   "f": "hsr/Cipher/Character Cipher Eidolon 3.png"
+   "f": "hsr/Character Cipher Eidolon 3.png"
   },
   {
-   "g": "Cipher",
+   "g": "",
    "n": "Character Cipher Eidolon 4",
-   "f": "hsr/Cipher/Character Cipher Eidolon 4.png"
+   "f": "hsr/Character Cipher Eidolon 4.png"
   },
   {
-   "g": "Cipher",
+   "g": "",
    "n": "Character Cipher Eidolon 5",
-   "f": "hsr/Cipher/Character Cipher Eidolon 5.png"
+   "f": "hsr/Character Cipher Eidolon 5.png"
   },
   {
-   "g": "Cipher",
+   "g": "",
    "n": "Character Cipher Eidolon 6",
-   "f": "hsr/Cipher/Character Cipher Eidolon 6.png"
+   "f": "hsr/Character Cipher Eidolon 6.png"
   },
   {
-   "g": "Cipher",
+   "g": "",
    "n": "Character Cipher Portrait",
-   "f": "hsr/Cipher/Character Cipher Portrait.png"
+   "f": "hsr/Character Cipher Portrait.png"
   },
   {
-   "g": "Clara",
+   "g": "",
    "n": "Character Clara Eidolon 1",
-   "f": "hsr/Clara/Character Clara Eidolon 1.png"
+   "f": "hsr/Character Clara Eidolon 1.png"
   },
   {
-   "g": "Clara",
+   "g": "",
    "n": "Character Clara Eidolon 2",
-   "f": "hsr/Clara/Character Clara Eidolon 2.png"
+   "f": "hsr/Character Clara Eidolon 2.png"
   },
   {
-   "g": "Clara",
+   "g": "",
    "n": "Character Clara Eidolon 3",
-   "f": "hsr/Clara/Character Clara Eidolon 3.png"
+   "f": "hsr/Character Clara Eidolon 3.png"
   },
   {
-   "g": "Clara",
+   "g": "",
    "n": "Character Clara Eidolon 4",
-   "f": "hsr/Clara/Character Clara Eidolon 4.png"
+   "f": "hsr/Character Clara Eidolon 4.png"
   },
   {
-   "g": "Clara",
+   "g": "",
    "n": "Character Clara Eidolon 5",
-   "f": "hsr/Clara/Character Clara Eidolon 5.png"
+   "f": "hsr/Character Clara Eidolon 5.png"
   },
   {
-   "g": "Clara",
+   "g": "",
    "n": "Character Clara Eidolon 6",
-   "f": "hsr/Clara/Character Clara Eidolon 6.png"
+   "f": "hsr/Character Clara Eidolon 6.png"
   },
   {
-   "g": "Clara",
+   "g": "",
    "n": "Character Clara Portrait",
-   "f": "hsr/Clara/Character Clara Portrait.png"
+   "f": "hsr/Character Clara Portrait.png"
   },
   {
-   "g": "Cyrene",
+   "g": "",
    "n": "Character Cyrene Eidolon 1",
-   "f": "hsr/Cyrene/Character Cyrene Eidolon 1.png"
+   "f": "hsr/Character Cyrene Eidolon 1.png"
   },
   {
-   "g": "Cyrene",
+   "g": "",
    "n": "Character Cyrene Eidolon 2",
-   "f": "hsr/Cyrene/Character Cyrene Eidolon 2.png"
+   "f": "hsr/Character Cyrene Eidolon 2.png"
   },
   {
-   "g": "Cyrene",
+   "g": "",
    "n": "Character Cyrene Eidolon 3",
-   "f": "hsr/Cyrene/Character Cyrene Eidolon 3.png"
+   "f": "hsr/Character Cyrene Eidolon 3.png"
   },
   {
-   "g": "Cyrene",
+   "g": "",
    "n": "Character Cyrene Eidolon 4",
-   "f": "hsr/Cyrene/Character Cyrene Eidolon 4.png"
+   "f": "hsr/Character Cyrene Eidolon 4.png"
   },
   {
-   "g": "Cyrene",
+   "g": "",
    "n": "Character Cyrene Eidolon 5",
-   "f": "hsr/Cyrene/Character Cyrene Eidolon 5.png"
+   "f": "hsr/Character Cyrene Eidolon 5.png"
   },
   {
-   "g": "Cyrene",
+   "g": "",
    "n": "Character Cyrene Eidolon 6",
-   "f": "hsr/Cyrene/Character Cyrene Eidolon 6.png"
+   "f": "hsr/Character Cyrene Eidolon 6.png"
   },
   {
-   "g": "Cyrene",
+   "g": "",
    "n": "Character Cyrene Portrait",
-   "f": "hsr/Cyrene/Character Cyrene Portrait.png"
+   "f": "hsr/Character Cyrene Portrait.png"
   },
   {
-   "g": "Dan Heng • Imbibitor Lunae",
-   "n": "Character Dan Heng • Imbibitor Lunae Eidolon 1",
-   "f": "hsr/Dan Heng • Imbibitor Lunae/Character Dan Heng • Imbibitor Lunae Eidolon 1.png"
-  },
-  {
-   "g": "Dan Heng • Imbibitor Lunae",
-   "n": "Character Dan Heng • Imbibitor Lunae Eidolon 2",
-   "f": "hsr/Dan Heng • Imbibitor Lunae/Character Dan Heng • Imbibitor Lunae Eidolon 2.png"
-  },
-  {
-   "g": "Dan Heng • Imbibitor Lunae",
-   "n": "Character Dan Heng • Imbibitor Lunae Eidolon 3",
-   "f": "hsr/Dan Heng • Imbibitor Lunae/Character Dan Heng • Imbibitor Lunae Eidolon 3.png"
-  },
-  {
-   "g": "Dan Heng • Imbibitor Lunae",
-   "n": "Character Dan Heng • Imbibitor Lunae Eidolon 4",
-   "f": "hsr/Dan Heng • Imbibitor Lunae/Character Dan Heng • Imbibitor Lunae Eidolon 4.png"
-  },
-  {
-   "g": "Dan Heng • Imbibitor Lunae",
-   "n": "Character Dan Heng • Imbibitor Lunae Eidolon 5",
-   "f": "hsr/Dan Heng • Imbibitor Lunae/Character Dan Heng • Imbibitor Lunae Eidolon 5.png"
-  },
-  {
-   "g": "Dan Heng • Imbibitor Lunae",
-   "n": "Character Dan Heng • Imbibitor Lunae Eidolon 6",
-   "f": "hsr/Dan Heng • Imbibitor Lunae/Character Dan Heng • Imbibitor Lunae Eidolon 6.png"
-  },
-  {
-   "g": "Dan Heng • Imbibitor Lunae",
-   "n": "Character Dan Heng • Imbibitor Lunae Portrait",
-   "f": "hsr/Dan Heng • Imbibitor Lunae/Character Dan Heng • Imbibitor Lunae Portrait.png"
-  },
-  {
-   "g": "Dan Heng • Permansor Terrae",
-   "n": "Character Dan Heng • Permansor Terrae Eidolon 1",
-   "f": "hsr/Dan Heng • Permansor Terrae/Character Dan Heng • Permansor Terrae Eidolon 1.png"
-  },
-  {
-   "g": "Dan Heng • Permansor Terrae",
-   "n": "Character Dan Heng • Permansor Terrae Eidolon 2",
-   "f": "hsr/Dan Heng • Permansor Terrae/Character Dan Heng • Permansor Terrae Eidolon 2.png"
-  },
-  {
-   "g": "Dan Heng • Permansor Terrae",
-   "n": "Character Dan Heng • Permansor Terrae Eidolon 3",
-   "f": "hsr/Dan Heng • Permansor Terrae/Character Dan Heng • Permansor Terrae Eidolon 3.png"
-  },
-  {
-   "g": "Dan Heng • Permansor Terrae",
-   "n": "Character Dan Heng • Permansor Terrae Eidolon 4",
-   "f": "hsr/Dan Heng • Permansor Terrae/Character Dan Heng • Permansor Terrae Eidolon 4.png"
-  },
-  {
-   "g": "Dan Heng • Permansor Terrae",
-   "n": "Character Dan Heng • Permansor Terrae Eidolon 5",
-   "f": "hsr/Dan Heng • Permansor Terrae/Character Dan Heng • Permansor Terrae Eidolon 5.png"
-  },
-  {
-   "g": "Dan Heng • Permansor Terrae",
-   "n": "Character Dan Heng • Permansor Terrae Eidolon 6",
-   "f": "hsr/Dan Heng • Permansor Terrae/Character Dan Heng • Permansor Terrae Eidolon 6.png"
-  },
-  {
-   "g": "Dan Heng • Permansor Terrae",
-   "n": "Character Dan Heng • Permansor Terrae Portrait",
-   "f": "hsr/Dan Heng • Permansor Terrae/Character Dan Heng • Permansor Terrae Portrait.png"
-  },
-  {
-   "g": "Dan Heng",
+   "g": "",
    "n": "Character Dan Heng Eidolon 1",
-   "f": "hsr/Dan Heng/Character Dan Heng Eidolon 1.png"
+   "f": "hsr/Character Dan Heng Eidolon 1.png"
   },
   {
-   "g": "Dan Heng",
+   "g": "",
    "n": "Character Dan Heng Eidolon 2",
-   "f": "hsr/Dan Heng/Character Dan Heng Eidolon 2.png"
+   "f": "hsr/Character Dan Heng Eidolon 2.png"
   },
   {
-   "g": "Dan Heng",
+   "g": "",
    "n": "Character Dan Heng Eidolon 3",
-   "f": "hsr/Dan Heng/Character Dan Heng Eidolon 3.png"
+   "f": "hsr/Character Dan Heng Eidolon 3.png"
   },
   {
-   "g": "Dan Heng",
+   "g": "",
    "n": "Character Dan Heng Eidolon 4",
-   "f": "hsr/Dan Heng/Character Dan Heng Eidolon 4.png"
+   "f": "hsr/Character Dan Heng Eidolon 4.png"
   },
   {
-   "g": "Dan Heng",
+   "g": "",
    "n": "Character Dan Heng Eidolon 5",
-   "f": "hsr/Dan Heng/Character Dan Heng Eidolon 5.png"
+   "f": "hsr/Character Dan Heng Eidolon 5.png"
   },
   {
-   "g": "Dan Heng",
+   "g": "",
    "n": "Character Dan Heng Eidolon 6",
-   "f": "hsr/Dan Heng/Character Dan Heng Eidolon 6.png"
+   "f": "hsr/Character Dan Heng Eidolon 6.png"
   },
   {
-   "g": "Dan Heng",
+   "g": "",
    "n": "Character Dan Heng Portrait",
-   "f": "hsr/Dan Heng/Character Dan Heng Portrait.png"
+   "f": "hsr/Character Dan Heng Portrait.png"
   },
   {
-   "g": "Dr. Ratio",
+   "g": "",
+   "n": "Character Dan Heng • Imbibitor Lunae Eidolon 1",
+   "f": "hsr/Character Dan Heng • Imbibitor Lunae Eidolon 1.png"
+  },
+  {
+   "g": "",
+   "n": "Character Dan Heng • Imbibitor Lunae Eidolon 2",
+   "f": "hsr/Character Dan Heng • Imbibitor Lunae Eidolon 2.png"
+  },
+  {
+   "g": "",
+   "n": "Character Dan Heng • Imbibitor Lunae Eidolon 3",
+   "f": "hsr/Character Dan Heng • Imbibitor Lunae Eidolon 3.png"
+  },
+  {
+   "g": "",
+   "n": "Character Dan Heng • Imbibitor Lunae Eidolon 4",
+   "f": "hsr/Character Dan Heng • Imbibitor Lunae Eidolon 4.png"
+  },
+  {
+   "g": "",
+   "n": "Character Dan Heng • Imbibitor Lunae Eidolon 5",
+   "f": "hsr/Character Dan Heng • Imbibitor Lunae Eidolon 5.png"
+  },
+  {
+   "g": "",
+   "n": "Character Dan Heng • Imbibitor Lunae Eidolon 6",
+   "f": "hsr/Character Dan Heng • Imbibitor Lunae Eidolon 6.png"
+  },
+  {
+   "g": "",
+   "n": "Character Dan Heng • Imbibitor Lunae Portrait",
+   "f": "hsr/Character Dan Heng • Imbibitor Lunae Portrait.png"
+  },
+  {
+   "g": "",
+   "n": "Character Dan Heng • Permansor Terrae Eidolon 1",
+   "f": "hsr/Character Dan Heng • Permansor Terrae Eidolon 1.png"
+  },
+  {
+   "g": "",
+   "n": "Character Dan Heng • Permansor Terrae Eidolon 2",
+   "f": "hsr/Character Dan Heng • Permansor Terrae Eidolon 2.png"
+  },
+  {
+   "g": "",
+   "n": "Character Dan Heng • Permansor Terrae Eidolon 3",
+   "f": "hsr/Character Dan Heng • Permansor Terrae Eidolon 3.png"
+  },
+  {
+   "g": "",
+   "n": "Character Dan Heng • Permansor Terrae Eidolon 4",
+   "f": "hsr/Character Dan Heng • Permansor Terrae Eidolon 4.png"
+  },
+  {
+   "g": "",
+   "n": "Character Dan Heng • Permansor Terrae Eidolon 5",
+   "f": "hsr/Character Dan Heng • Permansor Terrae Eidolon 5.png"
+  },
+  {
+   "g": "",
+   "n": "Character Dan Heng • Permansor Terrae Eidolon 6",
+   "f": "hsr/Character Dan Heng • Permansor Terrae Eidolon 6.png"
+  },
+  {
+   "g": "",
+   "n": "Character Dan Heng • Permansor Terrae Portrait",
+   "f": "hsr/Character Dan Heng • Permansor Terrae Portrait.png"
+  },
+  {
+   "g": "",
    "n": "Character Dr. Ratio Eidolon 1",
-   "f": "hsr/Dr. Ratio/Character Dr. Ratio Eidolon 1.png"
+   "f": "hsr/Character Dr. Ratio Eidolon 1.png"
   },
   {
-   "g": "Dr. Ratio",
+   "g": "",
    "n": "Character Dr. Ratio Eidolon 2",
-   "f": "hsr/Dr. Ratio/Character Dr. Ratio Eidolon 2.png"
+   "f": "hsr/Character Dr. Ratio Eidolon 2.png"
   },
   {
-   "g": "Dr. Ratio",
+   "g": "",
    "n": "Character Dr. Ratio Eidolon 3",
-   "f": "hsr/Dr. Ratio/Character Dr. Ratio Eidolon 3.png"
+   "f": "hsr/Character Dr. Ratio Eidolon 3.png"
   },
   {
-   "g": "Dr. Ratio",
+   "g": "",
    "n": "Character Dr. Ratio Eidolon 4",
-   "f": "hsr/Dr. Ratio/Character Dr. Ratio Eidolon 4.png"
+   "f": "hsr/Character Dr. Ratio Eidolon 4.png"
   },
   {
-   "g": "Dr. Ratio",
+   "g": "",
    "n": "Character Dr. Ratio Eidolon 5",
-   "f": "hsr/Dr. Ratio/Character Dr. Ratio Eidolon 5.png"
+   "f": "hsr/Character Dr. Ratio Eidolon 5.png"
   },
   {
-   "g": "Dr. Ratio",
+   "g": "",
    "n": "Character Dr. Ratio Eidolon 6",
-   "f": "hsr/Dr. Ratio/Character Dr. Ratio Eidolon 6.png"
+   "f": "hsr/Character Dr. Ratio Eidolon 6.png"
   },
   {
-   "g": "Dr. Ratio",
+   "g": "",
    "n": "Character Dr. Ratio Portrait",
-   "f": "hsr/Dr. Ratio/Character Dr. Ratio Portrait.png"
+   "f": "hsr/Character Dr. Ratio Portrait.png"
   },
   {
-   "g": "Evanescia Lunar Blossoming",
-   "n": "Character Evanescia Lunar Blossoming Portrait",
-   "f": "hsr/Evanescia Lunar Blossoming/Character Evanescia Lunar Blossoming Portrait.png"
-  },
-  {
-   "g": "Evanescia",
+   "g": "",
    "n": "Character Evanescia Eidolon 1",
-   "f": "hsr/Evanescia/Character Evanescia Eidolon 1.png"
+   "f": "hsr/Character Evanescia Eidolon 1.png"
   },
   {
-   "g": "Evanescia",
+   "g": "",
    "n": "Character Evanescia Eidolon 2",
-   "f": "hsr/Evanescia/Character Evanescia Eidolon 2.png"
+   "f": "hsr/Character Evanescia Eidolon 2.png"
   },
   {
-   "g": "Evanescia",
+   "g": "",
    "n": "Character Evanescia Eidolon 3",
-   "f": "hsr/Evanescia/Character Evanescia Eidolon 3.png"
+   "f": "hsr/Character Evanescia Eidolon 3.png"
   },
   {
-   "g": "Evanescia",
+   "g": "",
    "n": "Character Evanescia Eidolon 4",
-   "f": "hsr/Evanescia/Character Evanescia Eidolon 4.png"
+   "f": "hsr/Character Evanescia Eidolon 4.png"
   },
   {
-   "g": "Evanescia",
+   "g": "",
    "n": "Character Evanescia Eidolon 5",
-   "f": "hsr/Evanescia/Character Evanescia Eidolon 5.png"
+   "f": "hsr/Character Evanescia Eidolon 5.png"
   },
   {
-   "g": "Evanescia",
+   "g": "",
    "n": "Character Evanescia Eidolon 6",
-   "f": "hsr/Evanescia/Character Evanescia Eidolon 6.png"
+   "f": "hsr/Character Evanescia Eidolon 6.png"
   },
   {
-   "g": "Evanescia",
+   "g": "",
+   "n": "Character Evanescia Lunar Blossoming Portrait",
+   "f": "hsr/Character Evanescia Lunar Blossoming Portrait.png"
+  },
+  {
+   "g": "",
    "n": "Character Evanescia Portrait",
-   "f": "hsr/Evanescia/Character Evanescia Portrait.png"
+   "f": "hsr/Character Evanescia Portrait.png"
   },
   {
-   "g": "Evernight",
+   "g": "",
    "n": "Character Evernight Eidolon 1",
-   "f": "hsr/Evernight/Character Evernight Eidolon 1.png"
+   "f": "hsr/Character Evernight Eidolon 1.png"
   },
   {
-   "g": "Evernight",
+   "g": "",
    "n": "Character Evernight Eidolon 2",
-   "f": "hsr/Evernight/Character Evernight Eidolon 2.png"
+   "f": "hsr/Character Evernight Eidolon 2.png"
   },
   {
-   "g": "Evernight",
+   "g": "",
    "n": "Character Evernight Eidolon 3",
-   "f": "hsr/Evernight/Character Evernight Eidolon 3.png"
+   "f": "hsr/Character Evernight Eidolon 3.png"
   },
   {
-   "g": "Evernight",
+   "g": "",
    "n": "Character Evernight Eidolon 4",
-   "f": "hsr/Evernight/Character Evernight Eidolon 4.png"
+   "f": "hsr/Character Evernight Eidolon 4.png"
   },
   {
-   "g": "Evernight",
+   "g": "",
    "n": "Character Evernight Eidolon 5",
-   "f": "hsr/Evernight/Character Evernight Eidolon 5.png"
+   "f": "hsr/Character Evernight Eidolon 5.png"
   },
   {
-   "g": "Evernight",
+   "g": "",
    "n": "Character Evernight Eidolon 6",
-   "f": "hsr/Evernight/Character Evernight Eidolon 6.png"
+   "f": "hsr/Character Evernight Eidolon 6.png"
   },
   {
-   "g": "Evernight",
+   "g": "",
    "n": "Character Evernight Portrait",
-   "f": "hsr/Evernight/Character Evernight Portrait.png"
+   "f": "hsr/Character Evernight Portrait.png"
   },
   {
-   "g": "Feixiao",
+   "g": "",
    "n": "Character Feixiao Eidolon 1",
-   "f": "hsr/Feixiao/Character Feixiao Eidolon 1.png"
+   "f": "hsr/Character Feixiao Eidolon 1.png"
   },
   {
-   "g": "Feixiao",
+   "g": "",
    "n": "Character Feixiao Eidolon 2",
-   "f": "hsr/Feixiao/Character Feixiao Eidolon 2.png"
+   "f": "hsr/Character Feixiao Eidolon 2.png"
   },
   {
-   "g": "Feixiao",
+   "g": "",
    "n": "Character Feixiao Eidolon 3",
-   "f": "hsr/Feixiao/Character Feixiao Eidolon 3.png"
+   "f": "hsr/Character Feixiao Eidolon 3.png"
   },
   {
-   "g": "Feixiao",
+   "g": "",
    "n": "Character Feixiao Eidolon 4",
-   "f": "hsr/Feixiao/Character Feixiao Eidolon 4.png"
+   "f": "hsr/Character Feixiao Eidolon 4.png"
   },
   {
-   "g": "Feixiao",
+   "g": "",
    "n": "Character Feixiao Eidolon 5",
-   "f": "hsr/Feixiao/Character Feixiao Eidolon 5.png"
+   "f": "hsr/Character Feixiao Eidolon 5.png"
   },
   {
-   "g": "Feixiao",
+   "g": "",
    "n": "Character Feixiao Eidolon 6",
-   "f": "hsr/Feixiao/Character Feixiao Eidolon 6.png"
+   "f": "hsr/Character Feixiao Eidolon 6.png"
   },
   {
-   "g": "Feixiao",
+   "g": "",
    "n": "Character Feixiao Portrait",
-   "f": "hsr/Feixiao/Character Feixiao Portrait.png"
+   "f": "hsr/Character Feixiao Portrait.png"
   },
   {
-   "g": "Firefly Spring Missive",
-   "n": "Character Firefly Spring Missive Portrait",
-   "f": "hsr/Firefly Spring Missive/Character Firefly Spring Missive Portrait.png"
-  },
-  {
-   "g": "Firefly",
+   "g": "",
    "n": "Character Firefly Eidolon 1",
-   "f": "hsr/Firefly/Character Firefly Eidolon 1.png"
+   "f": "hsr/Character Firefly Eidolon 1.png"
   },
   {
-   "g": "Firefly",
+   "g": "",
    "n": "Character Firefly Eidolon 2",
-   "f": "hsr/Firefly/Character Firefly Eidolon 2.png"
+   "f": "hsr/Character Firefly Eidolon 2.png"
   },
   {
-   "g": "Firefly",
+   "g": "",
    "n": "Character Firefly Eidolon 3",
-   "f": "hsr/Firefly/Character Firefly Eidolon 3.png"
+   "f": "hsr/Character Firefly Eidolon 3.png"
   },
   {
-   "g": "Firefly",
+   "g": "",
    "n": "Character Firefly Eidolon 4",
-   "f": "hsr/Firefly/Character Firefly Eidolon 4.png"
+   "f": "hsr/Character Firefly Eidolon 4.png"
   },
   {
-   "g": "Firefly",
+   "g": "",
    "n": "Character Firefly Eidolon 5",
-   "f": "hsr/Firefly/Character Firefly Eidolon 5.png"
+   "f": "hsr/Character Firefly Eidolon 5.png"
   },
   {
-   "g": "Firefly",
+   "g": "",
    "n": "Character Firefly Eidolon 6",
-   "f": "hsr/Firefly/Character Firefly Eidolon 6.png"
+   "f": "hsr/Character Firefly Eidolon 6.png"
   },
   {
-   "g": "Firefly",
+   "g": "",
    "n": "Character Firefly Portrait",
-   "f": "hsr/Firefly/Character Firefly Portrait.png"
+   "f": "hsr/Character Firefly Portrait.png"
   },
   {
-   "g": "Fu Xuan",
+   "g": "",
+   "n": "Character Firefly Spring Missive Portrait",
+   "f": "hsr/Character Firefly Spring Missive Portrait.png"
+  },
+  {
+   "g": "",
    "n": "Character Fu Xuan Eidolon 1",
-   "f": "hsr/Fu Xuan/Character Fu Xuan Eidolon 1.png"
+   "f": "hsr/Character Fu Xuan Eidolon 1.png"
   },
   {
-   "g": "Fu Xuan",
+   "g": "",
    "n": "Character Fu Xuan Eidolon 2",
-   "f": "hsr/Fu Xuan/Character Fu Xuan Eidolon 2.png"
+   "f": "hsr/Character Fu Xuan Eidolon 2.png"
   },
   {
-   "g": "Fu Xuan",
+   "g": "",
    "n": "Character Fu Xuan Eidolon 3",
-   "f": "hsr/Fu Xuan/Character Fu Xuan Eidolon 3.png"
+   "f": "hsr/Character Fu Xuan Eidolon 3.png"
   },
   {
-   "g": "Fu Xuan",
+   "g": "",
    "n": "Character Fu Xuan Eidolon 4",
-   "f": "hsr/Fu Xuan/Character Fu Xuan Eidolon 4.png"
+   "f": "hsr/Character Fu Xuan Eidolon 4.png"
   },
   {
-   "g": "Fu Xuan",
+   "g": "",
    "n": "Character Fu Xuan Eidolon 5",
-   "f": "hsr/Fu Xuan/Character Fu Xuan Eidolon 5.png"
+   "f": "hsr/Character Fu Xuan Eidolon 5.png"
   },
   {
-   "g": "Fu Xuan",
+   "g": "",
    "n": "Character Fu Xuan Eidolon 6",
-   "f": "hsr/Fu Xuan/Character Fu Xuan Eidolon 6.png"
+   "f": "hsr/Character Fu Xuan Eidolon 6.png"
   },
   {
-   "g": "Fu Xuan",
+   "g": "",
    "n": "Character Fu Xuan Portrait",
-   "f": "hsr/Fu Xuan/Character Fu Xuan Portrait.png"
+   "f": "hsr/Character Fu Xuan Portrait.png"
   },
   {
-   "g": "Fugue",
+   "g": "",
    "n": "Character Fugue Eidolon 1",
-   "f": "hsr/Fugue/Character Fugue Eidolon 1.png"
+   "f": "hsr/Character Fugue Eidolon 1.png"
   },
   {
-   "g": "Fugue",
+   "g": "",
    "n": "Character Fugue Eidolon 2",
-   "f": "hsr/Fugue/Character Fugue Eidolon 2.png"
+   "f": "hsr/Character Fugue Eidolon 2.png"
   },
   {
-   "g": "Fugue",
+   "g": "",
    "n": "Character Fugue Eidolon 3",
-   "f": "hsr/Fugue/Character Fugue Eidolon 3.png"
+   "f": "hsr/Character Fugue Eidolon 3.png"
   },
   {
-   "g": "Fugue",
+   "g": "",
    "n": "Character Fugue Eidolon 4",
-   "f": "hsr/Fugue/Character Fugue Eidolon 4.png"
+   "f": "hsr/Character Fugue Eidolon 4.png"
   },
   {
-   "g": "Fugue",
+   "g": "",
    "n": "Character Fugue Eidolon 5",
-   "f": "hsr/Fugue/Character Fugue Eidolon 5.png"
+   "f": "hsr/Character Fugue Eidolon 5.png"
   },
   {
-   "g": "Fugue",
+   "g": "",
    "n": "Character Fugue Eidolon 6",
-   "f": "hsr/Fugue/Character Fugue Eidolon 6.png"
+   "f": "hsr/Character Fugue Eidolon 6.png"
   },
   {
-   "g": "Fugue",
+   "g": "",
    "n": "Character Fugue Portrait",
-   "f": "hsr/Fugue/Character Fugue Portrait.png"
+   "f": "hsr/Character Fugue Portrait.png"
   },
   {
-   "g": "Gallagher",
+   "g": "",
    "n": "Character Gallagher Eidolon 1",
-   "f": "hsr/Gallagher/Character Gallagher Eidolon 1.png"
+   "f": "hsr/Character Gallagher Eidolon 1.png"
   },
   {
-   "g": "Gallagher",
+   "g": "",
    "n": "Character Gallagher Eidolon 2",
-   "f": "hsr/Gallagher/Character Gallagher Eidolon 2.png"
+   "f": "hsr/Character Gallagher Eidolon 2.png"
   },
   {
-   "g": "Gallagher",
+   "g": "",
    "n": "Character Gallagher Eidolon 3",
-   "f": "hsr/Gallagher/Character Gallagher Eidolon 3.png"
+   "f": "hsr/Character Gallagher Eidolon 3.png"
   },
   {
-   "g": "Gallagher",
+   "g": "",
    "n": "Character Gallagher Eidolon 4",
-   "f": "hsr/Gallagher/Character Gallagher Eidolon 4.png"
+   "f": "hsr/Character Gallagher Eidolon 4.png"
   },
   {
-   "g": "Gallagher",
+   "g": "",
    "n": "Character Gallagher Eidolon 5",
-   "f": "hsr/Gallagher/Character Gallagher Eidolon 5.png"
+   "f": "hsr/Character Gallagher Eidolon 5.png"
   },
   {
-   "g": "Gallagher",
+   "g": "",
    "n": "Character Gallagher Eidolon 6",
-   "f": "hsr/Gallagher/Character Gallagher Eidolon 6.png"
+   "f": "hsr/Character Gallagher Eidolon 6.png"
   },
   {
-   "g": "Gallagher",
+   "g": "",
    "n": "Character Gallagher Portrait",
-   "f": "hsr/Gallagher/Character Gallagher Portrait.png"
+   "f": "hsr/Character Gallagher Portrait.png"
   },
   {
-   "g": "Gepard",
+   "g": "",
    "n": "Character Gepard Eidolon 1",
-   "f": "hsr/Gepard/Character Gepard Eidolon 1.png"
+   "f": "hsr/Character Gepard Eidolon 1.png"
   },
   {
-   "g": "Gepard",
+   "g": "",
    "n": "Character Gepard Eidolon 2",
-   "f": "hsr/Gepard/Character Gepard Eidolon 2.png"
+   "f": "hsr/Character Gepard Eidolon 2.png"
   },
   {
-   "g": "Gepard",
+   "g": "",
    "n": "Character Gepard Eidolon 3",
-   "f": "hsr/Gepard/Character Gepard Eidolon 3.png"
+   "f": "hsr/Character Gepard Eidolon 3.png"
   },
   {
-   "g": "Gepard",
+   "g": "",
    "n": "Character Gepard Eidolon 4",
-   "f": "hsr/Gepard/Character Gepard Eidolon 4.png"
+   "f": "hsr/Character Gepard Eidolon 4.png"
   },
   {
-   "g": "Gepard",
+   "g": "",
    "n": "Character Gepard Eidolon 5",
-   "f": "hsr/Gepard/Character Gepard Eidolon 5.png"
+   "f": "hsr/Character Gepard Eidolon 5.png"
   },
   {
-   "g": "Gepard",
+   "g": "",
    "n": "Character Gepard Eidolon 6",
-   "f": "hsr/Gepard/Character Gepard Eidolon 6.png"
+   "f": "hsr/Character Gepard Eidolon 6.png"
   },
   {
-   "g": "Gepard",
+   "g": "",
    "n": "Character Gepard Portrait",
-   "f": "hsr/Gepard/Character Gepard Portrait.png"
+   "f": "hsr/Character Gepard Portrait.png"
   },
   {
-   "g": "Gilgamesh",
+   "g": "",
    "n": "Character Gilgamesh Eidolon 1",
-   "f": "hsr/Gilgamesh/Character Gilgamesh Eidolon 1.png"
+   "f": "hsr/Character Gilgamesh Eidolon 1.png"
   },
   {
-   "g": "Gilgamesh",
+   "g": "",
    "n": "Character Gilgamesh Eidolon 2",
-   "f": "hsr/Gilgamesh/Character Gilgamesh Eidolon 2.png"
+   "f": "hsr/Character Gilgamesh Eidolon 2.png"
   },
   {
-   "g": "Gilgamesh",
+   "g": "",
    "n": "Character Gilgamesh Eidolon 3",
-   "f": "hsr/Gilgamesh/Character Gilgamesh Eidolon 3.png"
+   "f": "hsr/Character Gilgamesh Eidolon 3.png"
   },
   {
-   "g": "Gilgamesh",
+   "g": "",
    "n": "Character Gilgamesh Eidolon 4",
-   "f": "hsr/Gilgamesh/Character Gilgamesh Eidolon 4.png"
+   "f": "hsr/Character Gilgamesh Eidolon 4.png"
   },
   {
-   "g": "Gilgamesh",
+   "g": "",
    "n": "Character Gilgamesh Eidolon 5",
-   "f": "hsr/Gilgamesh/Character Gilgamesh Eidolon 5.png"
+   "f": "hsr/Character Gilgamesh Eidolon 5.png"
   },
   {
-   "g": "Gilgamesh",
+   "g": "",
    "n": "Character Gilgamesh Eidolon 6",
-   "f": "hsr/Gilgamesh/Character Gilgamesh Eidolon 6.png"
+   "f": "hsr/Character Gilgamesh Eidolon 6.png"
   },
   {
-   "g": "Gilgamesh",
+   "g": "",
    "n": "Character Gilgamesh Portrait",
-   "f": "hsr/Gilgamesh/Character Gilgamesh Portrait.png"
+   "f": "hsr/Character Gilgamesh Portrait.png"
   },
   {
-   "g": "Guinaifen",
+   "g": "",
    "n": "Character Guinaifen Eidolon 1",
-   "f": "hsr/Guinaifen/Character Guinaifen Eidolon 1.png"
+   "f": "hsr/Character Guinaifen Eidolon 1.png"
   },
   {
-   "g": "Guinaifen",
+   "g": "",
    "n": "Character Guinaifen Eidolon 2",
-   "f": "hsr/Guinaifen/Character Guinaifen Eidolon 2.png"
+   "f": "hsr/Character Guinaifen Eidolon 2.png"
   },
   {
-   "g": "Guinaifen",
+   "g": "",
    "n": "Character Guinaifen Eidolon 3",
-   "f": "hsr/Guinaifen/Character Guinaifen Eidolon 3.png"
+   "f": "hsr/Character Guinaifen Eidolon 3.png"
   },
   {
-   "g": "Guinaifen",
+   "g": "",
    "n": "Character Guinaifen Eidolon 4",
-   "f": "hsr/Guinaifen/Character Guinaifen Eidolon 4.png"
+   "f": "hsr/Character Guinaifen Eidolon 4.png"
   },
   {
-   "g": "Guinaifen",
+   "g": "",
    "n": "Character Guinaifen Eidolon 5",
-   "f": "hsr/Guinaifen/Character Guinaifen Eidolon 5.png"
+   "f": "hsr/Character Guinaifen Eidolon 5.png"
   },
   {
-   "g": "Guinaifen",
+   "g": "",
    "n": "Character Guinaifen Eidolon 6",
-   "f": "hsr/Guinaifen/Character Guinaifen Eidolon 6.png"
+   "f": "hsr/Character Guinaifen Eidolon 6.png"
   },
   {
-   "g": "Guinaifen",
+   "g": "",
    "n": "Character Guinaifen Portrait",
-   "f": "hsr/Guinaifen/Character Guinaifen Portrait.png"
+   "f": "hsr/Character Guinaifen Portrait.png"
   },
   {
-   "g": "Hanya",
+   "g": "",
    "n": "Character Hanya Eidolon 1",
-   "f": "hsr/Hanya/Character Hanya Eidolon 1.png"
+   "f": "hsr/Character Hanya Eidolon 1.png"
   },
   {
-   "g": "Hanya",
+   "g": "",
    "n": "Character Hanya Eidolon 2",
-   "f": "hsr/Hanya/Character Hanya Eidolon 2.png"
+   "f": "hsr/Character Hanya Eidolon 2.png"
   },
   {
-   "g": "Hanya",
+   "g": "",
    "n": "Character Hanya Eidolon 3",
-   "f": "hsr/Hanya/Character Hanya Eidolon 3.png"
+   "f": "hsr/Character Hanya Eidolon 3.png"
   },
   {
-   "g": "Hanya",
+   "g": "",
    "n": "Character Hanya Eidolon 4",
-   "f": "hsr/Hanya/Character Hanya Eidolon 4.png"
+   "f": "hsr/Character Hanya Eidolon 4.png"
   },
   {
-   "g": "Hanya",
+   "g": "",
    "n": "Character Hanya Eidolon 5",
-   "f": "hsr/Hanya/Character Hanya Eidolon 5.png"
+   "f": "hsr/Character Hanya Eidolon 5.png"
   },
   {
-   "g": "Hanya",
+   "g": "",
    "n": "Character Hanya Eidolon 6",
-   "f": "hsr/Hanya/Character Hanya Eidolon 6.png"
+   "f": "hsr/Character Hanya Eidolon 6.png"
   },
   {
-   "g": "Hanya",
+   "g": "",
    "n": "Character Hanya Portrait",
-   "f": "hsr/Hanya/Character Hanya Portrait.png"
+   "f": "hsr/Character Hanya Portrait.png"
   },
   {
-   "g": "Herta",
+   "g": "",
    "n": "Character Herta Eidolon 1",
-   "f": "hsr/Herta/Character Herta Eidolon 1.png"
+   "f": "hsr/Character Herta Eidolon 1.png"
   },
   {
-   "g": "Herta",
+   "g": "",
    "n": "Character Herta Eidolon 2",
-   "f": "hsr/Herta/Character Herta Eidolon 2.png"
+   "f": "hsr/Character Herta Eidolon 2.png"
   },
   {
-   "g": "Herta",
+   "g": "",
    "n": "Character Herta Eidolon 3",
-   "f": "hsr/Herta/Character Herta Eidolon 3.png"
+   "f": "hsr/Character Herta Eidolon 3.png"
   },
   {
-   "g": "Herta",
+   "g": "",
    "n": "Character Herta Eidolon 4",
-   "f": "hsr/Herta/Character Herta Eidolon 4.png"
+   "f": "hsr/Character Herta Eidolon 4.png"
   },
   {
-   "g": "Herta",
+   "g": "",
    "n": "Character Herta Eidolon 5",
-   "f": "hsr/Herta/Character Herta Eidolon 5.png"
+   "f": "hsr/Character Herta Eidolon 5.png"
   },
   {
-   "g": "Herta",
+   "g": "",
    "n": "Character Herta Eidolon 6",
-   "f": "hsr/Herta/Character Herta Eidolon 6.png"
+   "f": "hsr/Character Herta Eidolon 6.png"
   },
   {
-   "g": "Herta",
+   "g": "",
    "n": "Character Herta Portrait",
-   "f": "hsr/Herta/Character Herta Portrait.png"
+   "f": "hsr/Character Herta Portrait.png"
   },
   {
-   "g": "Himeko • Nova",
-   "n": "Character Himeko • Nova Eidolon 1",
-   "f": "hsr/Himeko • Nova/Character Himeko • Nova Eidolon 1.png"
-  },
-  {
-   "g": "Himeko • Nova",
-   "n": "Character Himeko • Nova Eidolon 2",
-   "f": "hsr/Himeko • Nova/Character Himeko • Nova Eidolon 2.png"
-  },
-  {
-   "g": "Himeko • Nova",
-   "n": "Character Himeko • Nova Eidolon 3",
-   "f": "hsr/Himeko • Nova/Character Himeko • Nova Eidolon 3.png"
-  },
-  {
-   "g": "Himeko • Nova",
-   "n": "Character Himeko • Nova Eidolon 4",
-   "f": "hsr/Himeko • Nova/Character Himeko • Nova Eidolon 4.png"
-  },
-  {
-   "g": "Himeko • Nova",
-   "n": "Character Himeko • Nova Eidolon 5",
-   "f": "hsr/Himeko • Nova/Character Himeko • Nova Eidolon 5.png"
-  },
-  {
-   "g": "Himeko • Nova",
-   "n": "Character Himeko • Nova Eidolon 6",
-   "f": "hsr/Himeko • Nova/Character Himeko • Nova Eidolon 6.png"
-  },
-  {
-   "g": "Himeko • Nova",
-   "n": "Character Himeko • Nova Portrait",
-   "f": "hsr/Himeko • Nova/Character Himeko • Nova Portrait.png"
-  },
-  {
-   "g": "Himeko",
+   "g": "",
    "n": "Character Himeko Eidolon 1",
-   "f": "hsr/Himeko/Character Himeko Eidolon 1.png"
+   "f": "hsr/Character Himeko Eidolon 1.png"
   },
   {
-   "g": "Himeko",
+   "g": "",
    "n": "Character Himeko Eidolon 2",
-   "f": "hsr/Himeko/Character Himeko Eidolon 2.png"
+   "f": "hsr/Character Himeko Eidolon 2.png"
   },
   {
-   "g": "Himeko",
+   "g": "",
    "n": "Character Himeko Eidolon 3",
-   "f": "hsr/Himeko/Character Himeko Eidolon 3.png"
+   "f": "hsr/Character Himeko Eidolon 3.png"
   },
   {
-   "g": "Himeko",
+   "g": "",
    "n": "Character Himeko Eidolon 4",
-   "f": "hsr/Himeko/Character Himeko Eidolon 4.png"
+   "f": "hsr/Character Himeko Eidolon 4.png"
   },
   {
-   "g": "Himeko",
+   "g": "",
    "n": "Character Himeko Eidolon 5",
-   "f": "hsr/Himeko/Character Himeko Eidolon 5.png"
+   "f": "hsr/Character Himeko Eidolon 5.png"
   },
   {
-   "g": "Himeko",
+   "g": "",
    "n": "Character Himeko Eidolon 6",
-   "f": "hsr/Himeko/Character Himeko Eidolon 6.png"
+   "f": "hsr/Character Himeko Eidolon 6.png"
   },
   {
-   "g": "Himeko",
+   "g": "",
    "n": "Character Himeko Portrait",
-   "f": "hsr/Himeko/Character Himeko Portrait.png"
+   "f": "hsr/Character Himeko Portrait.png"
   },
   {
-   "g": "Hook",
+   "g": "",
+   "n": "Character Himeko • Nova Eidolon 1",
+   "f": "hsr/Character Himeko • Nova Eidolon 1.png"
+  },
+  {
+   "g": "",
+   "n": "Character Himeko • Nova Eidolon 2",
+   "f": "hsr/Character Himeko • Nova Eidolon 2.png"
+  },
+  {
+   "g": "",
+   "n": "Character Himeko • Nova Eidolon 3",
+   "f": "hsr/Character Himeko • Nova Eidolon 3.png"
+  },
+  {
+   "g": "",
+   "n": "Character Himeko • Nova Eidolon 4",
+   "f": "hsr/Character Himeko • Nova Eidolon 4.png"
+  },
+  {
+   "g": "",
+   "n": "Character Himeko • Nova Eidolon 5",
+   "f": "hsr/Character Himeko • Nova Eidolon 5.png"
+  },
+  {
+   "g": "",
+   "n": "Character Himeko • Nova Eidolon 6",
+   "f": "hsr/Character Himeko • Nova Eidolon 6.png"
+  },
+  {
+   "g": "",
+   "n": "Character Himeko • Nova Portrait",
+   "f": "hsr/Character Himeko • Nova Portrait.png"
+  },
+  {
+   "g": "",
    "n": "Character Hook Eidolon 1",
-   "f": "hsr/Hook/Character Hook Eidolon 1.png"
+   "f": "hsr/Character Hook Eidolon 1.png"
   },
   {
-   "g": "Hook",
+   "g": "",
    "n": "Character Hook Eidolon 2",
-   "f": "hsr/Hook/Character Hook Eidolon 2.png"
+   "f": "hsr/Character Hook Eidolon 2.png"
   },
   {
-   "g": "Hook",
+   "g": "",
    "n": "Character Hook Eidolon 3",
-   "f": "hsr/Hook/Character Hook Eidolon 3.png"
+   "f": "hsr/Character Hook Eidolon 3.png"
   },
   {
-   "g": "Hook",
+   "g": "",
    "n": "Character Hook Eidolon 4",
-   "f": "hsr/Hook/Character Hook Eidolon 4.png"
+   "f": "hsr/Character Hook Eidolon 4.png"
   },
   {
-   "g": "Hook",
+   "g": "",
    "n": "Character Hook Eidolon 5",
-   "f": "hsr/Hook/Character Hook Eidolon 5.png"
+   "f": "hsr/Character Hook Eidolon 5.png"
   },
   {
-   "g": "Hook",
+   "g": "",
    "n": "Character Hook Eidolon 6",
-   "f": "hsr/Hook/Character Hook Eidolon 6.png"
+   "f": "hsr/Character Hook Eidolon 6.png"
   },
   {
-   "g": "Hook",
+   "g": "",
    "n": "Character Hook Portrait",
-   "f": "hsr/Hook/Character Hook Portrait.png"
+   "f": "hsr/Character Hook Portrait.png"
   },
   {
-   "g": "Huohuo",
+   "g": "",
    "n": "Character Huohuo Eidolon 1",
-   "f": "hsr/Huohuo/Character Huohuo Eidolon 1.png"
+   "f": "hsr/Character Huohuo Eidolon 1.png"
   },
   {
-   "g": "Huohuo",
+   "g": "",
    "n": "Character Huohuo Eidolon 2",
-   "f": "hsr/Huohuo/Character Huohuo Eidolon 2.png"
+   "f": "hsr/Character Huohuo Eidolon 2.png"
   },
   {
-   "g": "Huohuo",
+   "g": "",
    "n": "Character Huohuo Eidolon 3",
-   "f": "hsr/Huohuo/Character Huohuo Eidolon 3.png"
+   "f": "hsr/Character Huohuo Eidolon 3.png"
   },
   {
-   "g": "Huohuo",
+   "g": "",
    "n": "Character Huohuo Eidolon 4",
-   "f": "hsr/Huohuo/Character Huohuo Eidolon 4.png"
+   "f": "hsr/Character Huohuo Eidolon 4.png"
   },
   {
-   "g": "Huohuo",
+   "g": "",
    "n": "Character Huohuo Eidolon 5",
-   "f": "hsr/Huohuo/Character Huohuo Eidolon 5.png"
+   "f": "hsr/Character Huohuo Eidolon 5.png"
   },
   {
-   "g": "Huohuo",
+   "g": "",
    "n": "Character Huohuo Eidolon 6",
-   "f": "hsr/Huohuo/Character Huohuo Eidolon 6.png"
+   "f": "hsr/Character Huohuo Eidolon 6.png"
   },
   {
-   "g": "Huohuo",
+   "g": "",
    "n": "Character Huohuo Portrait",
-   "f": "hsr/Huohuo/Character Huohuo Portrait.png"
+   "f": "hsr/Character Huohuo Portrait.png"
   },
   {
-   "g": "Hyacine Warm Cotton Skies",
-   "n": "Character Hyacine Warm Cotton Skies Portrait",
-   "f": "hsr/Hyacine Warm Cotton Skies/Character Hyacine Warm Cotton Skies Portrait.png"
-  },
-  {
-   "g": "Hyacine",
+   "g": "",
    "n": "Character Hyacine Eidolon 1",
-   "f": "hsr/Hyacine/Character Hyacine Eidolon 1.png"
+   "f": "hsr/Character Hyacine Eidolon 1.png"
   },
   {
-   "g": "Hyacine",
+   "g": "",
    "n": "Character Hyacine Eidolon 2",
-   "f": "hsr/Hyacine/Character Hyacine Eidolon 2.png"
+   "f": "hsr/Character Hyacine Eidolon 2.png"
   },
   {
-   "g": "Hyacine",
+   "g": "",
    "n": "Character Hyacine Eidolon 3",
-   "f": "hsr/Hyacine/Character Hyacine Eidolon 3.png"
+   "f": "hsr/Character Hyacine Eidolon 3.png"
   },
   {
-   "g": "Hyacine",
+   "g": "",
    "n": "Character Hyacine Eidolon 4",
-   "f": "hsr/Hyacine/Character Hyacine Eidolon 4.png"
+   "f": "hsr/Character Hyacine Eidolon 4.png"
   },
   {
-   "g": "Hyacine",
+   "g": "",
    "n": "Character Hyacine Eidolon 5",
-   "f": "hsr/Hyacine/Character Hyacine Eidolon 5.png"
+   "f": "hsr/Character Hyacine Eidolon 5.png"
   },
   {
-   "g": "Hyacine",
+   "g": "",
    "n": "Character Hyacine Eidolon 6",
-   "f": "hsr/Hyacine/Character Hyacine Eidolon 6.png"
+   "f": "hsr/Character Hyacine Eidolon 6.png"
   },
   {
-   "g": "Hyacine",
+   "g": "",
    "n": "Character Hyacine Portrait",
-   "f": "hsr/Hyacine/Character Hyacine Portrait.png"
+   "f": "hsr/Character Hyacine Portrait.png"
   },
   {
-   "g": "Hysilens",
+   "g": "",
+   "n": "Character Hyacine Warm Cotton Skies Portrait",
+   "f": "hsr/Character Hyacine Warm Cotton Skies Portrait.png"
+  },
+  {
+   "g": "",
    "n": "Character Hysilens Eidolon 1",
-   "f": "hsr/Hysilens/Character Hysilens Eidolon 1.png"
+   "f": "hsr/Character Hysilens Eidolon 1.png"
   },
   {
-   "g": "Hysilens",
+   "g": "",
    "n": "Character Hysilens Eidolon 2",
-   "f": "hsr/Hysilens/Character Hysilens Eidolon 2.png"
+   "f": "hsr/Character Hysilens Eidolon 2.png"
   },
   {
-   "g": "Hysilens",
+   "g": "",
    "n": "Character Hysilens Eidolon 3",
-   "f": "hsr/Hysilens/Character Hysilens Eidolon 3.png"
+   "f": "hsr/Character Hysilens Eidolon 3.png"
   },
   {
-   "g": "Hysilens",
+   "g": "",
    "n": "Character Hysilens Eidolon 4",
-   "f": "hsr/Hysilens/Character Hysilens Eidolon 4.png"
+   "f": "hsr/Character Hysilens Eidolon 4.png"
   },
   {
-   "g": "Hysilens",
+   "g": "",
    "n": "Character Hysilens Eidolon 5",
-   "f": "hsr/Hysilens/Character Hysilens Eidolon 5.png"
+   "f": "hsr/Character Hysilens Eidolon 5.png"
   },
   {
-   "g": "Hysilens",
+   "g": "",
    "n": "Character Hysilens Eidolon 6",
-   "f": "hsr/Hysilens/Character Hysilens Eidolon 6.png"
+   "f": "hsr/Character Hysilens Eidolon 6.png"
   },
   {
-   "g": "Hysilens",
+   "g": "",
    "n": "Character Hysilens Portrait",
-   "f": "hsr/Hysilens/Character Hysilens Portrait.png"
+   "f": "hsr/Character Hysilens Portrait.png"
   },
   {
-   "g": "Jade",
+   "g": "",
    "n": "Character Jade Eidolon 1",
-   "f": "hsr/Jade/Character Jade Eidolon 1.png"
+   "f": "hsr/Character Jade Eidolon 1.png"
   },
   {
-   "g": "Jade",
+   "g": "",
    "n": "Character Jade Eidolon 2",
-   "f": "hsr/Jade/Character Jade Eidolon 2.png"
+   "f": "hsr/Character Jade Eidolon 2.png"
   },
   {
-   "g": "Jade",
+   "g": "",
    "n": "Character Jade Eidolon 3",
-   "f": "hsr/Jade/Character Jade Eidolon 3.png"
+   "f": "hsr/Character Jade Eidolon 3.png"
   },
   {
-   "g": "Jade",
+   "g": "",
    "n": "Character Jade Eidolon 4",
-   "f": "hsr/Jade/Character Jade Eidolon 4.png"
+   "f": "hsr/Character Jade Eidolon 4.png"
   },
   {
-   "g": "Jade",
+   "g": "",
    "n": "Character Jade Eidolon 5",
-   "f": "hsr/Jade/Character Jade Eidolon 5.png"
+   "f": "hsr/Character Jade Eidolon 5.png"
   },
   {
-   "g": "Jade",
+   "g": "",
    "n": "Character Jade Eidolon 6",
-   "f": "hsr/Jade/Character Jade Eidolon 6.png"
+   "f": "hsr/Character Jade Eidolon 6.png"
   },
   {
-   "g": "Jade",
+   "g": "",
    "n": "Character Jade Portrait",
-   "f": "hsr/Jade/Character Jade Portrait.png"
+   "f": "hsr/Character Jade Portrait.png"
   },
   {
-   "g": "Jiaoqiu",
+   "g": "",
    "n": "Character Jiaoqiu Eidolon 1",
-   "f": "hsr/Jiaoqiu/Character Jiaoqiu Eidolon 1.png"
+   "f": "hsr/Character Jiaoqiu Eidolon 1.png"
   },
   {
-   "g": "Jiaoqiu",
+   "g": "",
    "n": "Character Jiaoqiu Eidolon 2",
-   "f": "hsr/Jiaoqiu/Character Jiaoqiu Eidolon 2.png"
+   "f": "hsr/Character Jiaoqiu Eidolon 2.png"
   },
   {
-   "g": "Jiaoqiu",
+   "g": "",
    "n": "Character Jiaoqiu Eidolon 3",
-   "f": "hsr/Jiaoqiu/Character Jiaoqiu Eidolon 3.png"
+   "f": "hsr/Character Jiaoqiu Eidolon 3.png"
   },
   {
-   "g": "Jiaoqiu",
+   "g": "",
    "n": "Character Jiaoqiu Eidolon 4",
-   "f": "hsr/Jiaoqiu/Character Jiaoqiu Eidolon 4.png"
+   "f": "hsr/Character Jiaoqiu Eidolon 4.png"
   },
   {
-   "g": "Jiaoqiu",
+   "g": "",
    "n": "Character Jiaoqiu Eidolon 5",
-   "f": "hsr/Jiaoqiu/Character Jiaoqiu Eidolon 5.png"
+   "f": "hsr/Character Jiaoqiu Eidolon 5.png"
   },
   {
-   "g": "Jiaoqiu",
+   "g": "",
    "n": "Character Jiaoqiu Eidolon 6",
-   "f": "hsr/Jiaoqiu/Character Jiaoqiu Eidolon 6.png"
+   "f": "hsr/Character Jiaoqiu Eidolon 6.png"
   },
   {
-   "g": "Jiaoqiu",
+   "g": "",
    "n": "Character Jiaoqiu Portrait",
-   "f": "hsr/Jiaoqiu/Character Jiaoqiu Portrait.png"
+   "f": "hsr/Character Jiaoqiu Portrait.png"
   },
   {
-   "g": "Jing Yuan",
+   "g": "",
    "n": "Character Jing Yuan Eidolon 1",
-   "f": "hsr/Jing Yuan/Character Jing Yuan Eidolon 1.png"
+   "f": "hsr/Character Jing Yuan Eidolon 1.png"
   },
   {
-   "g": "Jing Yuan",
+   "g": "",
    "n": "Character Jing Yuan Eidolon 2",
-   "f": "hsr/Jing Yuan/Character Jing Yuan Eidolon 2.png"
+   "f": "hsr/Character Jing Yuan Eidolon 2.png"
   },
   {
-   "g": "Jing Yuan",
+   "g": "",
    "n": "Character Jing Yuan Eidolon 3",
-   "f": "hsr/Jing Yuan/Character Jing Yuan Eidolon 3.png"
+   "f": "hsr/Character Jing Yuan Eidolon 3.png"
   },
   {
-   "g": "Jing Yuan",
+   "g": "",
    "n": "Character Jing Yuan Eidolon 4",
-   "f": "hsr/Jing Yuan/Character Jing Yuan Eidolon 4.png"
+   "f": "hsr/Character Jing Yuan Eidolon 4.png"
   },
   {
-   "g": "Jing Yuan",
+   "g": "",
    "n": "Character Jing Yuan Eidolon 5",
-   "f": "hsr/Jing Yuan/Character Jing Yuan Eidolon 5.png"
+   "f": "hsr/Character Jing Yuan Eidolon 5.png"
   },
   {
-   "g": "Jing Yuan",
+   "g": "",
    "n": "Character Jing Yuan Eidolon 6",
-   "f": "hsr/Jing Yuan/Character Jing Yuan Eidolon 6.png"
+   "f": "hsr/Character Jing Yuan Eidolon 6.png"
   },
   {
-   "g": "Jing Yuan",
+   "g": "",
    "n": "Character Jing Yuan Portrait",
-   "f": "hsr/Jing Yuan/Character Jing Yuan Portrait.png"
+   "f": "hsr/Character Jing Yuan Portrait.png"
   },
   {
-   "g": "Jingliu",
+   "g": "",
    "n": "Character Jingliu Eidolon 1",
-   "f": "hsr/Jingliu/Character Jingliu Eidolon 1.png"
+   "f": "hsr/Character Jingliu Eidolon 1.png"
   },
   {
-   "g": "Jingliu",
+   "g": "",
    "n": "Character Jingliu Eidolon 2",
-   "f": "hsr/Jingliu/Character Jingliu Eidolon 2.png"
+   "f": "hsr/Character Jingliu Eidolon 2.png"
   },
   {
-   "g": "Jingliu",
+   "g": "",
    "n": "Character Jingliu Eidolon 3",
-   "f": "hsr/Jingliu/Character Jingliu Eidolon 3.png"
+   "f": "hsr/Character Jingliu Eidolon 3.png"
   },
   {
-   "g": "Jingliu",
+   "g": "",
    "n": "Character Jingliu Eidolon 4",
-   "f": "hsr/Jingliu/Character Jingliu Eidolon 4.png"
+   "f": "hsr/Character Jingliu Eidolon 4.png"
   },
   {
-   "g": "Jingliu",
+   "g": "",
    "n": "Character Jingliu Eidolon 5",
-   "f": "hsr/Jingliu/Character Jingliu Eidolon 5.png"
+   "f": "hsr/Character Jingliu Eidolon 5.png"
   },
   {
-   "g": "Jingliu",
+   "g": "",
    "n": "Character Jingliu Eidolon 6",
-   "f": "hsr/Jingliu/Character Jingliu Eidolon 6.png"
+   "f": "hsr/Character Jingliu Eidolon 6.png"
   },
   {
-   "g": "Jingliu",
+   "g": "",
    "n": "Character Jingliu Portrait",
-   "f": "hsr/Jingliu/Character Jingliu Portrait.png"
+   "f": "hsr/Character Jingliu Portrait.png"
   },
   {
-   "g": "Kafka",
+   "g": "",
    "n": "Character Kafka Eidolon 1",
-   "f": "hsr/Kafka/Character Kafka Eidolon 1.png"
+   "f": "hsr/Character Kafka Eidolon 1.png"
   },
   {
-   "g": "Kafka",
+   "g": "",
    "n": "Character Kafka Eidolon 2",
-   "f": "hsr/Kafka/Character Kafka Eidolon 2.png"
+   "f": "hsr/Character Kafka Eidolon 2.png"
   },
   {
-   "g": "Kafka",
+   "g": "",
    "n": "Character Kafka Eidolon 3",
-   "f": "hsr/Kafka/Character Kafka Eidolon 3.png"
+   "f": "hsr/Character Kafka Eidolon 3.png"
   },
   {
-   "g": "Kafka",
+   "g": "",
    "n": "Character Kafka Eidolon 4",
-   "f": "hsr/Kafka/Character Kafka Eidolon 4.png"
+   "f": "hsr/Character Kafka Eidolon 4.png"
   },
   {
-   "g": "Kafka",
+   "g": "",
    "n": "Character Kafka Eidolon 5",
-   "f": "hsr/Kafka/Character Kafka Eidolon 5.png"
+   "f": "hsr/Character Kafka Eidolon 5.png"
   },
   {
-   "g": "Kafka",
+   "g": "",
    "n": "Character Kafka Eidolon 6",
-   "f": "hsr/Kafka/Character Kafka Eidolon 6.png"
+   "f": "hsr/Character Kafka Eidolon 6.png"
   },
   {
-   "g": "Kafka",
+   "g": "",
    "n": "Character Kafka Portrait",
-   "f": "hsr/Kafka/Character Kafka Portrait.png"
+   "f": "hsr/Character Kafka Portrait.png"
   },
   {
-   "g": "Lingsha",
+   "g": "",
    "n": "Character Lingsha Eidolon 1",
-   "f": "hsr/Lingsha/Character Lingsha Eidolon 1.png"
+   "f": "hsr/Character Lingsha Eidolon 1.png"
   },
   {
-   "g": "Lingsha",
+   "g": "",
    "n": "Character Lingsha Eidolon 2",
-   "f": "hsr/Lingsha/Character Lingsha Eidolon 2.png"
+   "f": "hsr/Character Lingsha Eidolon 2.png"
   },
   {
-   "g": "Lingsha",
+   "g": "",
    "n": "Character Lingsha Eidolon 3",
-   "f": "hsr/Lingsha/Character Lingsha Eidolon 3.png"
+   "f": "hsr/Character Lingsha Eidolon 3.png"
   },
   {
-   "g": "Lingsha",
+   "g": "",
    "n": "Character Lingsha Eidolon 4",
-   "f": "hsr/Lingsha/Character Lingsha Eidolon 4.png"
+   "f": "hsr/Character Lingsha Eidolon 4.png"
   },
   {
-   "g": "Lingsha",
+   "g": "",
    "n": "Character Lingsha Eidolon 5",
-   "f": "hsr/Lingsha/Character Lingsha Eidolon 5.png"
+   "f": "hsr/Character Lingsha Eidolon 5.png"
   },
   {
-   "g": "Lingsha",
+   "g": "",
    "n": "Character Lingsha Eidolon 6",
-   "f": "hsr/Lingsha/Character Lingsha Eidolon 6.png"
+   "f": "hsr/Character Lingsha Eidolon 6.png"
   },
   {
-   "g": "Lingsha",
+   "g": "",
    "n": "Character Lingsha Portrait",
-   "f": "hsr/Lingsha/Character Lingsha Portrait.png"
+   "f": "hsr/Character Lingsha Portrait.png"
   },
   {
-   "g": "Luka",
+   "g": "",
    "n": "Character Luka Eidolon 1",
-   "f": "hsr/Luka/Character Luka Eidolon 1.png"
+   "f": "hsr/Character Luka Eidolon 1.png"
   },
   {
-   "g": "Luka",
+   "g": "",
    "n": "Character Luka Eidolon 2",
-   "f": "hsr/Luka/Character Luka Eidolon 2.png"
+   "f": "hsr/Character Luka Eidolon 2.png"
   },
   {
-   "g": "Luka",
+   "g": "",
    "n": "Character Luka Eidolon 3",
-   "f": "hsr/Luka/Character Luka Eidolon 3.png"
+   "f": "hsr/Character Luka Eidolon 3.png"
   },
   {
-   "g": "Luka",
+   "g": "",
    "n": "Character Luka Eidolon 4",
-   "f": "hsr/Luka/Character Luka Eidolon 4.png"
+   "f": "hsr/Character Luka Eidolon 4.png"
   },
   {
-   "g": "Luka",
+   "g": "",
    "n": "Character Luka Eidolon 5",
-   "f": "hsr/Luka/Character Luka Eidolon 5.png"
+   "f": "hsr/Character Luka Eidolon 5.png"
   },
   {
-   "g": "Luka",
+   "g": "",
    "n": "Character Luka Eidolon 6",
-   "f": "hsr/Luka/Character Luka Eidolon 6.png"
+   "f": "hsr/Character Luka Eidolon 6.png"
   },
   {
-   "g": "Luka",
+   "g": "",
    "n": "Character Luka Portrait",
-   "f": "hsr/Luka/Character Luka Portrait.png"
+   "f": "hsr/Character Luka Portrait.png"
   },
   {
-   "g": "Luocha",
+   "g": "",
    "n": "Character Luocha Eidolon 1",
-   "f": "hsr/Luocha/Character Luocha Eidolon 1.png"
+   "f": "hsr/Character Luocha Eidolon 1.png"
   },
   {
-   "g": "Luocha",
+   "g": "",
    "n": "Character Luocha Eidolon 2",
-   "f": "hsr/Luocha/Character Luocha Eidolon 2.png"
+   "f": "hsr/Character Luocha Eidolon 2.png"
   },
   {
-   "g": "Luocha",
+   "g": "",
    "n": "Character Luocha Eidolon 3",
-   "f": "hsr/Luocha/Character Luocha Eidolon 3.png"
+   "f": "hsr/Character Luocha Eidolon 3.png"
   },
   {
-   "g": "Luocha",
+   "g": "",
    "n": "Character Luocha Eidolon 4",
-   "f": "hsr/Luocha/Character Luocha Eidolon 4.png"
+   "f": "hsr/Character Luocha Eidolon 4.png"
   },
   {
-   "g": "Luocha",
+   "g": "",
    "n": "Character Luocha Eidolon 5",
-   "f": "hsr/Luocha/Character Luocha Eidolon 5.png"
+   "f": "hsr/Character Luocha Eidolon 5.png"
   },
   {
-   "g": "Luocha",
+   "g": "",
    "n": "Character Luocha Eidolon 6",
-   "f": "hsr/Luocha/Character Luocha Eidolon 6.png"
+   "f": "hsr/Character Luocha Eidolon 6.png"
   },
   {
-   "g": "Luocha",
+   "g": "",
    "n": "Character Luocha Portrait",
-   "f": "hsr/Luocha/Character Luocha Portrait.png"
+   "f": "hsr/Character Luocha Portrait.png"
   },
   {
-   "g": "Lynx",
+   "g": "",
    "n": "Character Lynx Eidolon 1",
-   "f": "hsr/Lynx/Character Lynx Eidolon 1.png"
+   "f": "hsr/Character Lynx Eidolon 1.png"
   },
   {
-   "g": "Lynx",
+   "g": "",
    "n": "Character Lynx Eidolon 2",
-   "f": "hsr/Lynx/Character Lynx Eidolon 2.png"
+   "f": "hsr/Character Lynx Eidolon 2.png"
   },
   {
-   "g": "Lynx",
+   "g": "",
    "n": "Character Lynx Eidolon 3",
-   "f": "hsr/Lynx/Character Lynx Eidolon 3.png"
+   "f": "hsr/Character Lynx Eidolon 3.png"
   },
   {
-   "g": "Lynx",
+   "g": "",
    "n": "Character Lynx Eidolon 4",
-   "f": "hsr/Lynx/Character Lynx Eidolon 4.png"
+   "f": "hsr/Character Lynx Eidolon 4.png"
   },
   {
-   "g": "Lynx",
+   "g": "",
    "n": "Character Lynx Eidolon 5",
-   "f": "hsr/Lynx/Character Lynx Eidolon 5.png"
+   "f": "hsr/Character Lynx Eidolon 5.png"
   },
   {
-   "g": "Lynx",
+   "g": "",
    "n": "Character Lynx Eidolon 6",
-   "f": "hsr/Lynx/Character Lynx Eidolon 6.png"
+   "f": "hsr/Character Lynx Eidolon 6.png"
   },
   {
-   "g": "Lynx",
+   "g": "",
    "n": "Character Lynx Portrait",
-   "f": "hsr/Lynx/Character Lynx Portrait.png"
+   "f": "hsr/Character Lynx Portrait.png"
   },
   {
-   "g": "March 7th (Preservation) Nascent Spring",
-   "n": "Character March 7th (Preservation) Nascent Spring Portrait",
-   "f": "hsr/March 7th (Preservation) Nascent Spring/Character March 7th (Preservation) Nascent Spring Portrait.png"
-  },
-  {
-   "g": "March 7th (Preservation)",
+   "g": "",
    "n": "Character March 7th (Preservation) Eidolon 1",
-   "f": "hsr/March 7th (Preservation)/Character March 7th (Preservation) Eidolon 1.png"
+   "f": "hsr/Character March 7th (Preservation) Eidolon 1.png"
   },
   {
-   "g": "March 7th (Preservation)",
+   "g": "",
    "n": "Character March 7th (Preservation) Eidolon 2",
-   "f": "hsr/March 7th (Preservation)/Character March 7th (Preservation) Eidolon 2.png"
+   "f": "hsr/Character March 7th (Preservation) Eidolon 2.png"
   },
   {
-   "g": "March 7th (Preservation)",
+   "g": "",
    "n": "Character March 7th (Preservation) Eidolon 3",
-   "f": "hsr/March 7th (Preservation)/Character March 7th (Preservation) Eidolon 3.png"
+   "f": "hsr/Character March 7th (Preservation) Eidolon 3.png"
   },
   {
-   "g": "March 7th (Preservation)",
+   "g": "",
    "n": "Character March 7th (Preservation) Eidolon 4",
-   "f": "hsr/March 7th (Preservation)/Character March 7th (Preservation) Eidolon 4.png"
+   "f": "hsr/Character March 7th (Preservation) Eidolon 4.png"
   },
   {
-   "g": "March 7th (Preservation)",
+   "g": "",
    "n": "Character March 7th (Preservation) Eidolon 5",
-   "f": "hsr/March 7th (Preservation)/Character March 7th (Preservation) Eidolon 5.png"
+   "f": "hsr/Character March 7th (Preservation) Eidolon 5.png"
   },
   {
-   "g": "March 7th (Preservation)",
+   "g": "",
    "n": "Character March 7th (Preservation) Eidolon 6",
-   "f": "hsr/March 7th (Preservation)/Character March 7th (Preservation) Eidolon 6.png"
+   "f": "hsr/Character March 7th (Preservation) Eidolon 6.png"
   },
   {
-   "g": "March 7th (Preservation)",
+   "g": "",
+   "n": "Character March 7th (Preservation) Nascent Spring Portrait",
+   "f": "hsr/Character March 7th (Preservation) Nascent Spring Portrait.png"
+  },
+  {
+   "g": "",
    "n": "Character March 7th (Preservation) Portrait",
-   "f": "hsr/March 7th (Preservation)/Character March 7th (Preservation) Portrait.png"
+   "f": "hsr/Character March 7th (Preservation) Portrait.png"
   },
   {
-   "g": "March 7th (The Hunt)",
+   "g": "",
    "n": "Character March 7th (The Hunt) Eidolon 1",
-   "f": "hsr/March 7th (The Hunt)/Character March 7th (The Hunt) Eidolon 1.png"
+   "f": "hsr/Character March 7th (The Hunt) Eidolon 1.png"
   },
   {
-   "g": "March 7th (The Hunt)",
+   "g": "",
    "n": "Character March 7th (The Hunt) Eidolon 2",
-   "f": "hsr/March 7th (The Hunt)/Character March 7th (The Hunt) Eidolon 2.png"
+   "f": "hsr/Character March 7th (The Hunt) Eidolon 2.png"
   },
   {
-   "g": "March 7th (The Hunt)",
+   "g": "",
    "n": "Character March 7th (The Hunt) Eidolon 3",
-   "f": "hsr/March 7th (The Hunt)/Character March 7th (The Hunt) Eidolon 3.png"
+   "f": "hsr/Character March 7th (The Hunt) Eidolon 3.png"
   },
   {
-   "g": "March 7th (The Hunt)",
+   "g": "",
    "n": "Character March 7th (The Hunt) Eidolon 4",
-   "f": "hsr/March 7th (The Hunt)/Character March 7th (The Hunt) Eidolon 4.png"
+   "f": "hsr/Character March 7th (The Hunt) Eidolon 4.png"
   },
   {
-   "g": "March 7th (The Hunt)",
+   "g": "",
    "n": "Character March 7th (The Hunt) Eidolon 5",
-   "f": "hsr/March 7th (The Hunt)/Character March 7th (The Hunt) Eidolon 5.png"
+   "f": "hsr/Character March 7th (The Hunt) Eidolon 5.png"
   },
   {
-   "g": "March 7th (The Hunt)",
+   "g": "",
    "n": "Character March 7th (The Hunt) Eidolon 6",
-   "f": "hsr/March 7th (The Hunt)/Character March 7th (The Hunt) Eidolon 6.png"
+   "f": "hsr/Character March 7th (The Hunt) Eidolon 6.png"
   },
   {
-   "g": "March 7th (The Hunt)",
+   "g": "",
    "n": "Character March 7th (The Hunt) Portrait",
-   "f": "hsr/March 7th (The Hunt)/Character March 7th (The Hunt) Portrait.png"
+   "f": "hsr/Character March 7th (The Hunt) Portrait.png"
   },
   {
-   "g": "Misha",
+   "g": "",
    "n": "Character Misha Eidolon 1",
-   "f": "hsr/Misha/Character Misha Eidolon 1.png"
+   "f": "hsr/Character Misha Eidolon 1.png"
   },
   {
-   "g": "Misha",
+   "g": "",
    "n": "Character Misha Eidolon 2",
-   "f": "hsr/Misha/Character Misha Eidolon 2.png"
+   "f": "hsr/Character Misha Eidolon 2.png"
   },
   {
-   "g": "Misha",
+   "g": "",
    "n": "Character Misha Eidolon 3",
-   "f": "hsr/Misha/Character Misha Eidolon 3.png"
+   "f": "hsr/Character Misha Eidolon 3.png"
   },
   {
-   "g": "Misha",
+   "g": "",
    "n": "Character Misha Eidolon 4",
-   "f": "hsr/Misha/Character Misha Eidolon 4.png"
+   "f": "hsr/Character Misha Eidolon 4.png"
   },
   {
-   "g": "Misha",
+   "g": "",
    "n": "Character Misha Eidolon 5",
-   "f": "hsr/Misha/Character Misha Eidolon 5.png"
+   "f": "hsr/Character Misha Eidolon 5.png"
   },
   {
-   "g": "Misha",
+   "g": "",
    "n": "Character Misha Eidolon 6",
-   "f": "hsr/Misha/Character Misha Eidolon 6.png"
+   "f": "hsr/Character Misha Eidolon 6.png"
   },
   {
-   "g": "Misha",
+   "g": "",
    "n": "Character Misha Portrait",
-   "f": "hsr/Misha/Character Misha Portrait.png"
+   "f": "hsr/Character Misha Portrait.png"
   },
   {
-   "g": "Mortenax Blade",
+   "g": "",
    "n": "Character Mortenax Blade Eidolon 1",
-   "f": "hsr/Mortenax Blade/Character Mortenax Blade Eidolon 1.png"
+   "f": "hsr/Character Mortenax Blade Eidolon 1.png"
   },
   {
-   "g": "Mortenax Blade",
+   "g": "",
    "n": "Character Mortenax Blade Eidolon 2",
-   "f": "hsr/Mortenax Blade/Character Mortenax Blade Eidolon 2.png"
+   "f": "hsr/Character Mortenax Blade Eidolon 2.png"
   },
   {
-   "g": "Mortenax Blade",
+   "g": "",
    "n": "Character Mortenax Blade Eidolon 3",
-   "f": "hsr/Mortenax Blade/Character Mortenax Blade Eidolon 3.png"
+   "f": "hsr/Character Mortenax Blade Eidolon 3.png"
   },
   {
-   "g": "Mortenax Blade",
+   "g": "",
    "n": "Character Mortenax Blade Eidolon 4",
-   "f": "hsr/Mortenax Blade/Character Mortenax Blade Eidolon 4.png"
+   "f": "hsr/Character Mortenax Blade Eidolon 4.png"
   },
   {
-   "g": "Mortenax Blade",
+   "g": "",
    "n": "Character Mortenax Blade Eidolon 5",
-   "f": "hsr/Mortenax Blade/Character Mortenax Blade Eidolon 5.png"
+   "f": "hsr/Character Mortenax Blade Eidolon 5.png"
   },
   {
-   "g": "Mortenax Blade",
+   "g": "",
    "n": "Character Mortenax Blade Eidolon 6",
-   "f": "hsr/Mortenax Blade/Character Mortenax Blade Eidolon 6.png"
+   "f": "hsr/Character Mortenax Blade Eidolon 6.png"
   },
   {
-   "g": "Mortenax Blade",
+   "g": "",
    "n": "Character Mortenax Blade Portrait",
-   "f": "hsr/Mortenax Blade/Character Mortenax Blade Portrait.png"
+   "f": "hsr/Character Mortenax Blade Portrait.png"
   },
   {
-   "g": "Moze",
+   "g": "",
    "n": "Character Moze Eidolon 1",
-   "f": "hsr/Moze/Character Moze Eidolon 1.png"
+   "f": "hsr/Character Moze Eidolon 1.png"
   },
   {
-   "g": "Moze",
+   "g": "",
    "n": "Character Moze Eidolon 2",
-   "f": "hsr/Moze/Character Moze Eidolon 2.png"
+   "f": "hsr/Character Moze Eidolon 2.png"
   },
   {
-   "g": "Moze",
+   "g": "",
    "n": "Character Moze Eidolon 3",
-   "f": "hsr/Moze/Character Moze Eidolon 3.png"
+   "f": "hsr/Character Moze Eidolon 3.png"
   },
   {
-   "g": "Moze",
+   "g": "",
    "n": "Character Moze Eidolon 4",
-   "f": "hsr/Moze/Character Moze Eidolon 4.png"
+   "f": "hsr/Character Moze Eidolon 4.png"
   },
   {
-   "g": "Moze",
+   "g": "",
    "n": "Character Moze Eidolon 5",
-   "f": "hsr/Moze/Character Moze Eidolon 5.png"
+   "f": "hsr/Character Moze Eidolon 5.png"
   },
   {
-   "g": "Moze",
+   "g": "",
    "n": "Character Moze Eidolon 6",
-   "f": "hsr/Moze/Character Moze Eidolon 6.png"
+   "f": "hsr/Character Moze Eidolon 6.png"
   },
   {
-   "g": "Moze",
+   "g": "",
    "n": "Character Moze Portrait",
-   "f": "hsr/Moze/Character Moze Portrait.png"
+   "f": "hsr/Character Moze Portrait.png"
   },
   {
-   "g": "Mydei",
+   "g": "",
    "n": "Character Mydei Eidolon 1",
-   "f": "hsr/Mydei/Character Mydei Eidolon 1.png"
+   "f": "hsr/Character Mydei Eidolon 1.png"
   },
   {
-   "g": "Mydei",
+   "g": "",
    "n": "Character Mydei Eidolon 2",
-   "f": "hsr/Mydei/Character Mydei Eidolon 2.png"
+   "f": "hsr/Character Mydei Eidolon 2.png"
   },
   {
-   "g": "Mydei",
+   "g": "",
    "n": "Character Mydei Eidolon 3",
-   "f": "hsr/Mydei/Character Mydei Eidolon 3.png"
+   "f": "hsr/Character Mydei Eidolon 3.png"
   },
   {
-   "g": "Mydei",
+   "g": "",
    "n": "Character Mydei Eidolon 4",
-   "f": "hsr/Mydei/Character Mydei Eidolon 4.png"
+   "f": "hsr/Character Mydei Eidolon 4.png"
   },
   {
-   "g": "Mydei",
+   "g": "",
    "n": "Character Mydei Eidolon 5",
-   "f": "hsr/Mydei/Character Mydei Eidolon 5.png"
+   "f": "hsr/Character Mydei Eidolon 5.png"
   },
   {
-   "g": "Mydei",
+   "g": "",
    "n": "Character Mydei Eidolon 6",
-   "f": "hsr/Mydei/Character Mydei Eidolon 6.png"
+   "f": "hsr/Character Mydei Eidolon 6.png"
   },
   {
-   "g": "Mydei",
+   "g": "",
    "n": "Character Mydei Portrait",
-   "f": "hsr/Mydei/Character Mydei Portrait.png"
+   "f": "hsr/Character Mydei Portrait.png"
   },
   {
-   "g": "Natasha",
+   "g": "",
    "n": "Character Natasha Eidolon 1",
-   "f": "hsr/Natasha/Character Natasha Eidolon 1.png"
+   "f": "hsr/Character Natasha Eidolon 1.png"
   },
   {
-   "g": "Natasha",
+   "g": "",
    "n": "Character Natasha Eidolon 2",
-   "f": "hsr/Natasha/Character Natasha Eidolon 2.png"
+   "f": "hsr/Character Natasha Eidolon 2.png"
   },
   {
-   "g": "Natasha",
+   "g": "",
    "n": "Character Natasha Eidolon 3",
-   "f": "hsr/Natasha/Character Natasha Eidolon 3.png"
+   "f": "hsr/Character Natasha Eidolon 3.png"
   },
   {
-   "g": "Natasha",
+   "g": "",
    "n": "Character Natasha Eidolon 4",
-   "f": "hsr/Natasha/Character Natasha Eidolon 4.png"
+   "f": "hsr/Character Natasha Eidolon 4.png"
   },
   {
-   "g": "Natasha",
+   "g": "",
    "n": "Character Natasha Eidolon 5",
-   "f": "hsr/Natasha/Character Natasha Eidolon 5.png"
+   "f": "hsr/Character Natasha Eidolon 5.png"
   },
   {
-   "g": "Natasha",
+   "g": "",
    "n": "Character Natasha Eidolon 6",
-   "f": "hsr/Natasha/Character Natasha Eidolon 6.png"
+   "f": "hsr/Character Natasha Eidolon 6.png"
   },
   {
-   "g": "Natasha",
+   "g": "",
    "n": "Character Natasha Portrait",
-   "f": "hsr/Natasha/Character Natasha Portrait.png"
+   "f": "hsr/Character Natasha Portrait.png"
   },
   {
-   "g": "Pearl",
+   "g": "",
    "n": "Character Pearl Eidolon 1",
-   "f": "hsr/Pearl/Character Pearl Eidolon 1.png"
+   "f": "hsr/Character Pearl Eidolon 1.png"
   },
   {
-   "g": "Pearl",
+   "g": "",
    "n": "Character Pearl Eidolon 2",
-   "f": "hsr/Pearl/Character Pearl Eidolon 2.png"
+   "f": "hsr/Character Pearl Eidolon 2.png"
   },
   {
-   "g": "Pearl",
+   "g": "",
    "n": "Character Pearl Eidolon 3",
-   "f": "hsr/Pearl/Character Pearl Eidolon 3.png"
+   "f": "hsr/Character Pearl Eidolon 3.png"
   },
   {
-   "g": "Pearl",
+   "g": "",
    "n": "Character Pearl Eidolon 4",
-   "f": "hsr/Pearl/Character Pearl Eidolon 4.png"
+   "f": "hsr/Character Pearl Eidolon 4.png"
   },
   {
-   "g": "Pearl",
+   "g": "",
    "n": "Character Pearl Eidolon 5",
-   "f": "hsr/Pearl/Character Pearl Eidolon 5.png"
+   "f": "hsr/Character Pearl Eidolon 5.png"
   },
   {
-   "g": "Pearl",
+   "g": "",
    "n": "Character Pearl Eidolon 6",
-   "f": "hsr/Pearl/Character Pearl Eidolon 6.png"
+   "f": "hsr/Character Pearl Eidolon 6.png"
   },
   {
-   "g": "Pearl",
+   "g": "",
    "n": "Character Pearl Portrait",
-   "f": "hsr/Pearl/Character Pearl Portrait.png"
+   "f": "hsr/Character Pearl Portrait.png"
   },
   {
-   "g": "Pela",
+   "g": "",
    "n": "Character Pela Eidolon 1",
-   "f": "hsr/Pela/Character Pela Eidolon 1.png"
+   "f": "hsr/Character Pela Eidolon 1.png"
   },
   {
-   "g": "Pela",
+   "g": "",
    "n": "Character Pela Eidolon 2",
-   "f": "hsr/Pela/Character Pela Eidolon 2.png"
+   "f": "hsr/Character Pela Eidolon 2.png"
   },
   {
-   "g": "Pela",
+   "g": "",
    "n": "Character Pela Eidolon 3",
-   "f": "hsr/Pela/Character Pela Eidolon 3.png"
+   "f": "hsr/Character Pela Eidolon 3.png"
   },
   {
-   "g": "Pela",
+   "g": "",
    "n": "Character Pela Eidolon 4",
-   "f": "hsr/Pela/Character Pela Eidolon 4.png"
+   "f": "hsr/Character Pela Eidolon 4.png"
   },
   {
-   "g": "Pela",
+   "g": "",
    "n": "Character Pela Eidolon 5",
-   "f": "hsr/Pela/Character Pela Eidolon 5.png"
+   "f": "hsr/Character Pela Eidolon 5.png"
   },
   {
-   "g": "Pela",
+   "g": "",
    "n": "Character Pela Eidolon 6",
-   "f": "hsr/Pela/Character Pela Eidolon 6.png"
+   "f": "hsr/Character Pela Eidolon 6.png"
   },
   {
-   "g": "Pela",
+   "g": "",
    "n": "Character Pela Portrait",
-   "f": "hsr/Pela/Character Pela Portrait.png"
+   "f": "hsr/Character Pela Portrait.png"
   },
   {
-   "g": "Phainon",
+   "g": "",
    "n": "Character Phainon Eidolon 1",
-   "f": "hsr/Phainon/Character Phainon Eidolon 1.png"
+   "f": "hsr/Character Phainon Eidolon 1.png"
   },
   {
-   "g": "Phainon",
+   "g": "",
    "n": "Character Phainon Eidolon 2",
-   "f": "hsr/Phainon/Character Phainon Eidolon 2.png"
+   "f": "hsr/Character Phainon Eidolon 2.png"
   },
   {
-   "g": "Phainon",
+   "g": "",
    "n": "Character Phainon Eidolon 3",
-   "f": "hsr/Phainon/Character Phainon Eidolon 3.png"
+   "f": "hsr/Character Phainon Eidolon 3.png"
   },
   {
-   "g": "Phainon",
+   "g": "",
    "n": "Character Phainon Eidolon 4",
-   "f": "hsr/Phainon/Character Phainon Eidolon 4.png"
+   "f": "hsr/Character Phainon Eidolon 4.png"
   },
   {
-   "g": "Phainon",
+   "g": "",
    "n": "Character Phainon Eidolon 5",
-   "f": "hsr/Phainon/Character Phainon Eidolon 5.png"
+   "f": "hsr/Character Phainon Eidolon 5.png"
   },
   {
-   "g": "Phainon",
+   "g": "",
    "n": "Character Phainon Eidolon 6",
-   "f": "hsr/Phainon/Character Phainon Eidolon 6.png"
+   "f": "hsr/Character Phainon Eidolon 6.png"
   },
   {
-   "g": "Phainon",
+   "g": "",
    "n": "Character Phainon Portrait",
-   "f": "hsr/Phainon/Character Phainon Portrait.png"
+   "f": "hsr/Character Phainon Portrait.png"
   },
   {
-   "g": "Qingque",
+   "g": "",
    "n": "Character Qingque Eidolon 1",
-   "f": "hsr/Qingque/Character Qingque Eidolon 1.png"
+   "f": "hsr/Character Qingque Eidolon 1.png"
   },
   {
-   "g": "Qingque",
+   "g": "",
    "n": "Character Qingque Eidolon 2",
-   "f": "hsr/Qingque/Character Qingque Eidolon 2.png"
+   "f": "hsr/Character Qingque Eidolon 2.png"
   },
   {
-   "g": "Qingque",
+   "g": "",
    "n": "Character Qingque Eidolon 3",
-   "f": "hsr/Qingque/Character Qingque Eidolon 3.png"
+   "f": "hsr/Character Qingque Eidolon 3.png"
   },
   {
-   "g": "Qingque",
+   "g": "",
    "n": "Character Qingque Eidolon 4",
-   "f": "hsr/Qingque/Character Qingque Eidolon 4.png"
+   "f": "hsr/Character Qingque Eidolon 4.png"
   },
   {
-   "g": "Qingque",
+   "g": "",
    "n": "Character Qingque Eidolon 5",
-   "f": "hsr/Qingque/Character Qingque Eidolon 5.png"
+   "f": "hsr/Character Qingque Eidolon 5.png"
   },
   {
-   "g": "Qingque",
+   "g": "",
    "n": "Character Qingque Eidolon 6",
-   "f": "hsr/Qingque/Character Qingque Eidolon 6.png"
+   "f": "hsr/Character Qingque Eidolon 6.png"
   },
   {
-   "g": "Qingque",
+   "g": "",
    "n": "Character Qingque Portrait",
-   "f": "hsr/Qingque/Character Qingque Portrait.png"
+   "f": "hsr/Character Qingque Portrait.png"
   },
   {
-   "g": "Rappa",
+   "g": "",
    "n": "Character Rappa Eidolon 1",
-   "f": "hsr/Rappa/Character Rappa Eidolon 1.png"
+   "f": "hsr/Character Rappa Eidolon 1.png"
   },
   {
-   "g": "Rappa",
+   "g": "",
    "n": "Character Rappa Eidolon 2",
-   "f": "hsr/Rappa/Character Rappa Eidolon 2.png"
+   "f": "hsr/Character Rappa Eidolon 2.png"
   },
   {
-   "g": "Rappa",
+   "g": "",
    "n": "Character Rappa Eidolon 3",
-   "f": "hsr/Rappa/Character Rappa Eidolon 3.png"
+   "f": "hsr/Character Rappa Eidolon 3.png"
   },
   {
-   "g": "Rappa",
+   "g": "",
    "n": "Character Rappa Eidolon 4",
-   "f": "hsr/Rappa/Character Rappa Eidolon 4.png"
+   "f": "hsr/Character Rappa Eidolon 4.png"
   },
   {
-   "g": "Rappa",
+   "g": "",
    "n": "Character Rappa Eidolon 5",
-   "f": "hsr/Rappa/Character Rappa Eidolon 5.png"
+   "f": "hsr/Character Rappa Eidolon 5.png"
   },
   {
-   "g": "Rappa",
+   "g": "",
    "n": "Character Rappa Eidolon 6",
-   "f": "hsr/Rappa/Character Rappa Eidolon 6.png"
+   "f": "hsr/Character Rappa Eidolon 6.png"
   },
   {
-   "g": "Rappa",
+   "g": "",
    "n": "Character Rappa Portrait",
-   "f": "hsr/Rappa/Character Rappa Portrait.png"
+   "f": "hsr/Character Rappa Portrait.png"
   },
   {
-   "g": "Rin Tohsaka",
+   "g": "",
    "n": "Character Rin Tohsaka Eidolon 1",
-   "f": "hsr/Rin Tohsaka/Character Rin Tohsaka Eidolon 1.png"
+   "f": "hsr/Character Rin Tohsaka Eidolon 1.png"
   },
   {
-   "g": "Rin Tohsaka",
+   "g": "",
    "n": "Character Rin Tohsaka Eidolon 2",
-   "f": "hsr/Rin Tohsaka/Character Rin Tohsaka Eidolon 2.png"
+   "f": "hsr/Character Rin Tohsaka Eidolon 2.png"
   },
   {
-   "g": "Rin Tohsaka",
+   "g": "",
    "n": "Character Rin Tohsaka Eidolon 3",
-   "f": "hsr/Rin Tohsaka/Character Rin Tohsaka Eidolon 3.png"
+   "f": "hsr/Character Rin Tohsaka Eidolon 3.png"
   },
   {
-   "g": "Rin Tohsaka",
+   "g": "",
    "n": "Character Rin Tohsaka Eidolon 4",
-   "f": "hsr/Rin Tohsaka/Character Rin Tohsaka Eidolon 4.png"
+   "f": "hsr/Character Rin Tohsaka Eidolon 4.png"
   },
   {
-   "g": "Rin Tohsaka",
+   "g": "",
    "n": "Character Rin Tohsaka Eidolon 5",
-   "f": "hsr/Rin Tohsaka/Character Rin Tohsaka Eidolon 5.png"
+   "f": "hsr/Character Rin Tohsaka Eidolon 5.png"
   },
   {
-   "g": "Rin Tohsaka",
+   "g": "",
    "n": "Character Rin Tohsaka Eidolon 6",
-   "f": "hsr/Rin Tohsaka/Character Rin Tohsaka Eidolon 6.png"
+   "f": "hsr/Character Rin Tohsaka Eidolon 6.png"
   },
   {
-   "g": "Rin Tohsaka",
+   "g": "",
    "n": "Character Rin Tohsaka Portrait",
-   "f": "hsr/Rin Tohsaka/Character Rin Tohsaka Portrait.png"
+   "f": "hsr/Character Rin Tohsaka Portrait.png"
   },
   {
-   "g": "Robin • Summeretto",
-   "n": "Character Robin • Summeretto Eidolon 1",
-   "f": "hsr/Robin • Summeretto/Character Robin • Summeretto Eidolon 1.png"
-  },
-  {
-   "g": "Robin • Summeretto",
-   "n": "Character Robin • Summeretto Eidolon 2",
-   "f": "hsr/Robin • Summeretto/Character Robin • Summeretto Eidolon 2.png"
-  },
-  {
-   "g": "Robin • Summeretto",
-   "n": "Character Robin • Summeretto Eidolon 3",
-   "f": "hsr/Robin • Summeretto/Character Robin • Summeretto Eidolon 3.png"
-  },
-  {
-   "g": "Robin • Summeretto",
-   "n": "Character Robin • Summeretto Eidolon 4",
-   "f": "hsr/Robin • Summeretto/Character Robin • Summeretto Eidolon 4.png"
-  },
-  {
-   "g": "Robin • Summeretto",
-   "n": "Character Robin • Summeretto Eidolon 5",
-   "f": "hsr/Robin • Summeretto/Character Robin • Summeretto Eidolon 5.png"
-  },
-  {
-   "g": "Robin • Summeretto",
-   "n": "Character Robin • Summeretto Eidolon 6",
-   "f": "hsr/Robin • Summeretto/Character Robin • Summeretto Eidolon 6.png"
-  },
-  {
-   "g": "Robin • Summeretto",
-   "n": "Character Robin • Summeretto Portrait",
-   "f": "hsr/Robin • Summeretto/Character Robin • Summeretto Portrait.png"
-  },
-  {
-   "g": "Robin",
+   "g": "",
    "n": "Character Robin Eidolon 1",
-   "f": "hsr/Robin/Character Robin Eidolon 1.png"
+   "f": "hsr/Character Robin Eidolon 1.png"
   },
   {
-   "g": "Robin",
+   "g": "",
    "n": "Character Robin Eidolon 2",
-   "f": "hsr/Robin/Character Robin Eidolon 2.png"
+   "f": "hsr/Character Robin Eidolon 2.png"
   },
   {
-   "g": "Robin",
+   "g": "",
    "n": "Character Robin Eidolon 3",
-   "f": "hsr/Robin/Character Robin Eidolon 3.png"
+   "f": "hsr/Character Robin Eidolon 3.png"
   },
   {
-   "g": "Robin",
+   "g": "",
    "n": "Character Robin Eidolon 4",
-   "f": "hsr/Robin/Character Robin Eidolon 4.png"
+   "f": "hsr/Character Robin Eidolon 4.png"
   },
   {
-   "g": "Robin",
+   "g": "",
    "n": "Character Robin Eidolon 5",
-   "f": "hsr/Robin/Character Robin Eidolon 5.png"
+   "f": "hsr/Character Robin Eidolon 5.png"
   },
   {
-   "g": "Robin",
+   "g": "",
    "n": "Character Robin Eidolon 6",
-   "f": "hsr/Robin/Character Robin Eidolon 6.png"
+   "f": "hsr/Character Robin Eidolon 6.png"
   },
   {
-   "g": "Robin",
+   "g": "",
    "n": "Character Robin Portrait",
-   "f": "hsr/Robin/Character Robin Portrait.png"
+   "f": "hsr/Character Robin Portrait.png"
   },
   {
-   "g": "Ruan Mei Plumblossom Letter",
-   "n": "Character Ruan Mei Plumblossom Letter Portrait",
-   "f": "hsr/Ruan Mei Plumblossom Letter/Character Ruan Mei Plumblossom Letter Portrait.png"
+   "g": "",
+   "n": "Character Robin • Summeretto Eidolon 1",
+   "f": "hsr/Character Robin • Summeretto Eidolon 1.png"
   },
   {
-   "g": "Ruan Mei",
+   "g": "",
+   "n": "Character Robin • Summeretto Eidolon 2",
+   "f": "hsr/Character Robin • Summeretto Eidolon 2.png"
+  },
+  {
+   "g": "",
+   "n": "Character Robin • Summeretto Eidolon 3",
+   "f": "hsr/Character Robin • Summeretto Eidolon 3.png"
+  },
+  {
+   "g": "",
+   "n": "Character Robin • Summeretto Eidolon 4",
+   "f": "hsr/Character Robin • Summeretto Eidolon 4.png"
+  },
+  {
+   "g": "",
+   "n": "Character Robin • Summeretto Eidolon 5",
+   "f": "hsr/Character Robin • Summeretto Eidolon 5.png"
+  },
+  {
+   "g": "",
+   "n": "Character Robin • Summeretto Eidolon 6",
+   "f": "hsr/Character Robin • Summeretto Eidolon 6.png"
+  },
+  {
+   "g": "",
+   "n": "Character Robin • Summeretto Portrait",
+   "f": "hsr/Character Robin • Summeretto Portrait.png"
+  },
+  {
+   "g": "",
    "n": "Character Ruan Mei Eidolon 1",
-   "f": "hsr/Ruan Mei/Character Ruan Mei Eidolon 1.png"
+   "f": "hsr/Character Ruan Mei Eidolon 1.png"
   },
   {
-   "g": "Ruan Mei",
+   "g": "",
    "n": "Character Ruan Mei Eidolon 2",
-   "f": "hsr/Ruan Mei/Character Ruan Mei Eidolon 2.png"
+   "f": "hsr/Character Ruan Mei Eidolon 2.png"
   },
   {
-   "g": "Ruan Mei",
+   "g": "",
    "n": "Character Ruan Mei Eidolon 3",
-   "f": "hsr/Ruan Mei/Character Ruan Mei Eidolon 3.png"
+   "f": "hsr/Character Ruan Mei Eidolon 3.png"
   },
   {
-   "g": "Ruan Mei",
+   "g": "",
    "n": "Character Ruan Mei Eidolon 4",
-   "f": "hsr/Ruan Mei/Character Ruan Mei Eidolon 4.png"
+   "f": "hsr/Character Ruan Mei Eidolon 4.png"
   },
   {
-   "g": "Ruan Mei",
+   "g": "",
    "n": "Character Ruan Mei Eidolon 5",
-   "f": "hsr/Ruan Mei/Character Ruan Mei Eidolon 5.png"
+   "f": "hsr/Character Ruan Mei Eidolon 5.png"
   },
   {
-   "g": "Ruan Mei",
+   "g": "",
    "n": "Character Ruan Mei Eidolon 6",
-   "f": "hsr/Ruan Mei/Character Ruan Mei Eidolon 6.png"
+   "f": "hsr/Character Ruan Mei Eidolon 6.png"
   },
   {
-   "g": "Ruan Mei",
+   "g": "",
+   "n": "Character Ruan Mei Plumblossom Letter Portrait",
+   "f": "hsr/Character Ruan Mei Plumblossom Letter Portrait.png"
+  },
+  {
+   "g": "",
    "n": "Character Ruan Mei Portrait",
-   "f": "hsr/Ruan Mei/Character Ruan Mei Portrait.png"
+   "f": "hsr/Character Ruan Mei Portrait.png"
   },
   {
-   "g": "Saber",
+   "g": "",
    "n": "Character Saber Eidolon 1",
-   "f": "hsr/Saber/Character Saber Eidolon 1.png"
+   "f": "hsr/Character Saber Eidolon 1.png"
   },
   {
-   "g": "Saber",
+   "g": "",
    "n": "Character Saber Eidolon 2",
-   "f": "hsr/Saber/Character Saber Eidolon 2.png"
+   "f": "hsr/Character Saber Eidolon 2.png"
   },
   {
-   "g": "Saber",
+   "g": "",
    "n": "Character Saber Eidolon 3",
-   "f": "hsr/Saber/Character Saber Eidolon 3.png"
+   "f": "hsr/Character Saber Eidolon 3.png"
   },
   {
-   "g": "Saber",
+   "g": "",
    "n": "Character Saber Eidolon 4",
-   "f": "hsr/Saber/Character Saber Eidolon 4.png"
+   "f": "hsr/Character Saber Eidolon 4.png"
   },
   {
-   "g": "Saber",
+   "g": "",
    "n": "Character Saber Eidolon 5",
-   "f": "hsr/Saber/Character Saber Eidolon 5.png"
+   "f": "hsr/Character Saber Eidolon 5.png"
   },
   {
-   "g": "Saber",
+   "g": "",
    "n": "Character Saber Eidolon 6",
-   "f": "hsr/Saber/Character Saber Eidolon 6.png"
+   "f": "hsr/Character Saber Eidolon 6.png"
   },
   {
-   "g": "Saber",
+   "g": "",
    "n": "Character Saber Portrait",
-   "f": "hsr/Saber/Character Saber Portrait.png"
+   "f": "hsr/Character Saber Portrait.png"
   },
   {
-   "g": "Sampo",
+   "g": "",
    "n": "Character Sampo Eidolon 1",
-   "f": "hsr/Sampo/Character Sampo Eidolon 1.png"
+   "f": "hsr/Character Sampo Eidolon 1.png"
   },
   {
-   "g": "Sampo",
+   "g": "",
    "n": "Character Sampo Eidolon 2",
-   "f": "hsr/Sampo/Character Sampo Eidolon 2.png"
+   "f": "hsr/Character Sampo Eidolon 2.png"
   },
   {
-   "g": "Sampo",
+   "g": "",
    "n": "Character Sampo Eidolon 3",
-   "f": "hsr/Sampo/Character Sampo Eidolon 3.png"
+   "f": "hsr/Character Sampo Eidolon 3.png"
   },
   {
-   "g": "Sampo",
+   "g": "",
    "n": "Character Sampo Eidolon 4",
-   "f": "hsr/Sampo/Character Sampo Eidolon 4.png"
+   "f": "hsr/Character Sampo Eidolon 4.png"
   },
   {
-   "g": "Sampo",
+   "g": "",
    "n": "Character Sampo Eidolon 5",
-   "f": "hsr/Sampo/Character Sampo Eidolon 5.png"
+   "f": "hsr/Character Sampo Eidolon 5.png"
   },
   {
-   "g": "Sampo",
+   "g": "",
    "n": "Character Sampo Eidolon 6",
-   "f": "hsr/Sampo/Character Sampo Eidolon 6.png"
+   "f": "hsr/Character Sampo Eidolon 6.png"
   },
   {
-   "g": "Sampo",
+   "g": "",
    "n": "Character Sampo Portrait",
-   "f": "hsr/Sampo/Character Sampo Portrait.png"
+   "f": "hsr/Character Sampo Portrait.png"
   },
   {
-   "g": "Seele",
+   "g": "",
    "n": "Character Seele Eidolon 1",
-   "f": "hsr/Seele/Character Seele Eidolon 1.png"
+   "f": "hsr/Character Seele Eidolon 1.png"
   },
   {
-   "g": "Seele",
+   "g": "",
    "n": "Character Seele Eidolon 2",
-   "f": "hsr/Seele/Character Seele Eidolon 2.png"
+   "f": "hsr/Character Seele Eidolon 2.png"
   },
   {
-   "g": "Seele",
+   "g": "",
    "n": "Character Seele Eidolon 3",
-   "f": "hsr/Seele/Character Seele Eidolon 3.png"
+   "f": "hsr/Character Seele Eidolon 3.png"
   },
   {
-   "g": "Seele",
+   "g": "",
    "n": "Character Seele Eidolon 4",
-   "f": "hsr/Seele/Character Seele Eidolon 4.png"
+   "f": "hsr/Character Seele Eidolon 4.png"
   },
   {
-   "g": "Seele",
+   "g": "",
    "n": "Character Seele Eidolon 5",
-   "f": "hsr/Seele/Character Seele Eidolon 5.png"
+   "f": "hsr/Character Seele Eidolon 5.png"
   },
   {
-   "g": "Seele",
+   "g": "",
    "n": "Character Seele Eidolon 6",
-   "f": "hsr/Seele/Character Seele Eidolon 6.png"
+   "f": "hsr/Character Seele Eidolon 6.png"
   },
   {
-   "g": "Seele",
+   "g": "",
    "n": "Character Seele Portrait",
-   "f": "hsr/Seele/Character Seele Portrait.png"
+   "f": "hsr/Character Seele Portrait.png"
   },
   {
-   "g": "Serval",
+   "g": "",
    "n": "Character Serval Eidolon 1",
-   "f": "hsr/Serval/Character Serval Eidolon 1.png"
+   "f": "hsr/Character Serval Eidolon 1.png"
   },
   {
-   "g": "Serval",
+   "g": "",
    "n": "Character Serval Eidolon 2",
-   "f": "hsr/Serval/Character Serval Eidolon 2.png"
+   "f": "hsr/Character Serval Eidolon 2.png"
   },
   {
-   "g": "Serval",
+   "g": "",
    "n": "Character Serval Eidolon 3",
-   "f": "hsr/Serval/Character Serval Eidolon 3.png"
+   "f": "hsr/Character Serval Eidolon 3.png"
   },
   {
-   "g": "Serval",
+   "g": "",
    "n": "Character Serval Eidolon 4",
-   "f": "hsr/Serval/Character Serval Eidolon 4.png"
+   "f": "hsr/Character Serval Eidolon 4.png"
   },
   {
-   "g": "Serval",
+   "g": "",
    "n": "Character Serval Eidolon 5",
-   "f": "hsr/Serval/Character Serval Eidolon 5.png"
+   "f": "hsr/Character Serval Eidolon 5.png"
   },
   {
-   "g": "Serval",
+   "g": "",
    "n": "Character Serval Eidolon 6",
-   "f": "hsr/Serval/Character Serval Eidolon 6.png"
+   "f": "hsr/Character Serval Eidolon 6.png"
   },
   {
-   "g": "Serval",
+   "g": "",
    "n": "Character Serval Portrait",
-   "f": "hsr/Serval/Character Serval Portrait.png"
+   "f": "hsr/Character Serval Portrait.png"
   },
   {
-   "g": "Silver Wolf LV.999",
-   "n": "Character Silver Wolf LV.999 Eidolon 1",
-   "f": "hsr/Silver Wolf LV.999/Character Silver Wolf LV.999 Eidolon 1.png"
-  },
-  {
-   "g": "Silver Wolf LV.999",
-   "n": "Character Silver Wolf LV.999 Eidolon 2",
-   "f": "hsr/Silver Wolf LV.999/Character Silver Wolf LV.999 Eidolon 2.png"
-  },
-  {
-   "g": "Silver Wolf LV.999",
-   "n": "Character Silver Wolf LV.999 Eidolon 3",
-   "f": "hsr/Silver Wolf LV.999/Character Silver Wolf LV.999 Eidolon 3.png"
-  },
-  {
-   "g": "Silver Wolf LV.999",
-   "n": "Character Silver Wolf LV.999 Eidolon 4",
-   "f": "hsr/Silver Wolf LV.999/Character Silver Wolf LV.999 Eidolon 4.png"
-  },
-  {
-   "g": "Silver Wolf LV.999",
-   "n": "Character Silver Wolf LV.999 Eidolon 5",
-   "f": "hsr/Silver Wolf LV.999/Character Silver Wolf LV.999 Eidolon 5.png"
-  },
-  {
-   "g": "Silver Wolf LV.999",
-   "n": "Character Silver Wolf LV.999 Eidolon 6",
-   "f": "hsr/Silver Wolf LV.999/Character Silver Wolf LV.999 Eidolon 6.png"
-  },
-  {
-   "g": "Silver Wolf LV.999",
-   "n": "Character Silver Wolf LV.999 Portrait",
-   "f": "hsr/Silver Wolf LV.999/Character Silver Wolf LV.999 Portrait.png"
-  },
-  {
-   "g": "Silver Wolf",
+   "g": "",
    "n": "Character Silver Wolf Eidolon 1",
-   "f": "hsr/Silver Wolf/Character Silver Wolf Eidolon 1.png"
+   "f": "hsr/Character Silver Wolf Eidolon 1.png"
   },
   {
-   "g": "Silver Wolf",
+   "g": "",
    "n": "Character Silver Wolf Eidolon 2",
-   "f": "hsr/Silver Wolf/Character Silver Wolf Eidolon 2.png"
+   "f": "hsr/Character Silver Wolf Eidolon 2.png"
   },
   {
-   "g": "Silver Wolf",
+   "g": "",
    "n": "Character Silver Wolf Eidolon 3",
-   "f": "hsr/Silver Wolf/Character Silver Wolf Eidolon 3.png"
+   "f": "hsr/Character Silver Wolf Eidolon 3.png"
   },
   {
-   "g": "Silver Wolf",
+   "g": "",
    "n": "Character Silver Wolf Eidolon 4",
-   "f": "hsr/Silver Wolf/Character Silver Wolf Eidolon 4.png"
+   "f": "hsr/Character Silver Wolf Eidolon 4.png"
   },
   {
-   "g": "Silver Wolf",
+   "g": "",
    "n": "Character Silver Wolf Eidolon 5",
-   "f": "hsr/Silver Wolf/Character Silver Wolf Eidolon 5.png"
+   "f": "hsr/Character Silver Wolf Eidolon 5.png"
   },
   {
-   "g": "Silver Wolf",
+   "g": "",
    "n": "Character Silver Wolf Eidolon 6",
-   "f": "hsr/Silver Wolf/Character Silver Wolf Eidolon 6.png"
+   "f": "hsr/Character Silver Wolf Eidolon 6.png"
   },
   {
-   "g": "Silver Wolf",
+   "g": "",
+   "n": "Character Silver Wolf LV.999 Eidolon 1",
+   "f": "hsr/Character Silver Wolf LV.999 Eidolon 1.png"
+  },
+  {
+   "g": "",
+   "n": "Character Silver Wolf LV.999 Eidolon 2",
+   "f": "hsr/Character Silver Wolf LV.999 Eidolon 2.png"
+  },
+  {
+   "g": "",
+   "n": "Character Silver Wolf LV.999 Eidolon 3",
+   "f": "hsr/Character Silver Wolf LV.999 Eidolon 3.png"
+  },
+  {
+   "g": "",
+   "n": "Character Silver Wolf LV.999 Eidolon 4",
+   "f": "hsr/Character Silver Wolf LV.999 Eidolon 4.png"
+  },
+  {
+   "g": "",
+   "n": "Character Silver Wolf LV.999 Eidolon 5",
+   "f": "hsr/Character Silver Wolf LV.999 Eidolon 5.png"
+  },
+  {
+   "g": "",
+   "n": "Character Silver Wolf LV.999 Eidolon 6",
+   "f": "hsr/Character Silver Wolf LV.999 Eidolon 6.png"
+  },
+  {
+   "g": "",
+   "n": "Character Silver Wolf LV.999 Portrait",
+   "f": "hsr/Character Silver Wolf LV.999 Portrait.png"
+  },
+  {
+   "g": "",
    "n": "Character Silver Wolf Portrait",
-   "f": "hsr/Silver Wolf/Character Silver Wolf Portrait.png"
+   "f": "hsr/Character Silver Wolf Portrait.png"
   },
   {
-   "g": "Sparkle",
+   "g": "",
    "n": "Character Sparkle Eidolon 1",
-   "f": "hsr/Sparkle/Character Sparkle Eidolon 1.png"
+   "f": "hsr/Character Sparkle Eidolon 1.png"
   },
   {
-   "g": "Sparkle",
+   "g": "",
    "n": "Character Sparkle Eidolon 2",
-   "f": "hsr/Sparkle/Character Sparkle Eidolon 2.png"
+   "f": "hsr/Character Sparkle Eidolon 2.png"
   },
   {
-   "g": "Sparkle",
+   "g": "",
    "n": "Character Sparkle Eidolon 3",
-   "f": "hsr/Sparkle/Character Sparkle Eidolon 3.png"
+   "f": "hsr/Character Sparkle Eidolon 3.png"
   },
   {
-   "g": "Sparkle",
+   "g": "",
    "n": "Character Sparkle Eidolon 4",
-   "f": "hsr/Sparkle/Character Sparkle Eidolon 4.png"
+   "f": "hsr/Character Sparkle Eidolon 4.png"
   },
   {
-   "g": "Sparkle",
+   "g": "",
    "n": "Character Sparkle Eidolon 5",
-   "f": "hsr/Sparkle/Character Sparkle Eidolon 5.png"
+   "f": "hsr/Character Sparkle Eidolon 5.png"
   },
   {
-   "g": "Sparkle",
+   "g": "",
    "n": "Character Sparkle Eidolon 6",
-   "f": "hsr/Sparkle/Character Sparkle Eidolon 6.png"
+   "f": "hsr/Character Sparkle Eidolon 6.png"
   },
   {
-   "g": "Sparkle",
+   "g": "",
    "n": "Character Sparkle Portrait",
-   "f": "hsr/Sparkle/Character Sparkle Portrait.png"
+   "f": "hsr/Character Sparkle Portrait.png"
   },
   {
-   "g": "Sparxie Candy-Coated Waves",
+   "g": "",
    "n": "Character Sparxie Candy-Coated Waves Portrait",
-   "f": "hsr/Sparxie Candy-Coated Waves/Character Sparxie Candy-Coated Waves Portrait.png"
+   "f": "hsr/Character Sparxie Candy-Coated Waves Portrait.png"
   },
   {
-   "g": "Sparxie",
+   "g": "",
    "n": "Character Sparxie Eidolon 1",
-   "f": "hsr/Sparxie/Character Sparxie Eidolon 1.png"
+   "f": "hsr/Character Sparxie Eidolon 1.png"
   },
   {
-   "g": "Sparxie",
+   "g": "",
    "n": "Character Sparxie Eidolon 2",
-   "f": "hsr/Sparxie/Character Sparxie Eidolon 2.png"
+   "f": "hsr/Character Sparxie Eidolon 2.png"
   },
   {
-   "g": "Sparxie",
+   "g": "",
    "n": "Character Sparxie Eidolon 3",
-   "f": "hsr/Sparxie/Character Sparxie Eidolon 3.png"
+   "f": "hsr/Character Sparxie Eidolon 3.png"
   },
   {
-   "g": "Sparxie",
+   "g": "",
    "n": "Character Sparxie Eidolon 4",
-   "f": "hsr/Sparxie/Character Sparxie Eidolon 4.png"
+   "f": "hsr/Character Sparxie Eidolon 4.png"
   },
   {
-   "g": "Sparxie",
+   "g": "",
    "n": "Character Sparxie Eidolon 5",
-   "f": "hsr/Sparxie/Character Sparxie Eidolon 5.png"
+   "f": "hsr/Character Sparxie Eidolon 5.png"
   },
   {
-   "g": "Sparxie",
+   "g": "",
    "n": "Character Sparxie Eidolon 6",
-   "f": "hsr/Sparxie/Character Sparxie Eidolon 6.png"
+   "f": "hsr/Character Sparxie Eidolon 6.png"
   },
   {
-   "g": "Sparxie",
+   "g": "",
    "n": "Character Sparxie Portrait",
-   "f": "hsr/Sparxie/Character Sparxie Portrait.png"
+   "f": "hsr/Character Sparxie Portrait.png"
   },
   {
-   "g": "Sunday",
+   "g": "",
    "n": "Character Sunday Eidolon 1",
-   "f": "hsr/Sunday/Character Sunday Eidolon 1.png"
+   "f": "hsr/Character Sunday Eidolon 1.png"
   },
   {
-   "g": "Sunday",
+   "g": "",
    "n": "Character Sunday Eidolon 2",
-   "f": "hsr/Sunday/Character Sunday Eidolon 2.png"
+   "f": "hsr/Character Sunday Eidolon 2.png"
   },
   {
-   "g": "Sunday",
+   "g": "",
    "n": "Character Sunday Eidolon 3",
-   "f": "hsr/Sunday/Character Sunday Eidolon 3.png"
+   "f": "hsr/Character Sunday Eidolon 3.png"
   },
   {
-   "g": "Sunday",
+   "g": "",
    "n": "Character Sunday Eidolon 4",
-   "f": "hsr/Sunday/Character Sunday Eidolon 4.png"
+   "f": "hsr/Character Sunday Eidolon 4.png"
   },
   {
-   "g": "Sunday",
+   "g": "",
    "n": "Character Sunday Eidolon 5",
-   "f": "hsr/Sunday/Character Sunday Eidolon 5.png"
+   "f": "hsr/Character Sunday Eidolon 5.png"
   },
   {
-   "g": "Sunday",
+   "g": "",
    "n": "Character Sunday Eidolon 6",
-   "f": "hsr/Sunday/Character Sunday Eidolon 6.png"
+   "f": "hsr/Character Sunday Eidolon 6.png"
   },
   {
-   "g": "Sunday",
+   "g": "",
    "n": "Character Sunday Portrait",
-   "f": "hsr/Sunday/Character Sunday Portrait.png"
+   "f": "hsr/Character Sunday Portrait.png"
   },
   {
-   "g": "Sushang",
+   "g": "",
    "n": "Character Sushang Eidolon 1",
-   "f": "hsr/Sushang/Character Sushang Eidolon 1.png"
+   "f": "hsr/Character Sushang Eidolon 1.png"
   },
   {
-   "g": "Sushang",
+   "g": "",
    "n": "Character Sushang Eidolon 2",
-   "f": "hsr/Sushang/Character Sushang Eidolon 2.png"
+   "f": "hsr/Character Sushang Eidolon 2.png"
   },
   {
-   "g": "Sushang",
+   "g": "",
    "n": "Character Sushang Eidolon 3",
-   "f": "hsr/Sushang/Character Sushang Eidolon 3.png"
+   "f": "hsr/Character Sushang Eidolon 3.png"
   },
   {
-   "g": "Sushang",
+   "g": "",
    "n": "Character Sushang Eidolon 4",
-   "f": "hsr/Sushang/Character Sushang Eidolon 4.png"
+   "f": "hsr/Character Sushang Eidolon 4.png"
   },
   {
-   "g": "Sushang",
+   "g": "",
    "n": "Character Sushang Eidolon 5",
-   "f": "hsr/Sushang/Character Sushang Eidolon 5.png"
+   "f": "hsr/Character Sushang Eidolon 5.png"
   },
   {
-   "g": "Sushang",
+   "g": "",
    "n": "Character Sushang Eidolon 6",
-   "f": "hsr/Sushang/Character Sushang Eidolon 6.png"
+   "f": "hsr/Character Sushang Eidolon 6.png"
   },
   {
-   "g": "Sushang",
+   "g": "",
    "n": "Character Sushang Portrait",
-   "f": "hsr/Sushang/Character Sushang Portrait.png"
+   "f": "hsr/Character Sushang Portrait.png"
   },
   {
-   "g": "The Dahlia",
+   "g": "",
    "n": "Character The Dahlia Eidolon 1",
-   "f": "hsr/The Dahlia/Character The Dahlia Eidolon 1.png"
+   "f": "hsr/Character The Dahlia Eidolon 1.png"
   },
   {
-   "g": "The Dahlia",
+   "g": "",
    "n": "Character The Dahlia Eidolon 2",
-   "f": "hsr/The Dahlia/Character The Dahlia Eidolon 2.png"
+   "f": "hsr/Character The Dahlia Eidolon 2.png"
   },
   {
-   "g": "The Dahlia",
+   "g": "",
    "n": "Character The Dahlia Eidolon 3",
-   "f": "hsr/The Dahlia/Character The Dahlia Eidolon 3.png"
+   "f": "hsr/Character The Dahlia Eidolon 3.png"
   },
   {
-   "g": "The Dahlia",
+   "g": "",
    "n": "Character The Dahlia Eidolon 4",
-   "f": "hsr/The Dahlia/Character The Dahlia Eidolon 4.png"
+   "f": "hsr/Character The Dahlia Eidolon 4.png"
   },
   {
-   "g": "The Dahlia",
+   "g": "",
    "n": "Character The Dahlia Eidolon 5",
-   "f": "hsr/The Dahlia/Character The Dahlia Eidolon 5.png"
+   "f": "hsr/Character The Dahlia Eidolon 5.png"
   },
   {
-   "g": "The Dahlia",
+   "g": "",
    "n": "Character The Dahlia Eidolon 6",
-   "f": "hsr/The Dahlia/Character The Dahlia Eidolon 6.png"
+   "f": "hsr/Character The Dahlia Eidolon 6.png"
   },
   {
-   "g": "The Dahlia",
+   "g": "",
    "n": "Character The Dahlia Portrait",
-   "f": "hsr/The Dahlia/Character The Dahlia Portrait.png"
+   "f": "hsr/Character The Dahlia Portrait.png"
   },
   {
-   "g": "The Herta",
+   "g": "",
    "n": "Character The Herta Eidolon 1",
-   "f": "hsr/The Herta/Character The Herta Eidolon 1.png"
+   "f": "hsr/Character The Herta Eidolon 1.png"
   },
   {
-   "g": "The Herta",
+   "g": "",
    "n": "Character The Herta Eidolon 2",
-   "f": "hsr/The Herta/Character The Herta Eidolon 2.png"
+   "f": "hsr/Character The Herta Eidolon 2.png"
   },
   {
-   "g": "The Herta",
+   "g": "",
    "n": "Character The Herta Eidolon 3",
-   "f": "hsr/The Herta/Character The Herta Eidolon 3.png"
+   "f": "hsr/Character The Herta Eidolon 3.png"
   },
   {
-   "g": "The Herta",
+   "g": "",
    "n": "Character The Herta Eidolon 4",
-   "f": "hsr/The Herta/Character The Herta Eidolon 4.png"
+   "f": "hsr/Character The Herta Eidolon 4.png"
   },
   {
-   "g": "The Herta",
+   "g": "",
    "n": "Character The Herta Eidolon 5",
-   "f": "hsr/The Herta/Character The Herta Eidolon 5.png"
+   "f": "hsr/Character The Herta Eidolon 5.png"
   },
   {
-   "g": "The Herta",
+   "g": "",
    "n": "Character The Herta Eidolon 6",
-   "f": "hsr/The Herta/Character The Herta Eidolon 6.png"
+   "f": "hsr/Character The Herta Eidolon 6.png"
   },
   {
-   "g": "The Herta",
+   "g": "",
    "n": "Character The Herta Portrait",
-   "f": "hsr/The Herta/Character The Herta Portrait.png"
+   "f": "hsr/Character The Herta Portrait.png"
   },
   {
-   "g": "Tingyun",
+   "g": "",
    "n": "Character Tingyun Eidolon 1",
-   "f": "hsr/Tingyun/Character Tingyun Eidolon 1.png"
+   "f": "hsr/Character Tingyun Eidolon 1.png"
   },
   {
-   "g": "Tingyun",
+   "g": "",
    "n": "Character Tingyun Eidolon 2",
-   "f": "hsr/Tingyun/Character Tingyun Eidolon 2.png"
+   "f": "hsr/Character Tingyun Eidolon 2.png"
   },
   {
-   "g": "Tingyun",
+   "g": "",
    "n": "Character Tingyun Eidolon 3",
-   "f": "hsr/Tingyun/Character Tingyun Eidolon 3.png"
+   "f": "hsr/Character Tingyun Eidolon 3.png"
   },
   {
-   "g": "Tingyun",
+   "g": "",
    "n": "Character Tingyun Eidolon 4",
-   "f": "hsr/Tingyun/Character Tingyun Eidolon 4.png"
+   "f": "hsr/Character Tingyun Eidolon 4.png"
   },
   {
-   "g": "Tingyun",
+   "g": "",
    "n": "Character Tingyun Eidolon 5",
-   "f": "hsr/Tingyun/Character Tingyun Eidolon 5.png"
+   "f": "hsr/Character Tingyun Eidolon 5.png"
   },
   {
-   "g": "Tingyun",
+   "g": "",
    "n": "Character Tingyun Eidolon 6",
-   "f": "hsr/Tingyun/Character Tingyun Eidolon 6.png"
+   "f": "hsr/Character Tingyun Eidolon 6.png"
   },
   {
-   "g": "Tingyun",
+   "g": "",
    "n": "Character Tingyun Portrait",
-   "f": "hsr/Tingyun/Character Tingyun Portrait.png"
+   "f": "hsr/Character Tingyun Portrait.png"
   },
   {
-   "g": "Topaz and Numby",
+   "g": "",
    "n": "Character Topaz and Numby Eidolon 1",
-   "f": "hsr/Topaz and Numby/Character Topaz and Numby Eidolon 1.png"
+   "f": "hsr/Character Topaz and Numby Eidolon 1.png"
   },
   {
-   "g": "Topaz and Numby",
+   "g": "",
    "n": "Character Topaz and Numby Eidolon 2",
-   "f": "hsr/Topaz and Numby/Character Topaz and Numby Eidolon 2.png"
+   "f": "hsr/Character Topaz and Numby Eidolon 2.png"
   },
   {
-   "g": "Topaz and Numby",
+   "g": "",
    "n": "Character Topaz and Numby Eidolon 3",
-   "f": "hsr/Topaz and Numby/Character Topaz and Numby Eidolon 3.png"
+   "f": "hsr/Character Topaz and Numby Eidolon 3.png"
   },
   {
-   "g": "Topaz and Numby",
+   "g": "",
    "n": "Character Topaz and Numby Eidolon 4",
-   "f": "hsr/Topaz and Numby/Character Topaz and Numby Eidolon 4.png"
+   "f": "hsr/Character Topaz and Numby Eidolon 4.png"
   },
   {
-   "g": "Topaz and Numby",
+   "g": "",
    "n": "Character Topaz and Numby Eidolon 5",
-   "f": "hsr/Topaz and Numby/Character Topaz and Numby Eidolon 5.png"
+   "f": "hsr/Character Topaz and Numby Eidolon 5.png"
   },
   {
-   "g": "Topaz and Numby",
+   "g": "",
    "n": "Character Topaz and Numby Eidolon 6",
-   "f": "hsr/Topaz and Numby/Character Topaz and Numby Eidolon 6.png"
+   "f": "hsr/Character Topaz and Numby Eidolon 6.png"
   },
   {
-   "g": "Topaz and Numby",
+   "g": "",
    "n": "Character Topaz and Numby Portrait",
-   "f": "hsr/Topaz and Numby/Character Topaz and Numby Portrait.png"
+   "f": "hsr/Character Topaz and Numby Portrait.png"
   },
   {
-   "g": "Trailblazer (F) Destruction",
+   "g": "",
    "n": "Character Trailblazer (F) Destruction Portrait",
-   "f": "hsr/Trailblazer (F) Destruction/Character Trailblazer (F) Destruction Portrait.png"
+   "f": "hsr/Character Trailblazer (F) Destruction Portrait.png"
   },
   {
-   "g": "Trailblazer (F) Elation",
+   "g": "",
    "n": "Character Trailblazer (F) Elation Portrait",
-   "f": "hsr/Trailblazer (F) Elation/Character Trailblazer (F) Elation Portrait.png"
+   "f": "hsr/Character Trailblazer (F) Elation Portrait.png"
   },
   {
-   "g": "Trailblazer (F) Harmony",
+   "g": "",
    "n": "Character Trailblazer (F) Harmony Portrait",
-   "f": "hsr/Trailblazer (F) Harmony/Character Trailblazer (F) Harmony Portrait.png"
+   "f": "hsr/Character Trailblazer (F) Harmony Portrait.png"
   },
   {
-   "g": "Trailblazer (F) Preservation",
+   "g": "",
    "n": "Character Trailblazer (F) Preservation Portrait",
-   "f": "hsr/Trailblazer (F) Preservation/Character Trailblazer (F) Preservation Portrait.png"
+   "f": "hsr/Character Trailblazer (F) Preservation Portrait.png"
   },
   {
-   "g": "Trailblazer (F) Remembrance",
+   "g": "",
    "n": "Character Trailblazer (F) Remembrance Portrait",
-   "f": "hsr/Trailblazer (F) Remembrance/Character Trailblazer (F) Remembrance Portrait.png"
+   "f": "hsr/Character Trailblazer (F) Remembrance Portrait.png"
   },
   {
-   "g": "Trailblazer (M) Destruction",
+   "g": "",
    "n": "Character Trailblazer (M) Destruction Portrait",
-   "f": "hsr/Trailblazer (M) Destruction/Character Trailblazer (M) Destruction Portrait.png"
+   "f": "hsr/Character Trailblazer (M) Destruction Portrait.png"
   },
   {
-   "g": "Trailblazer (M) Elation",
+   "g": "",
    "n": "Character Trailblazer (M) Elation Portrait",
-   "f": "hsr/Trailblazer (M) Elation/Character Trailblazer (M) Elation Portrait.png"
+   "f": "hsr/Character Trailblazer (M) Elation Portrait.png"
   },
   {
-   "g": "Trailblazer (M) Harmony",
+   "g": "",
    "n": "Character Trailblazer (M) Harmony Portrait",
-   "f": "hsr/Trailblazer (M) Harmony/Character Trailblazer (M) Harmony Portrait.png"
+   "f": "hsr/Character Trailblazer (M) Harmony Portrait.png"
   },
   {
-   "g": "Trailblazer (M) Preservation",
+   "g": "",
    "n": "Character Trailblazer (M) Preservation Portrait",
-   "f": "hsr/Trailblazer (M) Preservation/Character Trailblazer (M) Preservation Portrait.png"
+   "f": "hsr/Character Trailblazer (M) Preservation Portrait.png"
   },
   {
-   "g": "Trailblazer (M) Remembrance",
+   "g": "",
    "n": "Character Trailblazer (M) Remembrance Portrait",
-   "f": "hsr/Trailblazer (M) Remembrance/Character Trailblazer (M) Remembrance Portrait.png"
+   "f": "hsr/Character Trailblazer (M) Remembrance Portrait.png"
   },
   {
-   "g": "Trailblazer Female",
+   "g": "",
    "n": "Character Trailblazer Female Eidolon 1",
-   "f": "hsr/Trailblazer Female/Character Trailblazer Female Eidolon 1.png"
+   "f": "hsr/Character Trailblazer Female Eidolon 1.png"
   },
   {
-   "g": "Trailblazer Female",
+   "g": "",
    "n": "Character Trailblazer Female Eidolon 2",
-   "f": "hsr/Trailblazer Female/Character Trailblazer Female Eidolon 2.png"
+   "f": "hsr/Character Trailblazer Female Eidolon 2.png"
   },
   {
-   "g": "Trailblazer Female",
+   "g": "",
    "n": "Character Trailblazer Female Eidolon 3",
-   "f": "hsr/Trailblazer Female/Character Trailblazer Female Eidolon 3.png"
+   "f": "hsr/Character Trailblazer Female Eidolon 3.png"
   },
   {
-   "g": "Trailblazer Female",
+   "g": "",
    "n": "Character Trailblazer Female Eidolon 4",
-   "f": "hsr/Trailblazer Female/Character Trailblazer Female Eidolon 4.png"
+   "f": "hsr/Character Trailblazer Female Eidolon 4.png"
   },
   {
-   "g": "Trailblazer Female",
+   "g": "",
    "n": "Character Trailblazer Female Eidolon 5",
-   "f": "hsr/Trailblazer Female/Character Trailblazer Female Eidolon 5.png"
+   "f": "hsr/Character Trailblazer Female Eidolon 5.png"
   },
   {
-   "g": "Trailblazer Female",
+   "g": "",
    "n": "Character Trailblazer Female Eidolon 6",
-   "f": "hsr/Trailblazer Female/Character Trailblazer Female Eidolon 6.png"
+   "f": "hsr/Character Trailblazer Female Eidolon 6.png"
   },
   {
-   "g": "Trailblazer Male",
+   "g": "",
    "n": "Character Trailblazer Male Eidolon 1",
-   "f": "hsr/Trailblazer Male/Character Trailblazer Male Eidolon 1.png"
+   "f": "hsr/Character Trailblazer Male Eidolon 1.png"
   },
   {
-   "g": "Trailblazer Male",
+   "g": "",
    "n": "Character Trailblazer Male Eidolon 2",
-   "f": "hsr/Trailblazer Male/Character Trailblazer Male Eidolon 2.png"
+   "f": "hsr/Character Trailblazer Male Eidolon 2.png"
   },
   {
-   "g": "Trailblazer Male",
+   "g": "",
    "n": "Character Trailblazer Male Eidolon 3",
-   "f": "hsr/Trailblazer Male/Character Trailblazer Male Eidolon 3.png"
+   "f": "hsr/Character Trailblazer Male Eidolon 3.png"
   },
   {
-   "g": "Trailblazer Male",
+   "g": "",
    "n": "Character Trailblazer Male Eidolon 4",
-   "f": "hsr/Trailblazer Male/Character Trailblazer Male Eidolon 4.png"
+   "f": "hsr/Character Trailblazer Male Eidolon 4.png"
   },
   {
-   "g": "Trailblazer Male",
+   "g": "",
    "n": "Character Trailblazer Male Eidolon 5",
-   "f": "hsr/Trailblazer Male/Character Trailblazer Male Eidolon 5.png"
+   "f": "hsr/Character Trailblazer Male Eidolon 5.png"
   },
   {
-   "g": "Trailblazer Male",
+   "g": "",
    "n": "Character Trailblazer Male Eidolon 6",
-   "f": "hsr/Trailblazer Male/Character Trailblazer Male Eidolon 6.png"
+   "f": "hsr/Character Trailblazer Male Eidolon 6.png"
   },
   {
-   "g": "Tribbie",
+   "g": "",
    "n": "Character Tribbie Eidolon 1",
-   "f": "hsr/Tribbie/Character Tribbie Eidolon 1.png"
+   "f": "hsr/Character Tribbie Eidolon 1.png"
   },
   {
-   "g": "Tribbie",
+   "g": "",
    "n": "Character Tribbie Eidolon 2",
-   "f": "hsr/Tribbie/Character Tribbie Eidolon 2.png"
+   "f": "hsr/Character Tribbie Eidolon 2.png"
   },
   {
-   "g": "Tribbie",
+   "g": "",
    "n": "Character Tribbie Eidolon 3",
-   "f": "hsr/Tribbie/Character Tribbie Eidolon 3.png"
+   "f": "hsr/Character Tribbie Eidolon 3.png"
   },
   {
-   "g": "Tribbie",
+   "g": "",
    "n": "Character Tribbie Eidolon 4",
-   "f": "hsr/Tribbie/Character Tribbie Eidolon 4.png"
+   "f": "hsr/Character Tribbie Eidolon 4.png"
   },
   {
-   "g": "Tribbie",
+   "g": "",
    "n": "Character Tribbie Eidolon 5",
-   "f": "hsr/Tribbie/Character Tribbie Eidolon 5.png"
+   "f": "hsr/Character Tribbie Eidolon 5.png"
   },
   {
-   "g": "Tribbie",
+   "g": "",
    "n": "Character Tribbie Eidolon 6",
-   "f": "hsr/Tribbie/Character Tribbie Eidolon 6.png"
+   "f": "hsr/Character Tribbie Eidolon 6.png"
   },
   {
-   "g": "Tribbie",
+   "g": "",
    "n": "Character Tribbie Portrait",
-   "f": "hsr/Tribbie/Character Tribbie Portrait.png"
+   "f": "hsr/Character Tribbie Portrait.png"
   },
   {
-   "g": "Welt",
+   "g": "",
    "n": "Character Welt Eidolon 1",
-   "f": "hsr/Welt/Character Welt Eidolon 1.png"
+   "f": "hsr/Character Welt Eidolon 1.png"
   },
   {
-   "g": "Welt",
+   "g": "",
    "n": "Character Welt Eidolon 2",
-   "f": "hsr/Welt/Character Welt Eidolon 2.png"
+   "f": "hsr/Character Welt Eidolon 2.png"
   },
   {
-   "g": "Welt",
+   "g": "",
    "n": "Character Welt Eidolon 3",
-   "f": "hsr/Welt/Character Welt Eidolon 3.png"
+   "f": "hsr/Character Welt Eidolon 3.png"
   },
   {
-   "g": "Welt",
+   "g": "",
    "n": "Character Welt Eidolon 4",
-   "f": "hsr/Welt/Character Welt Eidolon 4.png"
+   "f": "hsr/Character Welt Eidolon 4.png"
   },
   {
-   "g": "Welt",
+   "g": "",
    "n": "Character Welt Eidolon 5",
-   "f": "hsr/Welt/Character Welt Eidolon 5.png"
+   "f": "hsr/Character Welt Eidolon 5.png"
   },
   {
-   "g": "Welt",
+   "g": "",
    "n": "Character Welt Eidolon 6",
-   "f": "hsr/Welt/Character Welt Eidolon 6.png"
+   "f": "hsr/Character Welt Eidolon 6.png"
   },
   {
-   "g": "Welt",
+   "g": "",
    "n": "Character Welt Portrait",
-   "f": "hsr/Welt/Character Welt Portrait.png"
+   "f": "hsr/Character Welt Portrait.png"
   },
   {
-   "g": "Xueyi",
+   "g": "",
    "n": "Character Xueyi Eidolon 1",
-   "f": "hsr/Xueyi/Character Xueyi Eidolon 1.png"
+   "f": "hsr/Character Xueyi Eidolon 1.png"
   },
   {
-   "g": "Xueyi",
+   "g": "",
    "n": "Character Xueyi Eidolon 2",
-   "f": "hsr/Xueyi/Character Xueyi Eidolon 2.png"
+   "f": "hsr/Character Xueyi Eidolon 2.png"
   },
   {
-   "g": "Xueyi",
+   "g": "",
    "n": "Character Xueyi Eidolon 3",
-   "f": "hsr/Xueyi/Character Xueyi Eidolon 3.png"
+   "f": "hsr/Character Xueyi Eidolon 3.png"
   },
   {
-   "g": "Xueyi",
+   "g": "",
    "n": "Character Xueyi Eidolon 4",
-   "f": "hsr/Xueyi/Character Xueyi Eidolon 4.png"
+   "f": "hsr/Character Xueyi Eidolon 4.png"
   },
   {
-   "g": "Xueyi",
+   "g": "",
    "n": "Character Xueyi Eidolon 5",
-   "f": "hsr/Xueyi/Character Xueyi Eidolon 5.png"
+   "f": "hsr/Character Xueyi Eidolon 5.png"
   },
   {
-   "g": "Xueyi",
+   "g": "",
    "n": "Character Xueyi Eidolon 6",
-   "f": "hsr/Xueyi/Character Xueyi Eidolon 6.png"
+   "f": "hsr/Character Xueyi Eidolon 6.png"
   },
   {
-   "g": "Xueyi",
+   "g": "",
    "n": "Character Xueyi Portrait",
-   "f": "hsr/Xueyi/Character Xueyi Portrait.png"
+   "f": "hsr/Character Xueyi Portrait.png"
   },
   {
-   "g": "Yanqing",
+   "g": "",
    "n": "Character Yanqing Eidolon 1",
-   "f": "hsr/Yanqing/Character Yanqing Eidolon 1.png"
+   "f": "hsr/Character Yanqing Eidolon 1.png"
   },
   {
-   "g": "Yanqing",
+   "g": "",
    "n": "Character Yanqing Eidolon 2",
-   "f": "hsr/Yanqing/Character Yanqing Eidolon 2.png"
+   "f": "hsr/Character Yanqing Eidolon 2.png"
   },
   {
-   "g": "Yanqing",
+   "g": "",
    "n": "Character Yanqing Eidolon 3",
-   "f": "hsr/Yanqing/Character Yanqing Eidolon 3.png"
+   "f": "hsr/Character Yanqing Eidolon 3.png"
   },
   {
-   "g": "Yanqing",
+   "g": "",
    "n": "Character Yanqing Eidolon 4",
-   "f": "hsr/Yanqing/Character Yanqing Eidolon 4.png"
+   "f": "hsr/Character Yanqing Eidolon 4.png"
   },
   {
-   "g": "Yanqing",
+   "g": "",
    "n": "Character Yanqing Eidolon 5",
-   "f": "hsr/Yanqing/Character Yanqing Eidolon 5.png"
+   "f": "hsr/Character Yanqing Eidolon 5.png"
   },
   {
-   "g": "Yanqing",
+   "g": "",
    "n": "Character Yanqing Eidolon 6",
-   "f": "hsr/Yanqing/Character Yanqing Eidolon 6.png"
+   "f": "hsr/Character Yanqing Eidolon 6.png"
   },
   {
-   "g": "Yanqing",
+   "g": "",
    "n": "Character Yanqing Portrait",
-   "f": "hsr/Yanqing/Character Yanqing Portrait.png"
+   "f": "hsr/Character Yanqing Portrait.png"
   },
   {
-   "g": "Yao Guang",
+   "g": "",
    "n": "Character Yao Guang Eidolon 1",
-   "f": "hsr/Yao Guang/Character Yao Guang Eidolon 1.png"
+   "f": "hsr/Character Yao Guang Eidolon 1.png"
   },
   {
-   "g": "Yao Guang",
+   "g": "",
    "n": "Character Yao Guang Eidolon 2",
-   "f": "hsr/Yao Guang/Character Yao Guang Eidolon 2.png"
+   "f": "hsr/Character Yao Guang Eidolon 2.png"
   },
   {
-   "g": "Yao Guang",
+   "g": "",
    "n": "Character Yao Guang Eidolon 3",
-   "f": "hsr/Yao Guang/Character Yao Guang Eidolon 3.png"
+   "f": "hsr/Character Yao Guang Eidolon 3.png"
   },
   {
-   "g": "Yao Guang",
+   "g": "",
    "n": "Character Yao Guang Eidolon 4",
-   "f": "hsr/Yao Guang/Character Yao Guang Eidolon 4.png"
+   "f": "hsr/Character Yao Guang Eidolon 4.png"
   },
   {
-   "g": "Yao Guang",
+   "g": "",
    "n": "Character Yao Guang Eidolon 5",
-   "f": "hsr/Yao Guang/Character Yao Guang Eidolon 5.png"
+   "f": "hsr/Character Yao Guang Eidolon 5.png"
   },
   {
-   "g": "Yao Guang",
+   "g": "",
    "n": "Character Yao Guang Eidolon 6",
-   "f": "hsr/Yao Guang/Character Yao Guang Eidolon 6.png"
+   "f": "hsr/Character Yao Guang Eidolon 6.png"
   },
   {
-   "g": "Yao Guang",
+   "g": "",
    "n": "Character Yao Guang Portrait",
-   "f": "hsr/Yao Guang/Character Yao Guang Portrait.png"
+   "f": "hsr/Character Yao Guang Portrait.png"
   },
   {
-   "g": "Yukong",
+   "g": "",
    "n": "Character Yukong Eidolon 1",
-   "f": "hsr/Yukong/Character Yukong Eidolon 1.png"
+   "f": "hsr/Character Yukong Eidolon 1.png"
   },
   {
-   "g": "Yukong",
+   "g": "",
    "n": "Character Yukong Eidolon 2",
-   "f": "hsr/Yukong/Character Yukong Eidolon 2.png"
+   "f": "hsr/Character Yukong Eidolon 2.png"
   },
   {
-   "g": "Yukong",
+   "g": "",
    "n": "Character Yukong Eidolon 3",
-   "f": "hsr/Yukong/Character Yukong Eidolon 3.png"
+   "f": "hsr/Character Yukong Eidolon 3.png"
   },
   {
-   "g": "Yukong",
+   "g": "",
    "n": "Character Yukong Eidolon 4",
-   "f": "hsr/Yukong/Character Yukong Eidolon 4.png"
+   "f": "hsr/Character Yukong Eidolon 4.png"
   },
   {
-   "g": "Yukong",
+   "g": "",
    "n": "Character Yukong Eidolon 5",
-   "f": "hsr/Yukong/Character Yukong Eidolon 5.png"
+   "f": "hsr/Character Yukong Eidolon 5.png"
   },
   {
-   "g": "Yukong",
+   "g": "",
    "n": "Character Yukong Eidolon 6",
-   "f": "hsr/Yukong/Character Yukong Eidolon 6.png"
+   "f": "hsr/Character Yukong Eidolon 6.png"
   },
   {
-   "g": "Yukong",
+   "g": "",
    "n": "Character Yukong Portrait",
-   "f": "hsr/Yukong/Character Yukong Portrait.png"
+   "f": "hsr/Character Yukong Portrait.png"
   },
   {
-   "g": "Yunli",
+   "g": "",
    "n": "Character Yunli Eidolon 1",
-   "f": "hsr/Yunli/Character Yunli Eidolon 1.png"
+   "f": "hsr/Character Yunli Eidolon 1.png"
   },
   {
-   "g": "Yunli",
+   "g": "",
    "n": "Character Yunli Eidolon 2",
-   "f": "hsr/Yunli/Character Yunli Eidolon 2.png"
+   "f": "hsr/Character Yunli Eidolon 2.png"
   },
   {
-   "g": "Yunli",
+   "g": "",
    "n": "Character Yunli Eidolon 3",
-   "f": "hsr/Yunli/Character Yunli Eidolon 3.png"
+   "f": "hsr/Character Yunli Eidolon 3.png"
   },
   {
-   "g": "Yunli",
+   "g": "",
    "n": "Character Yunli Eidolon 4",
-   "f": "hsr/Yunli/Character Yunli Eidolon 4.png"
+   "f": "hsr/Character Yunli Eidolon 4.png"
   },
   {
-   "g": "Yunli",
+   "g": "",
    "n": "Character Yunli Eidolon 5",
-   "f": "hsr/Yunli/Character Yunli Eidolon 5.png"
+   "f": "hsr/Character Yunli Eidolon 5.png"
   },
   {
-   "g": "Yunli",
+   "g": "",
    "n": "Character Yunli Eidolon 6",
-   "f": "hsr/Yunli/Character Yunli Eidolon 6.png"
+   "f": "hsr/Character Yunli Eidolon 6.png"
   },
   {
-   "g": "Yunli",
+   "g": "",
    "n": "Character Yunli Portrait",
-   "f": "hsr/Yunli/Character Yunli Portrait.png"
+   "f": "hsr/Character Yunli Portrait.png"
   }
  ],
  "hi3": [

@@ -328,10 +328,13 @@ function drawGal(){
   if(!list.length){box.textContent=galTab==='hi3'?t('noHi3'):t('nothing');return}
   const groups=new Map();list.forEach(e=>{const k=e.g||'';if(!groups.has(k))groups.set(k,[]);groups.get(k).push(e)});
   groups.forEach((arr,g)=>{
-    if(g){const h=document.createElement('h4');h.textContent=g;box.appendChild(h)}
+    let h=null;if(g){h=document.createElement('h4');h.textContent=g;box.appendChild(h)}
     const gr=document.createElement('div');gr.className='ggrid';
     arr.forEach(e=>{const b=document.createElement('button');b.className='gi';b.title=e.n;
-      b.innerHTML='<img loading="lazy" alt=""><span></span>';b.querySelector('img').src=e.u||GAL_DIR+encodeURI(e.f);b.querySelector('span').textContent=e.n;
+      b.innerHTML='<img loading="lazy" alt=""><span></span>';const im=b.querySelector('img');
+      /* file không tồn tại (có trong index.json nhưng chưa upload) -> tự ẩn, nhóm rỗng thì ẩn luôn tiêu đề */
+      im.onerror=()=>{b.remove();if(!gr.children.length){gr.remove();if(h)h.remove();if(!box.querySelector('.gi'))box.textContent=t('nothing')}};
+      im.src=e.u||GAL_DIR+encodeURI(e.f);b.querySelector('span').textContent=e.n;
       b.onclick=()=>{$('#gal').hidden=true;loadUrl(sel,e.u||GAL_DIR+encodeURI(e.f))};gr.appendChild(b)});
     box.appendChild(gr);
   });

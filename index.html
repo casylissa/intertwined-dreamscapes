@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Image Frame Composer</title>
 <style>
-:root{--bg:#120d1f;--panel:#1d1533;--line:#3a2b63;--acc:#8b5cf6;--tx:#ece8ff;--mut:#a79bd0}
+:root{--bg:#120d1f;--panel:#1d1533;--line:#3a2b63;--acc:#8b5cf6;--tx:#ece8ff;--mut:#d4ccf2}
 *{box-sizing:border-box}
 @supports not selector(::-webkit-scrollbar){*{scrollbar-width:thin;scrollbar-color:rgba(167,139,250,.35) transparent}}
 ::-webkit-scrollbar{width:6px;height:6px}
@@ -80,11 +80,11 @@ button.seg.on{background:var(--acc);border-color:#c4b5fd;color:#fff;font-weight:
 .wrap{max-width:1500px;display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:14px;align-items:stretch;align-content:center;min-height:100vh}
 #stage{position:sticky;top:10px;align-self:start;display:flex;justify-content:center;background:#0b0816}
 canvas{width:auto;max-width:100%;max-height:calc(100vh - 20px)}
-.panel{margin-top:0;overflow:auto;contain:size;min-height:0}
+.panel{margin-top:0;overflow:auto;contain:size;min-height:0;background:linear-gradient(rgba(6,3,16,.5),rgba(6,3,16,.5)),rgba(29,21,51,var(--pa,.3))}
 }
 .stats{margin-top:14px;text-align:center;color:var(--mut);font-size:12px}
 .stats b{color:var(--tx);font-weight:600}
-.credit{margin-top:16px;padding-top:10px;border-top:1px solid var(--line);color:var(--mut);font-size:12px;line-height:1.6;text-align:center;opacity:.9}
+.credit{margin-top:16px;padding-top:10px;border-top:1px solid var(--line);color:var(--mut);font-size:12px;line-height:1.6;text-align:center;opacity:1}
 .credit b{color:var(--tx);font-weight:600}
 .gal{position:fixed;inset:0;background:rgba(8,5,16,.82);z-index:50;display:flex;align-items:center;justify-content:center;padding:10px}
 .gal[hidden]{display:none}
@@ -421,8 +421,8 @@ $('#cLogo').onchange=e=>{showLogo=e.target.checked;if(W)render()};
 })();
 applyLang();syncR();
 function placeFx(){const r=document.documentElement.style;
-  if(innerWidth>=900){const a=$('#stage').getBoundingClientRect(),b=$('.panel').getBoundingClientRect();
-    r.setProperty('--ex',((a.right+b.left)/2)+'px');r.setProperty('--ey',((Math.min(a.top,b.top)+Math.max(a.bottom,b.bottom))/2)+'px')}
+  if(innerWidth>=900){const b=$('.panel').getBoundingClientRect();
+    r.setProperty('--ex',((b.left+b.right)/2)+'px');r.setProperty('--ey',((b.top+b.bottom)/2)+'px')}
   else{r.removeProperty('--ex');r.removeProperty('--ey')}}
 addEventListener('resize',placeFx);placeFx();
 let n=0;const done=()=>{if(++n===5)init()};

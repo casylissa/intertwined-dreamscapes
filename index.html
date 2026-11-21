@@ -28,8 +28,8 @@ body{margin:0;background:radial-gradient(1200px 800px at 15% 0%,#3b2480 0%,trans
 @media(prefers-reduced-motion:reduce){#fx *,#em *{animation:none!important}}
 .wrap{position:relative;z-index:1}
 #stage{box-shadow:0 0 0 1px rgba(167,139,250,.35),0 10px 60px rgba(139,92,246,.35)}
-.lang{display:flex;justify-content:flex-end;gap:0;margin-bottom:8px}
-.lang button{padding:5px 12px;font-size:12px;border-radius:0;background:transparent;color:var(--mut)}
+.lang{display:flex;flex:none;gap:0}
+.lang button{padding:10px 12px;font-size:12px;border-radius:0;background:transparent;color:var(--mut)}
 .lang button:first-child{border-radius:8px 0 0 8px}
 .lang button:last-child{border-radius:0 8px 8px 0;border-left:0}
 .lang button.on{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:600}
@@ -92,12 +92,11 @@ canvas{width:auto;max-width:100%;max-height:calc(100vh - 20px)}
 <div class="wrap">
   <div id="stage"><canvas id="cv"></canvas></div>
   <div class="panel">
-    <div class="lang"><button data-l="en">EN</button><button data-l="vi">VI</button></div>
     <div class="row two">
       <button class="pri" id="bTop" data-i="chTop">Choose top image</button>
       <button class="pri" id="bBot" data-i="chBot">Choose bottom image</button>
     </div>
-    <div class="row" style="margin-top:8px"><button class="out" id="bGal" style="width:100%" data-i="gallery">Gallery (HSR / HI3)</button></div>
+    <div class="row" style="margin-top:8px;flex-wrap:nowrap"><div class="lang"><button data-l="en">EN</button><button data-l="vi">VI</button></div><button class="out" id="bGal" style="flex:1;min-width:0" data-i="gallery">Gallery (HSR / HI3)</button></div>
     <div class="selbar"><span data-i="selected">Selected:</span> <b id="selName">Top image</b></div>
     <div class="row" style="margin-top:8px">
       <button id="bFit" data-i="fit">Fit</button>

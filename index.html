@@ -133,8 +133,11 @@ canvas{width:var(--cw,1289px);height:var(--ch,900px);max-width:none;max-height:n
     <label class="nr"><span data-i="botImg">Bottom image</span><input type="range" id="rF1" min="0" max="100" value="0"><b id="vF1">0%</b></label>
     <label class="nr"><span data-i="frame">Frame</span><input type="range" id="rFr" min="0" max="100" value="100"><b id="vFr">100%</b></label>
     <div class="row two" style="margin-top:12px">
-      <button class="out" id="bBlank" data-i="dlBlank">Download blank frame</button>
-      <button class="pri" id="bSave" data-i="dlPng">Download PNG</button>
+      <button class="out" id="bBlank" data-i="dlBlank" style="flex:1 1 auto;font-size:12px">Download blank frame (self-edit)</button>
+      <button class="out" id="bCopy" data-i="copyImg" style="flex:1 1 auto;font-size:12px">Copy combined image</button>
+    </div>
+    <div class="row two" style="margin-top:8px">
+      <button class="pri" id="bSave" data-i="dlPng">Download combined PNG</button>
     </div>
     <div class="stats" id="stats"></div>
     <div class="credit">Thanks to <b>老铁工具包</b> on Xiaohongshu who created the widget “梦境交织生成器 (Dream Weaving Generator)” that gave me this idea.<br>Recreated by <b>Khong simp Kosma doi khong ne</b>. Thanks to <b>Quoc Minh</b> for pulling the assets from the game files.<br>Artwork, frame and characters © miHoYo / HoYoverse; all rights belong to their respective owners. Unofficial, non-commercial fan project, not affiliated with the original author or miHoYo.</div>
@@ -158,8 +161,8 @@ const $=s=>document.querySelector(s);
 const V="?v=1";const ASSET_LOGO="assets/logo.webp"+V;
 const ASSET={"glass": "assets/glass.webp", "deco": "assets/deco.webp", "r1": "assets/r1.webp", "r2": "assets/r2.webp", "s1": "assets/s1.webp", "s2": "assets/s2.webp", "s3": "assets/s3.webp"};for(const k in ASSET)ASSET[k]+=V;
 const I18N={
-en:{gallery:'Gallery (HSR / HI3)',topImg:'Top image',botImg:'Bottom image',fit:'Fit',flip:'Flip',resetAll:'Reset all',resetAllT:'Reset everything for the selected image',reset:'Reset',zoom:'Zoom',rotate:'Rotate',opacity:'Opacity',bright:'Brightness',contrast:'Contrast',sat:'Saturation',hue:'Hue',feather:'Feather border',frame:'Frame',logo:'Logo',dlBlank:'Download blank frame',dlPng:'Download PNG',search:'Search name...',close:'Close',loadInto:'Load into',loading:'Loading...',noHi3:'No HI3 images yet. Add files to gallery/hi3 and list them in gallery/index.json.',nothing:'Nothing here.',loadErr:'Cannot load image: ',title:'Intertwined Dreamscapes',upload:'Upload',visits:'Visits',created:'Images created'},
-vi:{gallery:'Thư viện (HSR / HI3)',topImg:'Ảnh trên',botImg:'Ảnh dưới',fit:'Vừa khung',flip:'Lật',resetAll:'Đặt lại tất cả',resetAllT:'Đặt lại mọi thứ của ảnh đang chọn',reset:'Đặt lại',zoom:'Phóng to',rotate:'Xoay',opacity:'Độ trong suốt',bright:'Độ sáng',contrast:'Tương phản',sat:'Bão hòa',hue:'Sắc độ',feather:'Làm mềm viền',frame:'Khung',logo:'Logo',dlBlank:'Tải khung trống',dlPng:'Tải ảnh PNG',search:'Tìm theo tên...',close:'Đóng',loadInto:'Nạp vào',loading:'Đang tải...',noHi3:'Chưa có ảnh HI3. Thêm file vào gallery/hi3 và khai báo trong gallery/index.json.',nothing:'Chưa có gì ở đây.',loadErr:'Không tải được ảnh: ',title:'Cõi Mộng Đan Xen',upload:'Tải ảnh lên',visits:'Lượt truy cập',created:'Ảnh đã tạo'}
+en:{gallery:'Gallery (HSR / HI3)',topImg:'Top image',botImg:'Bottom image',fit:'Fit',flip:'Flip',resetAll:'Reset all',resetAllT:'Reset everything for the selected image',reset:'Reset',zoom:'Zoom',rotate:'Rotate',opacity:'Opacity',bright:'Brightness',contrast:'Contrast',sat:'Saturation',hue:'Hue',feather:'Feather border',frame:'Frame',logo:'Logo',dlBlank:'Download blank frame (self-edit)',copyImg:'Copy combined image',copied:'Copied!',copyErr:'Copy failed',dlPng:'Download combined PNG',search:'Search name...',close:'Close',loadInto:'Load into',loading:'Loading...',noHi3:'No HI3 images yet. Add files to gallery/hi3 and list them in gallery/index.json.',nothing:'Nothing here.',loadErr:'Cannot load image: ',title:'Intertwined Dreamscapes',upload:'Upload',visits:'Visits',created:'Images created'},
+vi:{gallery:'Thư viện (HSR / HI3)',topImg:'Ảnh trên',botImg:'Ảnh dưới',fit:'Vừa khung',flip:'Lật',resetAll:'Đặt lại tất cả',resetAllT:'Đặt lại mọi thứ của ảnh đang chọn',reset:'Đặt lại',zoom:'Phóng to',rotate:'Xoay',opacity:'Độ trong suốt',bright:'Độ sáng',contrast:'Tương phản',sat:'Bão hòa',hue:'Sắc độ',feather:'Làm mềm viền',frame:'Khung',logo:'Logo',dlBlank:'Tải khung trống (tự edit)',copyImg:'Sao chép ảnh đã ghép',copied:'Đã sao chép',copyErr:'Không sao chép được',dlPng:'Tải ảnh PNG đã ghép',search:'Tìm theo tên...',close:'Đóng',loadInto:'Nạp vào',loading:'Đang tải...',noHi3:'Chưa có ảnh HI3. Thêm file vào gallery/hi3 và khai báo trong gallery/index.json.',nothing:'Chưa có gì ở đây.',loadErr:'Không tải được ảnh: ',title:'Cõi Mộng Đan Xen',upload:'Tải ảnh lên',visits:'Lượt truy cập',created:'Ảnh đã tạo'}
 };
 let LANG='en';
 try{LANG=localStorage.getItem('fc_lang')||''}catch(e){}
@@ -342,7 +345,13 @@ function load(i,f){if(!f||!f.type.startsWith('image/'))return;const r=new FileRe
 $('#rZoom').oninput=e=>{const z=zones[sel];z.s=e.target.value/100*cover(z);$('#vZoom').textContent=e.target.value+'%';render()};
 $('#rRot').oninput=e=>{zones[sel].rot=+e.target.value;$('#vRot').textContent=e.target.value+'°';render()};
 $('#rOp').oninput=e=>{zones[sel].op=e.target.value/100;$('#vOp').textContent=e.target.value+'%';render()};
-$('#bSave').onclick=()=>{render(false);cv.toBlob(b=>{count('downloads');const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='framed.png';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1500);render()},'image/png')};
+/* Xuất ảnh hoàn chỉnh (không có gợi ý +) thành PNG blob */
+const exportBlob=()=>new Promise(res=>{render(false);cv.toBlob(b=>{render();res(b)},'image/png')});
+$('#bSave').onclick=()=>exportBlob().then(b=>{count('downloads');const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='framed.png';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1500)});
+/* Copy ảnh vào clipboard (cần https/localhost); đổi chữ nút 1.5s để báo kết quả */
+$('#bCopy').onclick=async e=>{const btn=e.currentTarget;
+  let k='copied';try{await navigator.clipboard.write([new ClipboardItem({'image/png':exportBlob()})])}catch(err){k='copyErr'}
+  btn.textContent=t(k);clearTimeout(btn._t);btn._t=setTimeout(()=>btn.textContent=t('copyImg'),1500)};
 
 [0,1].forEach(i=>$('#rF'+i).oninput=e=>{const q=zones[i];if(!q||!q.img)return;q.fe=+e.target.value;$('#vF'+i).textContent=q.fe+'%';render()});
 $('#rFr').oninput=e=>{frT=e.target.value/100;$('#vFr').textContent=e.target.value+'%';render()};

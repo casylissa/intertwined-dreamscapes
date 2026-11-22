@@ -51,7 +51,7 @@ canvas{width:100%;height:auto;display:block;touch-action:none}
 .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 button{background:#2a1f4a;color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:9px 14px;font:inherit;cursor:pointer}
 button.pri{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:600}
-label{display:flex;align-items:center;gap:8px;color:var(--mut);margin-top:10px;min-width:0}
+label{display:flex;align-items:center;gap:8px;color:var(--mut);margin-top:8px;min-width:0;height:26px;flex:none}
 label span{width:104px;flex:none;white-space:nowrap}
 label b{flex:none;min-width:40px;text-align:right;color:var(--tx);font-weight:500}
 input[type=range]{-webkit-appearance:none;appearance:none;flex:1;min-width:0;width:100%;height:6px;margin:0;border-radius:99px;outline:none;cursor:pointer;background:linear-gradient(90deg,var(--acc) var(--p,50%),rgba(255,255,255,.2) var(--p,50%))}
@@ -64,25 +64,34 @@ button.seg:hover{color:var(--tx)}
 button.seg.on{background:var(--acc);border-color:#c4b5fd;color:#fff;font-weight:600;box-shadow:0 0 0 1px rgba(196,181,253,.6),0 0 18px rgba(139,92,246,.75)}
 .row4{gap:6px}.row4 button{padding:9px 10px;white-space:nowrap;flex:none}.row4 .chk{flex:none;white-space:nowrap}.row4 .chk span{white-space:nowrap!important}
 .row3 button{padding:10px 8px;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
-.sec{margin-top:14px;color:var(--mut);font-size:13px}
+.sec{margin-top:8px;height:26px;display:flex;align-items:center;color:var(--mut);font-size:13px}
 .two{flex-wrap:nowrap}
 .two button{flex:1 1 0;min-width:0;padding:10px 6px;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.acc{margin-top:12px;border-top:1px solid var(--line);padding-top:8px}
+.acc{margin-top:0;padding-top:0}
 .acc summary{cursor:pointer;color:var(--tx);padding:6px 0;font-weight:600;display:flex;align-items:center;justify-content:space-between;list-style:none}
 .acc summary::-webkit-details-marker{display:none}
 .acc .t::before{content:'\25B8  '}
 .acc[open] .t::before{content:'\25BE  '}
 .hd{display:flex;align-items:center;justify-content:space-between}
-.ic{padding:5px 7px;line-height:0;border-radius:8px;flex:none}
+.ic{width:26px;height:26px;padding:0;display:grid;place-items:center;line-height:0;border-radius:8px;flex:none}
+.ic svg{width:12px;height:12px;display:block}
 #bAll{display:inline-flex;align-items:center;gap:6px}
 .selbar{margin-top:12px;color:var(--mut);font-size:13px}
 .selbar b{color:var(--tx);font-weight:600}
 .nr{padding-right:36px}
 @media(min-width:900px){
-.wrap{max-width:1500px;display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:14px;align-items:stretch;align-content:center;min-height:100vh}
-#stage{position:sticky;top:10px;align-self:start;display:flex;justify-content:center;background:#0b0816}
-canvas{width:auto;max-width:100%;max-height:calc(100vh - 20px)}
-.panel{margin-top:0;overflow:auto;contain:size;min-height:0;background:linear-gradient(rgba(6,3,16,.5),rgba(6,3,16,.5)),rgba(29,21,51,var(--pa,.3))}
+html,body{overflow:hidden;height:100%}
+.wrap{position:absolute;left:50%;top:50%;max-width:none;margin:0;padding:0;width:calc(var(--cw,1289px) + 14px + 400px);min-height:var(--ch,900px);display:grid;grid-template-columns:var(--cw,1289px) 400px;gap:14px;align-items:center;transform:translate(-50%,-50%) scale(var(--sc,1));transform-origin:center center}
+#stage{display:block;background:#0b0816;width:var(--cw,1289px);height:var(--ch,900px)}
+canvas{width:var(--cw,1289px);height:var(--ch,900px);max-width:none;max-height:none}
+.panel{margin-top:0;min-height:var(--ch,900px);overflow:visible;display:flex;flex-direction:column;background:linear-gradient(rgba(6,3,16,.5),rgba(6,3,16,.5)),rgba(29,21,51,var(--pa,.3))}
+.panel>*{flex:none}
+.panel label{margin-top:var(--g,8px);height:26px;min-height:0;flex:none}
+.sec{margin-top:var(--g,8px);height:26px;display:flex;align-items:center}
+.ic{width:26px;height:26px;padding:0;display:grid;place-items:center;line-height:0}
+.ic svg{width:12px;height:12px;display:block}
+.credit{font-size:11px;line-height:1.45;margin-top:auto;padding-top:8px}
+.stats{margin-top:12px;margin-bottom:12px}
 }
 .stats{margin-top:14px;text-align:center;color:var(--mut);font-size:12px}
 .stats b{color:var(--tx);font-weight:600}
@@ -123,18 +132,17 @@ canvas{width:auto;max-width:100%;max-height:calc(100vh - 20px)}
     <label><span data-i="zoom">Zoom</span><input type="range" id="rZoom" min="20" max="400" value="100"><b id="vZoom">100%</b></label>
     <label><span data-i="rotate">Rotate</span><input type="range" id="rRot" min="-180" max="180" value="0"><b id="vRot">0°</b></label>
     <label><span data-i="opacity">Opacity</span><input type="range" id="rOp" min="0" max="100" value="75"><b id="vOp">75%</b></label>
-    <details class="acc"><summary><span class="t" data-i="adjust">Adjust</span></summary>
+    <div class="acc">
       <label><span data-i="bright">Brightness</span><input type="range" id="a_br" min="0" max="200" value="100"><b id="v_br">100%</b></label>
       <label><span data-i="contrast">Contrast</span><input type="range" id="a_co" min="0" max="200" value="100"><b id="v_co">100%</b></label>
       <label><span data-i="sat">Saturation</span><input type="range" id="a_sa" min="0" max="200" value="100"><b id="v_sa">100%</b></label>
       <label><span data-i="hue">Hue</span><input type="range" id="a_hu" min="-180" max="180" value="0"><b id="v_hu">0°</b></label>
-      <label><span data-i="blur">Blur</span><input type="range" id="a_bl" min="0" max="20" value="0"><b id="v_bl">0</b></label>
-    </details>
+    </div>
     <div class="sec" data-i="feather">Feather border</div>
-    <label class="nr"><span data-i="top">Top</span><input type="range" id="rF0" min="0" max="100" value="0"><b id="vF0">0%</b></label>
-    <label class="nr"><span data-i="bottom">Bottom</span><input type="range" id="rF1" min="0" max="100" value="0"><b id="vF1">0%</b></label>
+    <label class="nr"><span data-i="topImg">Top image</span><input type="range" id="rF0" min="0" max="100" value="0"><b id="vF0">0%</b></label>
+    <label class="nr"><span data-i="botImg">Bottom image</span><input type="range" id="rF1" min="0" max="100" value="0"><b id="vF1">0%</b></label>
     <label class="nr"><span data-i="frame">Frame</span><input type="range" id="rFr" min="0" max="100" value="100"><b id="vFr">100%</b></label>
-    <div class="row two" style="margin-top:14px">
+    <div class="row two" style="margin-top:12px">
       <button class="out" id="bBlank" data-i="dlBlank">Download blank frame</button>
       <button class="pri" id="bSave" data-i="dlPng">Download PNG</button>
     </div>
@@ -161,7 +169,7 @@ const V="?v=1";const ASSET_LOGO="assets/logo.webp"+V;
 const ASSET={"glass": "assets/glass.webp", "deco": "assets/deco.webp", "r1": "assets/r1.webp", "r2": "assets/r2.webp", "s1": "assets/s1.webp", "s2": "assets/s2.webp", "s3": "assets/s3.webp"};for(const k in ASSET)ASSET[k]+=V;
 const I18N={
 en:{chTop:'Choose top image',chBot:'Choose bottom image',gallery:'Gallery (HSR / HI3)',selected:'Selected:',topImg:'Top image',botImg:'Bottom image',fit:'Fit',flip:'Flip',resetAll:'Reset all',resetAllT:'Reset everything for the selected image',reset:'Reset',zoom:'Zoom',rotate:'Rotate',opacity:'Opacity',adjust:'Adjust',bright:'Brightness',contrast:'Contrast',sat:'Saturation',hue:'Hue',blur:'Blur',feather:'Feather border',top:'Top',bottom:'Bottom',frame:'Frame',logo:'Logo',dlBlank:'Download blank frame',dlPng:'Download PNG',search:'Search name...',close:'Close',loadInto:'Load into',loading:'Loading...',noHi3:'No HI3 images yet. Add files to gallery/hi3 and list them in gallery/index.json.',nothing:'Nothing here.',loadErr:'Cannot load image: ',title:'Intertwined Dreamscapes',upload:'Upload',visits:'Visits',created:'Images created'},
-vi:{chTop:'Chọn ảnh trên',chBot:'Chọn ảnh dưới',gallery:'Thư viện (HSR / HI3)',selected:'Đang chọn:',topImg:'Ảnh trên',botImg:'Ảnh dưới',fit:'Vừa khung',flip:'Lật',resetAll:'Đặt lại tất cả',resetAllT:'Đặt lại mọi thứ của ảnh đang chọn',reset:'Đặt lại',zoom:'Phóng to',rotate:'Xoay',opacity:'Độ trong suốt',adjust:'Chỉnh màu',bright:'Độ sáng',contrast:'Tương phản',sat:'Bão hòa',hue:'Sắc độ',blur:'Làm nhòe',feather:'Làm mờ viền',top:'Trên',bottom:'Dưới',frame:'Khung',logo:'Logo',dlBlank:'Tải khung trống',dlPng:'Tải ảnh PNG',search:'Tìm theo tên...',close:'Đóng',loadInto:'Nạp vào',loading:'Đang tải...',noHi3:'Chưa có ảnh HI3. Thêm file vào gallery/hi3 và khai báo trong gallery/index.json.',nothing:'Chưa có gì ở đây.',loadErr:'Không tải được ảnh: ',title:'Cõi Mộng Đan Xen',upload:'Tải ảnh lên',visits:'Lượt truy cập',created:'Ảnh đã tạo'}
+vi:{chTop:'Chọn ảnh trên',chBot:'Chọn ảnh dưới',gallery:'Thư viện (HSR / HI3)',selected:'Đang chọn:',topImg:'Ảnh trên',botImg:'Ảnh dưới',fit:'Vừa khung',flip:'Lật',resetAll:'Đặt lại tất cả',resetAllT:'Đặt lại mọi thứ của ảnh đang chọn',reset:'Đặt lại',zoom:'Phóng to',rotate:'Xoay',opacity:'Độ trong suốt',adjust:'Chỉnh màu',bright:'Độ sáng',contrast:'Tương phản',sat:'Bão hòa',hue:'Sắc độ',blur:'Làm nhòe',feather:'Làm mềm viền',top:'Trên',bottom:'Dưới',frame:'Khung',logo:'Logo',dlBlank:'Tải khung trống',dlPng:'Tải ảnh PNG',search:'Tìm theo tên...',close:'Đóng',loadInto:'Nạp vào',loading:'Đang tải...',noHi3:'Chưa có ảnh HI3. Thêm file vào gallery/hi3 và khai báo trong gallery/index.json.',nothing:'Chưa có gì ở đây.',loadErr:'Không tải được ảnh: ',title:'Cõi Mộng Đan Xen',upload:'Tải ảnh lên',visits:'Lượt truy cập',created:'Ảnh đã tạo'}
 };
 let LANG='en';
 try{LANG=localStorage.getItem('fc_lang')||''}catch(e){}
@@ -189,7 +197,7 @@ let W=0,H=0,N=0,lab=null,zones=[],sel=0;
 const tc=document.createElement('canvas'),tx=tc.getContext('2d');
 
 function init(){
-  W=cv.width=tc.width=mc0.width=frame.naturalWidth;H=cv.height=tc.height=mc0.height=frame.naturalHeight;
+  W=cv.width=tc.width=mc0.width=frame.naturalWidth;H=cv.height=tc.height=mc0.height=frame.naturalHeight;{const r=document.documentElement.style;r.setProperty('--cw',W+'px');r.setProperty('--ch',H+'px')}
   {const c2=document.createElement('canvas');c2.width=W;c2.height=H;const x2=c2.getContext('2d');x2.drawImage(lab2Img,0,0,W,H);lab=lab2=x2.getImageData(0,0,W,H).data}
   for(let i=0;i<W*H;i++){const v=Math.round(lab[i*4]/100);if(v>N)N=v}
   zones=[];
@@ -285,12 +293,12 @@ function ui(){
   $('#vZoom').textContent=$('#rZoom').value+'%';$('#vRot').textContent=$('#rRot').value+'°';$('#vOp').textContent=$('#rOp').value+'%';
   syncR();render();
 }
-const ADJ=[['br','%'],['co','%'],['sa','%'],['hu','°'],['bl','']];
+const ADJ=[['br','%'],['co','%'],['sa','%'],['hu','°']];
 ADJ.forEach(([k,u])=>$('#a_'+k).oninput=e=>{const z=zones[sel];if(!z||!z.img)return;z[k]=+e.target.value;$('#v_'+k).textContent=e.target.value+u;render()});
 const ADJ0={br:100,co:100,sa:100,hu:0,bl:0};
 const withImg=fn=>e=>{if(e){e.preventDefault();e.stopPropagation()}const z=zones[sel];if(z&&z.img){fn(z);ui()}};
 const IC='<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>';
-const RS={rZoom:z=>{const x=z.cx,y=z.cy;fit(z);z.cx=x;z.cy=y},rRot:z=>{z.rot=0},rOp:z=>{z.op=.75},a_br:z=>{z.br=100},a_co:z=>{z.co=100},a_sa:z=>{z.sa=100},a_hu:z=>{z.hu=0},a_bl:z=>{z.bl=0}};
+const RS={rZoom:z=>{const x=z.cx,y=z.cy;fit(z);z.cx=x;z.cy=y},rRot:z=>{z.rot=0},rOp:z=>{z.op=.75},a_br:z=>{z.br=100},a_co:z=>{z.co=100},a_sa:z=>{z.sa=100},a_hu:z=>{z.hu=0}};
 Object.entries(RS).forEach(([id,fn])=>{const b=document.createElement('button');b.className='ic rb';b.title=t('reset');b.innerHTML=IC;b.onclick=withImg(fn);$('#'+id).closest('label').appendChild(b)});
 $('#bAll').onclick=withImg(z=>{Object.assign(z,ADJ0);z.fe=0;z.rot=0;z.fl=1;z.op=.75;fit(z)});
 let pickIdx=0;
@@ -419,7 +427,14 @@ $('#cLogo').onchange=e=>{showLogo=e.target.checked;if(W)render()};
   img(ASSET_LOGO,layer('tx'));
 })();
 applyLang();syncR();
-function placeFx(){const r=document.documentElement.style;
+function fitPc(){const r=document.documentElement.style;
+  if(innerWidth>=900){
+    {const pn=$('.panel'),n=pn.querySelectorAll('label:not(.chk)').length+1;
+     r.setProperty('--g','8px');pn.style.minHeight='0';const nat=pn.offsetHeight;pn.style.minHeight='';
+     const slack=(H||900)-nat;r.setProperty('--g',Math.max(8,Math.min(24,8+slack/n))+'px')}const w=$('.wrap'),dw=w.offsetWidth,ch=w.offsetHeight;
+    r.setProperty('--sc',Math.min(1,(innerWidth-20)/dw,(innerHeight-20)/ch))}
+  else{r.removeProperty('--sc');r.removeProperty('--g')}}
+function placeFx(){fitPc();const r=document.documentElement.style;
   if(innerWidth>=900){const b=$('.panel').getBoundingClientRect();
     r.setProperty('--ex',((b.left+b.right)/2)+'px');r.setProperty('--ey',((b.top+b.bottom)/2)+'px')}
   else{r.removeProperty('--ex');r.removeProperty('--ey')}}

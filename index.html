@@ -6,7 +6,9 @@
 <title>Intertwined Dreamscapes</title>
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=1">
 <style>
-:root{--bg:#120d1f;--panel:#1d1533;--line:#3a2b63;--acc:#8b5cf6;--tx:#ece8ff;--mut:#d4ccf2}
+:root{--bg:#120d1f;--panel:#1d1533;--line:#3a2b63;--acc:#8b5cf6;--tx:#ece8ff;--mut:#d4ccf2;
+--row:26px;/* chiều cao mọi dòng thanh trượt + nút reset */
+--g:8px;/* khoảng cách giữa các dòng; trên PC được JS (fitPc) kéo giãn cho vừa khung */}
 *{box-sizing:border-box}
 @supports not selector(::-webkit-scrollbar){*{scrollbar-width:thin;scrollbar-color:rgba(167,139,250,.35) transparent}}
 ::-webkit-scrollbar{width:6px;height:6px}
@@ -51,7 +53,7 @@ canvas{width:100%;height:auto;display:block;touch-action:none}
 .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 button{background:#2a1f4a;color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:9px 14px;font:inherit;cursor:pointer}
 button.pri{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:600}
-label{display:flex;align-items:center;gap:8px;color:var(--mut);margin-top:8px;min-width:0;height:26px;flex:none}
+label{display:flex;align-items:center;gap:8px;color:var(--mut);margin-top:var(--g);min-width:0;height:var(--row);flex:none}
 label span{width:104px;flex:none;white-space:nowrap}
 label b{flex:none;min-width:40px;text-align:right;color:var(--tx);font-weight:500}
 input[type=range]{-webkit-appearance:none;appearance:none;flex:1;min-width:0;width:100%;height:6px;margin:0;border-radius:99px;outline:none;cursor:pointer;background:linear-gradient(90deg,var(--acc) var(--p,50%),rgba(255,255,255,.2) var(--p,50%))}
@@ -64,32 +66,22 @@ button.seg:hover{color:var(--tx)}
 button.seg.on{background:var(--acc);border-color:#c4b5fd;color:#fff;font-weight:600;box-shadow:0 0 0 1px rgba(196,181,253,.6),0 0 18px rgba(139,92,246,.75)}
 .row4{gap:6px}.row4 button{padding:9px 10px;white-space:nowrap;flex:none}.row4 .chk{flex:none;white-space:nowrap}.row4 .chk span{white-space:nowrap!important}
 .row3 button{padding:10px 8px;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
-.sec{margin-top:8px;height:26px;display:flex;align-items:center;color:var(--mut);font-size:13px}
+.sec{margin-top:var(--g);height:var(--row);display:flex;align-items:center;justify-content:center;color:var(--tx);font-size:15px;font-weight:600}
 .two{flex-wrap:nowrap}
 .two button{flex:1 1 0;min-width:0;padding:10px 6px;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.acc{margin-top:0;padding-top:0}
-.acc summary{cursor:pointer;color:var(--tx);padding:6px 0;font-weight:600;display:flex;align-items:center;justify-content:space-between;list-style:none}
-.acc summary::-webkit-details-marker{display:none}
-.acc .t::before{content:'\25B8  '}
-.acc[open] .t::before{content:'\25BE  '}
-.hd{display:flex;align-items:center;justify-content:space-between}
-.ic{width:26px;height:26px;padding:0;display:grid;place-items:center;line-height:0;border-radius:8px;flex:none}
+.ic{width:var(--row);height:var(--row);padding:0;display:grid;place-items:center;line-height:0;border-radius:8px;flex:none}
 .ic svg{width:12px;height:12px;display:block}
 #bAll{display:inline-flex;align-items:center;gap:6px}
-.selbar{margin-top:12px;color:var(--mut);font-size:13px}
-.selbar b{color:var(--tx);font-weight:600}
-.nr{padding-right:36px}
+.nr{padding-right:calc(var(--row) + 8px)}/* chừa chỗ cho nút reset để thanh trượt thẳng hàng */
+/* ===== PC: bố cục cố định cỡ ảnh khung (--cw x --ch) + cột phải 400px, cả khối được scale (--sc) cho vừa màn hình ===== */
 @media(min-width:900px){
 html,body{overflow:hidden;height:100%}
 .wrap{position:absolute;left:50%;top:50%;max-width:none;margin:0;padding:0;width:calc(var(--cw,1289px) + 14px + 400px);min-height:var(--ch,900px);display:grid;grid-template-columns:var(--cw,1289px) 400px;gap:14px;align-items:center;transform:translate(-50%,-50%) scale(var(--sc,1));transform-origin:center center}
 #stage{display:block;background:#0b0816;width:var(--cw,1289px);height:var(--ch,900px)}
 canvas{width:var(--cw,1289px);height:var(--ch,900px);max-width:none;max-height:none}
-.panel{margin-top:0;min-height:var(--ch,900px);overflow:visible;display:flex;flex-direction:column;background:linear-gradient(rgba(6,3,16,.5),rgba(6,3,16,.5)),rgba(29,21,51,var(--pa,.3))}
+.panel{margin-top:0;min-height:var(--ch,900px);display:flex;flex-direction:column;background:linear-gradient(rgba(6,3,16,.5),rgba(6,3,16,.5)),rgba(29,21,51,var(--pa,.3))}
 .panel>*{flex:none}
-.panel label{margin-top:var(--g,8px);height:26px;min-height:0;flex:none}
-.sec{margin-top:var(--g,8px);height:26px;display:flex;align-items:center}
-.ic{width:26px;height:26px;padding:0;display:grid;place-items:center;line-height:0}
-.ic svg{width:12px;height:12px;display:block}
+.ic svg{width:12px;height:12px}
 .credit{font-size:11px;line-height:1.45;margin-top:auto;padding-top:8px}
 .stats{margin-top:12px;margin-bottom:12px}
 }
@@ -132,12 +124,10 @@ canvas{width:var(--cw,1289px);height:var(--ch,900px);max-width:none;max-height:n
     <label><span data-i="zoom">Zoom</span><input type="range" id="rZoom" min="20" max="400" value="100"><b id="vZoom">100%</b></label>
     <label><span data-i="rotate">Rotate</span><input type="range" id="rRot" min="-180" max="180" value="0"><b id="vRot">0°</b></label>
     <label><span data-i="opacity">Opacity</span><input type="range" id="rOp" min="0" max="100" value="75"><b id="vOp">75%</b></label>
-    <div class="acc">
-      <label><span data-i="bright">Brightness</span><input type="range" id="a_br" min="0" max="200" value="100"><b id="v_br">100%</b></label>
+          <label><span data-i="bright">Brightness</span><input type="range" id="a_br" min="0" max="200" value="100"><b id="v_br">100%</b></label>
       <label><span data-i="contrast">Contrast</span><input type="range" id="a_co" min="0" max="200" value="100"><b id="v_co">100%</b></label>
       <label><span data-i="sat">Saturation</span><input type="range" id="a_sa" min="0" max="200" value="100"><b id="v_sa">100%</b></label>
       <label><span data-i="hue">Hue</span><input type="range" id="a_hu" min="-180" max="180" value="0"><b id="v_hu">0°</b></label>
-    </div>
     <div class="sec" data-i="feather">Feather border</div>
     <label class="nr"><span data-i="topImg">Top image</span><input type="range" id="rF0" min="0" max="100" value="0"><b id="vF0">0%</b></label>
     <label class="nr"><span data-i="botImg">Bottom image</span><input type="range" id="rF1" min="0" max="100" value="0"><b id="vF1">0%</b></label>
@@ -147,7 +137,7 @@ canvas{width:var(--cw,1289px);height:var(--ch,900px);max-width:none;max-height:n
       <button class="pri" id="bSave" data-i="dlPng">Download PNG</button>
     </div>
     <div class="stats" id="stats"></div>
-    <div class="credit">Thanks to <b>老铁工具包</b> on Xiaohongshu for the widget “梦境交织生成器 (Dream Weaving Generator)” idea.<br>Recreated by <b>Khong simp Kosma doi khong ne</b>. Thanks to <b>Quoc Minh</b> for pulling the assets from the game files.<br>Artwork, frame and characters © miHoYo / HoYoverse; all rights belong to their respective owners. Unofficial, non-commercial fan project, not affiliated with the original author or miHoYo.</div>
+    <div class="credit">Thanks to <b>老铁工具包</b> on Xiaohongshu who created the widget “梦境交织生成器 (Dream Weaving Generator)” that gave me this idea.<br>Recreated by <b>Khong simp Kosma doi khong ne</b>. Thanks to <b>Quoc Minh</b> for pulling the assets from the game files.<br>Artwork, frame and characters © miHoYo / HoYoverse; all rights belong to their respective owners. Unofficial, non-commercial fan project, not affiliated with the original author or miHoYo.</div>
   </div>
 </div>
 <input type="file" id="fImg" accept="image/*" hidden>
@@ -156,7 +146,7 @@ canvas{width:var(--cw,1289px);height:var(--ch,900px);max-width:none;max-height:n
     <div class="ghd">
       <button id="gT_hsr">HSR</button><button id="gT_hi3">HI3</button>
       <input id="gQ" type="search" data-ph="search" placeholder="Search name...">
-      <span class="mut" id="gTarget" style="color:var(--mut);font-size:12px"></span>
+      <span id="gTarget" style="color:var(--mut);font-size:12px"></span>
       <button id="gX" data-i="close">Close</button>
     </div>
     <div class="gbody" id="gBody"></div>
@@ -168,8 +158,8 @@ const $=s=>document.querySelector(s);
 const V="?v=1";const ASSET_LOGO="assets/logo.webp"+V;
 const ASSET={"glass": "assets/glass.webp", "deco": "assets/deco.webp", "r1": "assets/r1.webp", "r2": "assets/r2.webp", "s1": "assets/s1.webp", "s2": "assets/s2.webp", "s3": "assets/s3.webp"};for(const k in ASSET)ASSET[k]+=V;
 const I18N={
-en:{chTop:'Choose top image',chBot:'Choose bottom image',gallery:'Gallery (HSR / HI3)',selected:'Selected:',topImg:'Top image',botImg:'Bottom image',fit:'Fit',flip:'Flip',resetAll:'Reset all',resetAllT:'Reset everything for the selected image',reset:'Reset',zoom:'Zoom',rotate:'Rotate',opacity:'Opacity',adjust:'Adjust',bright:'Brightness',contrast:'Contrast',sat:'Saturation',hue:'Hue',blur:'Blur',feather:'Feather border',top:'Top',bottom:'Bottom',frame:'Frame',logo:'Logo',dlBlank:'Download blank frame',dlPng:'Download PNG',search:'Search name...',close:'Close',loadInto:'Load into',loading:'Loading...',noHi3:'No HI3 images yet. Add files to gallery/hi3 and list them in gallery/index.json.',nothing:'Nothing here.',loadErr:'Cannot load image: ',title:'Intertwined Dreamscapes',upload:'Upload',visits:'Visits',created:'Images created'},
-vi:{chTop:'Chọn ảnh trên',chBot:'Chọn ảnh dưới',gallery:'Thư viện (HSR / HI3)',selected:'Đang chọn:',topImg:'Ảnh trên',botImg:'Ảnh dưới',fit:'Vừa khung',flip:'Lật',resetAll:'Đặt lại tất cả',resetAllT:'Đặt lại mọi thứ của ảnh đang chọn',reset:'Đặt lại',zoom:'Phóng to',rotate:'Xoay',opacity:'Độ trong suốt',adjust:'Chỉnh màu',bright:'Độ sáng',contrast:'Tương phản',sat:'Bão hòa',hue:'Sắc độ',blur:'Làm nhòe',feather:'Làm mềm viền',top:'Trên',bottom:'Dưới',frame:'Khung',logo:'Logo',dlBlank:'Tải khung trống',dlPng:'Tải ảnh PNG',search:'Tìm theo tên...',close:'Đóng',loadInto:'Nạp vào',loading:'Đang tải...',noHi3:'Chưa có ảnh HI3. Thêm file vào gallery/hi3 và khai báo trong gallery/index.json.',nothing:'Chưa có gì ở đây.',loadErr:'Không tải được ảnh: ',title:'Cõi Mộng Đan Xen',upload:'Tải ảnh lên',visits:'Lượt truy cập',created:'Ảnh đã tạo'}
+en:{gallery:'Gallery (HSR / HI3)',topImg:'Top image',botImg:'Bottom image',fit:'Fit',flip:'Flip',resetAll:'Reset all',resetAllT:'Reset everything for the selected image',reset:'Reset',zoom:'Zoom',rotate:'Rotate',opacity:'Opacity',bright:'Brightness',contrast:'Contrast',sat:'Saturation',hue:'Hue',feather:'Feather border',frame:'Frame',logo:'Logo',dlBlank:'Download blank frame',dlPng:'Download PNG',search:'Search name...',close:'Close',loadInto:'Load into',loading:'Loading...',noHi3:'No HI3 images yet. Add files to gallery/hi3 and list them in gallery/index.json.',nothing:'Nothing here.',loadErr:'Cannot load image: ',title:'Intertwined Dreamscapes',upload:'Upload',visits:'Visits',created:'Images created'},
+vi:{gallery:'Thư viện (HSR / HI3)',topImg:'Ảnh trên',botImg:'Ảnh dưới',fit:'Vừa khung',flip:'Lật',resetAll:'Đặt lại tất cả',resetAllT:'Đặt lại mọi thứ của ảnh đang chọn',reset:'Đặt lại',zoom:'Phóng to',rotate:'Xoay',opacity:'Độ trong suốt',bright:'Độ sáng',contrast:'Tương phản',sat:'Bão hòa',hue:'Sắc độ',feather:'Làm mềm viền',frame:'Khung',logo:'Logo',dlBlank:'Tải khung trống',dlPng:'Tải ảnh PNG',search:'Tìm theo tên...',close:'Đóng',loadInto:'Nạp vào',loading:'Đang tải...',noHi3:'Chưa có ảnh HI3. Thêm file vào gallery/hi3 và khai báo trong gallery/index.json.',nothing:'Chưa có gì ở đây.',loadErr:'Không tải được ảnh: ',title:'Cõi Mộng Đan Xen',upload:'Tải ảnh lên',visits:'Lượt truy cập',created:'Ảnh đã tạo'}
 };
 let LANG='en';
 try{LANG=localStorage.getItem('fc_lang')||''}catch(e){}
@@ -194,6 +184,7 @@ let frT=1;
 const ZB=[[0, 17, 1280, 601], [0, 187, 1280, 876]];
 const ZC=[[403, 224], [782, 652]];
 let W=0,H=0,N=0,lab=null,zones=[],sel=0;
+const ADJ0={br:100,co:100,sa:100,hu:0};/* giá trị mặc định của các thanh chỉnh màu */
 const tc=document.createElement('canvas'),tx=tc.getContext('2d');
 
 function init(){
@@ -207,7 +198,7 @@ function init(){
     const d2=m2x.createImageData(W,H);
     for(let i=0;i<W*H;i++)if(Math.round(lab2[i*4]/100)===k)d2.data[i*4+3]=255;
     m2x.putImageData(d2,0,0);
-    zones.push({mask2:m2,bb:{x0,y0,x1,y1},img:null,cx:0,cy:0,s:1,rot:0,op:.75,fl:1,fe:0,fc:null,fk:'',br:100,co:100,sa:100,hu:0,bl:0});
+    zones.push({mask2:m2,bb:{x0,y0,x1,y1},img:null,cx:0,cy:0,s:1,rot:0,op:.75,fl:1,fe:0,fc:null,fk:'',...ADJ0});
   }
   buildOuter();
   ui();placeFx();
@@ -215,13 +206,13 @@ function init(){
 function zoneAt(x,y){x=Math.round(x);y=Math.round(y);if(x<0||y<0||x>=W||y>=H)return -1;return Math.round(lab[(y*W+x)*4]/100)-1}
 const cover=z=>Math.max(Math.max(...zones.map(q=>q.bb.x1-q.bb.x0))/z.img.width,Math.max(...zones.map(q=>q.bb.y1-q.bb.y0))/z.img.height);
 function src(z){
-  const adj=z.br!==100||z.co!==100||z.sa!==100||z.hu!==0||z.bl>0;
+  const adj=z.br!==100||z.co!==100||z.sa!==100||z.hu!==0;
   const iw=z.img.width,ih=z.img.height,sc=Math.min(1,2400/Math.max(iw,ih));
   const f=Math.round(z.fe/100*.5*Math.min(iw,ih)*sc);
   if(f<1&&!adj)return z.img;
-  const k=[f,z.br,z.co,z.sa,z.hu,z.bl].join('|');if(z.fc&&z.fk===k)return z.fc;
+  const k=[f,z.br,z.co,z.sa,z.hu].join('|');if(z.fc&&z.fk===k)return z.fc;
   const w=Math.round(iw*sc),h=Math.round(ih*sc),c=document.createElement('canvas');c.width=w;c.height=h;const x=c.getContext('2d');
-  if(adj&&'filter' in x){x.filter=`brightness(${z.br}%) contrast(${z.co}%) saturate(${z.sa}%) hue-rotate(${z.hu}deg) blur(${(z.bl*Math.min(w,h)/1000).toFixed(2)}px)`;x.drawImage(z.img,0,0,w,h);x.filter='none'}
+  if(adj&&'filter' in x){x.filter=`brightness(${z.br}%) contrast(${z.co}%) saturate(${z.sa}%) hue-rotate(${z.hu}deg)`;x.drawImage(z.img,0,0,w,h);x.filter='none'}
   else{x.drawImage(z.img,0,0,w,h);
     if(adj){const d=x.getImageData(0,0,w,h),p=d.data,B=z.br/100,C=z.co/100,S=z.sa/100;
       for(let i=0;i<p.length;i+=4){let r=p[i]*B,g=p[i+1]*B,b=p[i+2]*B;const l=.299*r+.587*g+.114*b;
@@ -295,7 +286,6 @@ function ui(){
 }
 const ADJ=[['br','%'],['co','%'],['sa','%'],['hu','°']];
 ADJ.forEach(([k,u])=>$('#a_'+k).oninput=e=>{const z=zones[sel];if(!z||!z.img)return;z[k]=+e.target.value;$('#v_'+k).textContent=e.target.value+u;render()});
-const ADJ0={br:100,co:100,sa:100,hu:0,bl:0};
 const withImg=fn=>e=>{if(e){e.preventDefault();e.stopPropagation()}const z=zones[sel];if(z&&z.img){fn(z);ui()}};
 const IC='<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>';
 const RS={rZoom:z=>{const x=z.cx,y=z.cy;fit(z);z.cx=x;z.cy=y},rRot:z=>{z.rot=0},rOp:z=>{z.op=.75},a_br:z=>{z.br=100},a_co:z=>{z.co=100},a_sa:z=>{z.sa=100},a_hu:z=>{z.hu=0}};
@@ -308,9 +298,9 @@ $('#bUp').onclick=()=>{pickIdx=sel;$('#fImg').click()};
 function syncR(e){(e?[e]:document.querySelectorAll('input[type=range]')).forEach(r=>r.style.setProperty('--p',((r.value-r.min)/(r.max-r.min)*100)+'%'))}
 document.addEventListener('input',e=>{if(e.target.type==='range')syncR(e.target)});
 $('#fImg').onchange=e=>{const f=e.target.files[0];e.target.value='';load(pickIdx,f)};
+function setImage(i,im){const z=zones[i];z.img=im;z.fc=null;Object.assign(z,ADJ0);z.rot=0;z.fl=1;fit(z);sel=i;ui()}
 function loadUrl(i,url){const im=new Image();im.crossOrigin='anonymous';
-  im.onload=()=>{const z=zones[i];z.img=im;z.fc=null;Object.assign(z,{br:100,co:100,sa:100,hu:0,bl:0});z.rot=0;z.fl=1;fit(z);sel=i;ui()};
-  im.onerror=()=>alert(t('loadErr')+url);im.src=url}
+  im.onload=()=>setImage(i,im);im.onerror=()=>alert(t('loadErr')+url);im.src=url}
 /* ===== Gallery: reads gallery/index.json =====
    { "hsr":[{"g":"Aha","n":"Aha Eidolon 1","f":"hsr/Aha/Aha Eidolon 1.png"}], "hi3":[...] }
    f is a path relative to the gallery/ folder. */
@@ -348,7 +338,7 @@ $('#gal').onclick=e=>{if(e.target.id==='gal')$('#gal').hidden=true};
 $('#gT_hsr').onclick=()=>{galTab='hsr';drawGal()};$('#gT_hi3').onclick=()=>{galTab='hi3';drawGal()};
 $('#gQ').oninput=drawGal;
 function load(i,f){if(!f||!f.type.startsWith('image/'))return;const r=new FileReader();
-  r.onload=()=>{const im=new Image();im.onload=()=>{const z=zones[i];z.img=im;z.fc=null;Object.assign(z,{br:100,co:100,sa:100,hu:0,bl:0});z.rot=0;z.fl=1;fit(z);sel=i;ui()};im.src=r.result};r.readAsDataURL(f)}
+  r.onload=()=>{const im=new Image();im.onload=()=>setImage(i,im);im.src=r.result};r.readAsDataURL(f)}
 $('#rZoom').oninput=e=>{const z=zones[sel];z.s=e.target.value/100*cover(z);$('#vZoom').textContent=e.target.value+'%';render()};
 $('#rRot').oninput=e=>{zones[sel].rot=+e.target.value;$('#vRot').textContent=e.target.value+'°';render()};
 $('#rOp').oninput=e=>{zones[sel].op=e.target.value/100;$('#vOp').textContent=e.target.value+'%';render()};
@@ -427,13 +417,14 @@ $('#cLogo').onchange=e=>{showLogo=e.target.checked;if(W)render()};
   img(ASSET_LOGO,layer('tx'));
 })();
 applyLang();syncR();
+/* Bố cục PC: (1) kéo giãn khoảng cách dòng --g cho cột phải lấp đầy chiều cao khung, (2) scale cả khối cho vừa màn hình */
 function fitPc(){const r=document.documentElement.style;
-  if(innerWidth>=900){
-    {const pn=$('.panel'),n=pn.querySelectorAll('label:not(.chk)').length+1;
-     r.setProperty('--g','8px');pn.style.minHeight='0';const nat=pn.offsetHeight;pn.style.minHeight='';
-     const slack=(H||900)-nat;r.setProperty('--g',Math.max(8,Math.min(24,8+slack/n))+'px')}const w=$('.wrap'),dw=w.offsetWidth,ch=w.offsetHeight;
-    r.setProperty('--sc',Math.min(1,(innerWidth-20)/dw,(innerHeight-20)/ch))}
-  else{r.removeProperty('--sc');r.removeProperty('--g')}}
+  if(innerWidth<900){r.removeProperty('--sc');r.removeProperty('--g');return}
+  const pn=$('.panel'),rows=pn.querySelectorAll('label:not(.chk)').length+1/* +1: tiêu đề .sec */,G0=8,GMAX=24;
+  r.setProperty('--g',G0+'px');pn.style.minHeight='0';const nat=pn.offsetHeight;pn.style.minHeight='';
+  r.setProperty('--g',Math.max(G0,Math.min(GMAX,G0+((H||900)-nat)/rows))+'px');
+  const w=$('.wrap');r.setProperty('--sc',Math.min(1,(innerWidth-20)/w.offsetWidth,(innerHeight-20)/w.offsetHeight))}
+/* đặt tâm hiệu ứng nền vào giữa cột phải */
 function placeFx(){fitPc();const r=document.documentElement.style;
   if(innerWidth>=900){const b=$('.panel').getBoundingClientRect();
     r.setProperty('--ex',((b.left+b.right)/2)+'px');r.setProperty('--ey',((b.top+b.bottom)/2)+'px')}

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Intertwined Dreamscapes</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=1">
+<style>
+:root{--bg:#120d1f;--panel:#1d1533;--line:#3a2b63;--acc:#8b5cf6;--tx:#ece8ff;--mut:#d4ccf2;
+--row:26px;/* chiều cao mọi dòng thanh trượt + nút reset */
+--g:8px;/* khoảng cách giữa các dòng; trên PC được JS (fitPc) kéo giãn cho vừa khung */}
+*{box-sizing:border-box}
+@supports not selector(::-webkit-scrollbar){*{scrollbar-width:thin;scrollbar-color:rgba(167,139,250,.35) transparent}}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(167,139,250,.3);border-radius:99px}
+::-webkit-scrollbar-thumb:hover{background:rgba(167,139,250,.6)}
+::-webkit-scrollbar-corner{background:transparent}
+::-webkit-scrollbar-button{display:none;width:0;height:0}
+body{margin:0;background:radial-gradient(1200px 800px at 15% 0%,#3b2480 0%,transparent 60%),radial-gradient(1000px 700px at 100% 100%,#4a1f7a 0%,transparent 55%),radial-gradient(900px 600px at 80% 20%,#1e2a7a 0%,transparent 60%),var(--bg);background-attachment:fixed;color:var(--tx);font:14px system-ui,sans-serif;min-height:100vh}
+#fx{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+#fx img{position:absolute;user-select:none;-webkit-user-drag:none;max-width:none}
+#em{position:absolute;left:var(--ex,50%);top:var(--ey,50%);--S:min(96vmin,880px);width:var(--S);height:var(--S);margin:calc(var(--S)/-2) 0 0 calc(var(--S)/-2);opacity:.9}
+#em .ly{position:absolute;inset:0;display:grid;place-items:center}
+#em img{max-width:none;user-select:none;-webkit-user-drag:none}
+#em .gl{animation:spin 220s linear infinite}#em .gl img{width:100%;opacity:.6}
+#em .dc{animation:spin 140s linear infinite reverse}#em .dc img{width:62%;mix-blend-mode:screen;opacity:.85;animation:glow 9s ease-in-out infinite}
+#em .tx img{width:78%;animation:glow2 8s ease-in-out infinite}
+#em .orb{animation:spin 170s linear infinite}
+#em .orb img{position:absolute;transform:translate(-50%,-50%);mix-blend-mode:screen}
+#em .rg{width:32%;animation:glow2 10s ease-in-out infinite}
+#em .sp{animation:tw 4s ease-in-out infinite}
+#fx .halo{position:absolute;inset:0;background:radial-gradient(circle at var(--ex,50%) var(--ey,50%),rgba(139,92,246,.3),transparent 55%);animation:glow2 12s ease-in-out infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes glow{0%,100%{opacity:.45}50%{opacity:.95}}
+@keyframes glow2{0%,100%{opacity:.75}50%{opacity:1}}
+@keyframes tw{0%,100%{opacity:.1;transform:translate(-50%,-50%) scale(.55)}50%{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+@media(prefers-reduced-motion:reduce){#fx *,#em *{animation:none!important}}
+.wrap{position:relative;z-index:1}
+#stage{box-shadow:0 0 0 1px rgba(167,139,250,.35),0 10px 60px rgba(139,92,246,.35)}
+.lang{display:flex;flex:none;gap:0}
+.lang button{padding:10px 12px;font-size:12px;border-radius:0;background:transparent;color:var(--mut)}
+.lang button:first-child{border-radius:8px 0 0 8px}
+.lang button:last-child{border-radius:0 8px 8px 0;border-left:0}
+.lang button.on{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:600}
+.chk{cursor:pointer}
+.chk span{width:auto!important;white-space:normal!important}
+.chk input{accent-color:var(--acc);width:16px;height:16px;margin:0}
+.wrap{max-width:1000px;margin:0 auto;padding:10px}
+#stage{border-radius:10px;overflow:hidden;line-height:0;background:#0b0816}
+canvas{width:100%;height:auto;display:block;touch-action:none}
+.panel{background:rgba(29,21,51,var(--pa,.3));-webkit-backdrop-filter:blur(var(--pb,2px));backdrop-filter:blur(var(--pb,2px));border:1px solid rgba(139,92,246,.35);border-radius:12px;padding:10px;margin-top:10px;box-shadow:0 8px 40px rgba(10,5,30,.5)}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+button{background:#2a1f4a;color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:9px 14px;font:inherit;cursor:pointer}
+button.pri{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:600}
+label{display:flex;align-items:center;gap:8px;color:var(--mut);margin-top:var(--g);min-width:0;height:var(--row);flex:none}
+label span{width:104px;flex:none;white-space:nowrap}
+label b{flex:none;min-width:40px;text-align:right;color:var(--tx);font-weight:500}
+input[type=range]{-webkit-appearance:none;appearance:none;flex:1;min-width:0;width:100%;height:6px;margin:0;border-radius:99px;outline:none;cursor:pointer;background:linear-gradient(90deg,var(--acc) var(--p,50%),rgba(255,255,255,.2) var(--p,50%))}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:16px;height:16px;border-radius:50%;background:var(--acc);border:2px solid #e9deff;box-shadow:0 0 8px rgba(139,92,246,.7)}
+input[type=range]::-moz-range-thumb{width:12px;height:12px;border-radius:50%;background:var(--acc);border:2px solid #e9deff;box-shadow:0 0 8px rgba(139,92,246,.7)}
+input[type=range]::-moz-range-track{background:transparent;height:6px}
+input[type=range]:disabled{opacity:.45;cursor:not-allowed}
+button.seg{background:#2a1f4a;color:var(--mut);transition:background .15s,box-shadow .15s,color .15s}
+button.seg:hover{color:var(--tx)}
+button.seg.on{background:var(--acc);border-color:#c4b5fd;color:#fff;font-weight:600;box-shadow:0 0 0 1px rgba(196,181,253,.6),0 0 18px rgba(139,92,246,.75)}
+.row4{gap:6px}.row4 button{padding:9px 10px;white-space:nowrap;flex:none}.row4 .chk{flex:none;white-space:nowrap}.row4 .chk span{white-space:nowrap!important}
+.row3 button{padding:10px 8px;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.sec{margin-top:var(--g);height:var(--row);display:flex;align-items:center;justify-content:center;color:var(--tx);font-size:15px;font-weight:600}
+.two{flex-wrap:nowrap}
+.two button{flex:1 1 0;min-width:0;padding:10px 6px;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ic{width:var(--row);height:var(--row);padding:0;display:grid;place-items:center;line-height:0;border-radius:8px;flex:none}
+.ic svg{width:12px;height:12px;display:block}
+#bAll{display:inline-flex;align-items:center;gap:6px}
+.nr{padding-right:calc(var(--row) + 8px)}/* chừa chỗ cho nút reset để thanh trượt thẳng hàng */
+/* ===== PC: bố cục cố định cỡ ảnh khung (--cw x --ch) + cột phải 400px, cả khối được scale (--sc) cho vừa màn hình ===== */
+@media(min-width:900px){
+html,body{overflow:hidden;height:100%}
+.wrap{position:absolute;left:50%;top:50%;max-width:none;margin:0;padding:0;width:calc(var(--cw,1289px) + 14px + 400px);min-height:var(--ch,900px);display:grid;grid-template-columns:var(--cw,1289px) 400px;gap:14px;align-items:center;transform:translate(-50%,-50%) scale(var(--sc,1));transform-origin:center center}
+#stage{display:block;background:#0b0816;width:var(--cw,1289px);height:var(--ch,900px)}
+canvas{width:var(--cw,1289px);height:var(--ch,900px);max-width:none;max-height:none}
+.panel{margin-top:0;min-height:var(--ch,900px);display:flex;flex-direction:column;background:linear-gradient(rgba(6,3,16,.5),rgba(6,3,16,.5)),rgba(29,21,51,var(--pa,.3))}
+.panel>*{flex:none}
+.ic svg{width:12px;height:12px}
+.credit{font-size:11px;line-height:1.45;margin-top:auto;padding-top:8px}
+.stats{margin-top:12px;margin-bottom:12px}
+}
+.stats{margin-top:14px;text-align:center;color:var(--mut);font-size:12px}
+.stats b{color:var(--tx);font-weight:600}
+.credit{margin-top:16px;padding-top:10px;border-top:1px solid var(--line);color:var(--mut);font-size:12px;line-height:1.6;text-align:center;opacity:1}
+.credit b{color:var(--tx);font-weight:600}
+.gal{position:fixed;inset:0;background:rgba(8,5,16,.82);z-index:50;display:flex;align-items:center;justify-content:center;padding:10px}
+.gal[hidden]{display:none}
+.gbox{background:var(--panel);border:1px solid var(--line);border-radius:12px;width:min(900px,100%);max-height:100%;display:flex;flex-direction:column;overflow:hidden}
+.ghd{display:flex;gap:8px;align-items:center;padding:10px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.ghd input{flex:1;min-width:120px;background:#120d1f;color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:9px;font:inherit}
+.ghd button.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.gbody{overflow:auto;padding:10px}
+.gbody h4{margin:12px 0 6px;color:var(--mut);font-weight:600;font-size:13px}
+.ggrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px}
+.gi{background:#120d1f;border:1px solid var(--line);border-radius:8px;overflow:hidden;cursor:pointer;padding:0;text-align:left;color:var(--tx)}
+.gi img{width:100%;aspect-ratio:1;object-fit:cover;display:block;background:#0b0816}
+.gi span{display:block;padding:4px 6px;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.out{background:transparent;border:2px solid var(--acc);color:#d9ccff;font-weight:600}
+.out:hover{background:rgba(139,92,246,.15)}
+</style>
+</head>
+<body>
+<div id="fx"></div>
+<div class="wrap">
+  <div id="stage"><canvas id="cv"></canvas></div>
+  <div class="panel">
+    <div class="row two">
+      <button class="seg on" id="bTop" data-i="topImg">Top image</button>
+      <button class="seg" id="bBot" data-i="botImg">Bottom image</button>
+    </div>
+    <div class="row row3" style="margin-top:8px;flex-wrap:nowrap"><div class="lang"><button data-l="en">EN</button><button data-l="vi">VI</button></div><button class="pri" id="bUp" style="flex:1" data-i="upload">Upload</button><button class="out" id="bGal" style="flex:1.5" data-i="gallery">Gallery (HSR / HI3)</button></div>
+    <div class="row row4" style="margin-top:8px;flex-wrap:nowrap">
+      <button id="bFit" data-i="fit">Fit</button>
+      <button id="bFlip" data-i="flip">Flip</button>
+      <button id="bAll" data-ti="resetAllT" title="Reset everything for the selected image"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg> <span data-i="resetAll">Reset all</span></button>
+      <label class="chk" style="margin:0;margin-left:auto"><input type="checkbox" id="cLogo" checked><span data-i="logo">Logo</span></label>
+    </div>
+    <label><span data-i="zoom">Zoom</span><input type="range" id="rZoom" min="20" max="400" value="100"><b id="vZoom">100%</b></label>
+    <label><span data-i="rotate">Rotate</span><input type="range" id="rRot" min="-180" max="180" value="0"><b id="vRot">0°</b></label>
+    <label><span data-i="opacity">Opacity</span><input type="range" id="rOp" min="0" max="100" value="75"><b id="vOp">75%</b></label>
+          <label><span data-i="bright">Brightness</span><input type="range" id="a_br" min="0" max="200" value="100"><b id="v_br">100%</b></label>
+      <label><span data-i="contrast">Contrast</span><input type="range" id="a_co" min="0" max="200" value="100"><b id="v_co">100%</b></label>
+      <label><span data-i="sat">Saturation</span><input type="range" id="a_sa" min="0" max="200" value="100"><b id="v_sa">100%</b></label>
+      <label><span data-i="hue">Hue</span><input type="range" id="a_hu" min="-180" max="180" value="0"><b id="v_hu">0°</b></label>
+    <div class="sec" data-i="feather">Feather border</div>
+    <label class="nr"><span data-i="topImg">Top image</span><input type="range" id="rF0" min="0" max="100" value="0"><b id="vF0">0%</b></label>
+    <label class="nr"><span data-i="botImg">Bottom image</span><input type="range" id="rF1" min="0" max="100" value="0"><b id="vF1">0%</b></label>
+    <label class="nr"><span data-i="frame">Frame</span><input type="range" id="rFr" min="0" max="100" value="100"><b id="vFr">100%</b></label>
+    <div class="row two" style="margin-top:12px">
+      <button class="out" id="bBlank" data-i="dlBlank" style="flex:1 1 auto;font-size:12px">Download blank frame (self-edit)</button>
+      <button class="out" id="bCopy" data-i="copyImg" style="flex:1 1 auto;font-size:12px">Copy combined image</button>
+    </div>
+    <div class="row two" style="margin-top:8px">
+      <button class="pri" id="bSave" data-i="dlPng">Download combined PNG</button>
+    </div>
+    <div class="stats" id="stats"></div>
+    <div class="credit">Thanks to <b>老铁工具包</b> on Xiaohongshu who created the widget “梦境交织生成器 (Dream Weaving Generator)” that gave me this idea.<br>Recreated by <b>Khong simp Kosma doi khong ne</b>. Thanks to <b>Quoc Minh</b> for pulling the assets from the game files.<br>Artwork, frame and characters © miHoYo / HoYoverse; all rights belong to their respective owners. Unofficial, non-commercial fan project, not affiliated with the original author or miHoYo.</div>
+  </div>
+</div>
+<input type="file" id="fImg" accept="image/*" hidden>
+<div class="gal" id="gal" hidden>
+  <div class="gbox">
+    <div class="ghd">
+      <button id="gT_hsr">HSR</button><button id="gT_hi3">HI3</button>
+      <input id="gQ" type="search" data-ph="search" placeholder="Search name...">
+      <span id="gTarget" style="color:var(--mut);font-size:12px"></span>
+      <button id="gX" data-i="close">Close</button>
+    </div>
+    <div class="gbody" id="gBody"></div>
+  </div>
+</div>
+
+<script>
+const $=s=>document.querySelector(s);
+const V="?v=1";const ASSET_LOGO="assets/logo.webp"+V;
+const ASSET={"glass": "assets/glass.webp", "deco": "assets/deco.webp", "r1": "assets/r1.webp", "r2": "assets/r2.webp", "s1": "assets/s1.webp", "s2": "assets/s2.webp", "s3": "assets/s3.webp"};for(const k in ASSET)ASSET[k]+=V;
+const I18N={
+en:{gallery:'Gallery (HSR / HI3)',topImg:'Top image',botImg:'Bottom image',fit:'Fit',flip:'Flip',resetAll:'Reset all',resetAllT:'Reset everything for the selected image',reset:'Reset',zoom:'Zoom',rotate:'Rotate',opacity:'Opacity',bright:'Brightness',contrast:'Contrast',sat:'Saturation',hue:'Hue',feather:'Feather border',frame:'Frame',logo:'Logo',dlBlank:'Download blank frame (self-edit)',copyImg:'Copy combined image',copied:'Copied!',copyErr:'Copy failed',dlPng:'Download combined PNG',search:'Search name...',close:'Close',loadInto:'Load into',loading:'Loading...',noHi3:'No HI3 images yet. Add files to gallery/hi3 and list them in gallery/index.json.',nothing:'Nothing here.',loadErr:'Cannot load image: ',title:'Intertwined Dreamscapes',upload:'Upload',visits:'Visits',created:'Images created'},
+vi:{gallery:'Thư viện (HSR / HI3)',topImg:'Ảnh trên',botImg:'Ảnh dưới',fit:'Vừa khung',flip:'Lật',resetAll:'Đặt lại tất cả',resetAllT:'Đặt lại mọi thứ của ảnh đang chọn',reset:'Đặt lại',zoom:'Phóng to',rotate:'Xoay',opacity:'Độ trong suốt',bright:'Độ sáng',contrast:'Tương phản',sat:'Bão hòa',hue:'Sắc độ',feather:'Làm mềm viền',frame:'Khung',logo:'Logo',dlBlank:'Tải khung trống (tự edit)',copyImg:'Sao chép ảnh đã ghép',copied:'Đã sao chép',copyErr:'Không sao chép được',dlPng:'Tải ảnh PNG đã ghép',search:'Tìm theo tên...',close:'Đóng',loadInto:'Nạp vào',loading:'Đang tải...',noHi3:'Chưa có ảnh HI3. Thêm file vào gallery/hi3 và khai báo trong gallery/index.json.',nothing:'Chưa có gì ở đây.',loadErr:'Không tải được ảnh: ',title:'Cõi Mộng Đan Xen',upload:'Tải ảnh lên',visits:'Lượt truy cập',created:'Ảnh đã tạo'}
+};
+let LANG='en';
+try{LANG=localStorage.getItem('fc_lang')||''}catch(e){}
+if(!I18N[LANG])LANG=(navigator.language||'').toLowerCase().startsWith('vi')?'vi':'en';
+const t=k=>(I18N[LANG][k]!==undefined?I18N[LANG][k]:I18N.en[k]);
+function applyLang(){
+  document.documentElement.lang=LANG;document.title=t('title');
+  document.querySelectorAll('[data-i]').forEach(e=>e.textContent=t(e.dataset.i));
+  document.querySelectorAll('[data-ph]').forEach(e=>e.placeholder=t(e.dataset.ph));
+  document.querySelectorAll('[data-ti]').forEach(e=>e.title=t(e.dataset.ti));
+  document.querySelectorAll('.rb').forEach(e=>e.title=t('reset'));
+  document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('on',b.dataset.l===LANG));
+  if(typeof sel!=='undefined'){if(!$('#gal').hidden){$('#gTarget').textContent=t('loadInto')+': '+t(sel===0?'topImg':'botImg');drawGal()}}
+  if(typeof showStats==='function')showStats();
+}
+document.querySelectorAll('.lang button').forEach(b=>b.onclick=()=>{LANG=b.dataset.l;try{localStorage.setItem('fc_lang',LANG)}catch(e){}applyLang()});
+const cv=$('#cv'),ctx=cv.getContext('2d');
+const logo=new Image();let showLogo=true;logo.onload=()=>{if(W)render()};logo.src=ASSET_LOGO;
+const frame=new Image(),frame2=new Image(),lab2Img=new Image(),bg=new Image();
+let lab2=null;
+let frT=1;
+const ZB=[[0, 17, 1280, 601], [0, 187, 1280, 876]];
+const ZC=[[403, 224], [782, 652]];
+let W=0,H=0,N=0,lab=null,zones=[],sel=0;
+const ADJ0={br:100,co:100,sa:100,hu:0};/* giá trị mặc định của các thanh chỉnh màu */
+const tc=document.createElement('canvas'),tx=tc.getContext('2d');
+
+function init(){
+  W=cv.width=tc.width=mc0.width=frame.naturalWidth;H=cv.height=tc.height=mc0.height=frame.naturalHeight;{const r=document.documentElement.style;r.setProperty('--cw',W+'px');r.setProperty('--ch',H+'px')}
+  {const c2=document.createElement('canvas');c2.width=W;c2.height=H;const x2=c2.getContext('2d');x2.drawImage(lab2Img,0,0,W,H);lab=lab2=x2.getImageData(0,0,W,H).data}
+  for(let i=0;i<W*H;i++){const v=Math.round(lab[i*4]/100);if(v>N)N=v}
+  zones=[];
+  for(let k=1;k<=N;k++){
+    const b=ZB[k-1],x0=b[0],y0=b[1],x1=b[2],y1=b[3];
+    const m2=document.createElement('canvas');m2.width=W;m2.height=H;const m2x=m2.getContext('2d');
+    const d2=m2x.createImageData(W,H);
+    for(let i=0;i<W*H;i++)if(Math.round(lab2[i*4]/100)===k)d2.data[i*4+3]=255;
+    m2x.putImageData(d2,0,0);
+    zones.push({mask2:m2,bb:{x0,y0,x1,y1},img:null,cx:0,cy:0,s:1,rot:0,op:.75,fl:1,fe:0,fc:null,fk:'',...ADJ0});
+  }
+  buildOuter();
+  ui();placeFx();
+}
+function zoneAt(x,y){x=Math.round(x);y=Math.round(y);if(x<0||y<0||x>=W||y>=H)return -1;return Math.round(lab[(y*W+x)*4]/100)-1}
+const cover=z=>Math.max(Math.max(...zones.map(q=>q.bb.x1-q.bb.x0))/z.img.width,Math.max(...zones.map(q=>q.bb.y1-q.bb.y0))/z.img.height);
+function src(z){
+  const adj=z.br!==100||z.co!==100||z.sa!==100||z.hu!==0;
+  const iw=z.img.width,ih=z.img.height,sc=Math.min(1,2400/Math.max(iw,ih));
+  const f=Math.round(z.fe/100*.5*Math.min(iw,ih)*sc);
+  if(f<1&&!adj)return z.img;
+  const k=[f,z.br,z.co,z.sa,z.hu].join('|');if(z.fc&&z.fk===k)return z.fc;
+  const w=Math.round(iw*sc),h=Math.round(ih*sc),c=document.createElement('canvas');c.width=w;c.height=h;const x=c.getContext('2d');
+  if(adj&&'filter' in x){x.filter=`brightness(${z.br}%) contrast(${z.co}%) saturate(${z.sa}%) hue-rotate(${z.hu}deg)`;x.drawImage(z.img,0,0,w,h);x.filter='none'}
+  else{x.drawImage(z.img,0,0,w,h);
+    if(adj){const d=x.getImageData(0,0,w,h),p=d.data,B=z.br/100,C=z.co/100,S=z.sa/100;
+      for(let i=0;i<p.length;i+=4){let r=p[i]*B,g=p[i+1]*B,b=p[i+2]*B;const l=.299*r+.587*g+.114*b;
+        r=l+(r-l)*S;g=l+(g-l)*S;b=l+(b-l)*S;p[i]=(r-128)*C+128;p[i+1]=(g-128)*C+128;p[i+2]=(b-128)*C+128}
+      x.putImageData(d,0,0)}}
+  if(f>=1){x.globalCompositeOperation='destination-in';
+    let g=x.createLinearGradient(0,0,w,0);const a=Math.min(.5,f/w);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(a,'#000');g.addColorStop(1-a,'#000');g.addColorStop(1,'rgba(0,0,0,0)');x.fillStyle=g;x.fillRect(0,0,w,h);
+    g=x.createLinearGradient(0,0,0,h);const b=Math.min(.5,f/h);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(b,'#000');g.addColorStop(1-b,'#000');g.addColorStop(1,'rgba(0,0,0,0)');x.fillStyle=g;x.fillRect(0,0,w,h)}
+  z.fc=c;z.fk=k;return c}
+function fit(z){const b=z.bb,w=Math.max(...zones.map(q=>q.bb.x1-q.bb.x0)),h=Math.max(...zones.map(q=>q.bb.y1-q.bb.y0)),r=z.rot*Math.PI/180,c=Math.abs(Math.cos(r)),s=Math.abs(Math.sin(r));
+  z.s=Math.max((w*c+h*s)/z.img.width,(w*s+h*c)/z.img.height);z.cx=(b.x0+b.x1)/2;z.cy=(b.y0+b.y1)/2}
+
+const mc0=document.createElement('canvas'),mx0=mc0.getContext('2d');
+let inM=null,frOut=null;
+function buildOuter(){
+  inM=document.createElement('canvas');inM.width=W;inM.height=H;
+  const x=inM.getContext('2d'),d=x.createImageData(W,H);
+  for(let i=0;i<W*H;i++)if(lab2[i*4]>=50)d.data[i*4+3]=255;
+  x.putImageData(d,0,0);
+  frOut=document.createElement('canvas');frOut.width=W;frOut.height=H;
+  const o=frOut.getContext('2d');o.drawImage(frame,0,0,W,H);
+  o.globalCompositeOperation='destination-out';o.drawImage(inM,0,0);
+}
+function drawFrame(c){
+  /* trong mask: frame2 luôn 100%, frame đè lên với opacity theo thanh trượt */
+  const m=mx0;m.globalCompositeOperation='source-over';m.clearRect(0,0,W,H);
+  m.drawImage(frame2,0,0,W,H);
+  if(frT>0){m.globalAlpha=frT;m.drawImage(frame,0,0,W,H)}
+  m.globalAlpha=1;m.globalCompositeOperation='destination-in';m.drawImage(inM,0,0);
+  c.drawImage(mc0,0,0);
+  /* ngoài mask: lấy thẳng từ frame.png, cố định */
+  c.drawImage(frOut,0,0);
+  /* logo layer: góc dưới bên phải khung */
+  if(showLogo&&logo.naturalWidth){const lw=W*.2,lh=lw*logo.naturalHeight/logo.naturalWidth;c.save();c.globalAlpha=.97;c.drawImage(logo,W-lw-6,H-lh-2,lw,lh);c.restore()}
+}
+function render(hint=true){
+  ctx.clearRect(0,0,W,H);
+  zones.forEach((z,i)=>{
+    tx.globalCompositeOperation='source-over';tx.clearRect(0,0,W,H);
+    tx.drawImage(bg,0,0,W,H);
+    if(z.img){
+      tx.save();tx.globalAlpha=z.op;tx.translate(z.cx,z.cy);tx.rotate(z.rot*Math.PI/180);tx.scale(z.fl,1);
+      tx.drawImage(src(z),-z.img.width*z.s/2,-z.img.height*z.s/2,z.img.width*z.s,z.img.height*z.s);tx.restore();
+    }
+    tx.globalCompositeOperation='destination-in';tx.drawImage(z.mask2,0,0);
+    ctx.drawImage(tc,0,0);
+  });
+  drawFrame(ctx);
+  if(hint){
+    const k=W/cv.getBoundingClientRect().width;
+    zones.forEach((z,i)=>{
+      if(z.img&&i!==sel)return;
+      const [cx,cy]=ZC[i];
+      if(!z.img){const r=34*k,p=14*k;ctx.save();ctx.strokeStyle='rgba(255,255,255,.85)';ctx.lineWidth=2.5*k;ctx.setLineDash([7*k,6*k]);ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.stroke();ctx.setLineDash([]);ctx.beginPath();ctx.moveTo(cx-p,cy);ctx.lineTo(cx+p,cy);ctx.moveTo(cx,cy-p);ctx.lineTo(cx,cy+p);ctx.stroke();ctx.restore()}
+    });
+  }
+}
+function ui(){
+  const z=zones[sel];
+  $('#bTop').classList.toggle('on',sel===0);$('#bBot').classList.toggle('on',sel===1);
+  const has=!!(z&&z.img);
+  document.querySelectorAll('.rb').forEach(b=>b.disabled=!has);
+  ['rZoom','rRot','rOp'].forEach(id=>$('#'+id).disabled=!has);
+  ADJ.forEach(([k,u])=>{const e=$('#a_'+k);e.disabled=!has;e.value=has?z[k]:e.defaultValue;$('#v_'+k).textContent=e.value+u});
+  [0,1].forEach(i=>{const q=zones[i];$('#rF'+i).disabled=!(q&&q.img);$('#rF'+i).value=q?q.fe:0;$('#vF'+i).textContent=(q?q.fe:0)+'%'});
+  if(has){
+    $('#rZoom').value=Math.round(z.s/cover(z)*100);$('#rRot').value=z.rot;$('#rOp').value=Math.round(z.op*100);
+  }
+  $('#vZoom').textContent=$('#rZoom').value+'%';$('#vRot').textContent=$('#rRot').value+'°';$('#vOp').textContent=$('#rOp').value+'%';
+  syncR();render();
+}
+const ADJ=[['br','%'],['co','%'],['sa','%'],['hu','°']];
+ADJ.forEach(([k,u])=>$('#a_'+k).oninput=e=>{const z=zones[sel];if(!z||!z.img)return;z[k]=+e.target.value;$('#v_'+k).textContent=e.target.value+u;render()});
+const withImg=fn=>e=>{if(e){e.preventDefault();e.stopPropagation()}const z=zones[sel];if(z&&z.img){fn(z);ui()}};
+const IC='<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>';
+const RS={rZoom:z=>{const x=z.cx,y=z.cy;fit(z);z.cx=x;z.cy=y},rRot:z=>{z.rot=0},rOp:z=>{z.op=.75},a_br:z=>{z.br=100},a_co:z=>{z.co=100},a_sa:z=>{z.sa=100},a_hu:z=>{z.hu=0}};
+Object.entries(RS).forEach(([id,fn])=>{const b=document.createElement('button');b.className='ic rb';b.title=t('reset');b.innerHTML=IC;b.onclick=withImg(fn);$('#'+id).closest('label').appendChild(b)});
+$('#bAll').onclick=withImg(z=>{Object.assign(z,ADJ0);z.fe=0;z.rot=0;z.fl=1;z.op=.75;fit(z)});
+let pickIdx=0;
+const choose=i=>{sel=i;ui()};
+$('#bTop').onclick=()=>choose(0);$('#bBot').onclick=()=>choose(1);
+$('#bUp').onclick=()=>{pickIdx=sel;$('#fImg').click()};
+function syncR(e){(e?[e]:document.querySelectorAll('input[type=range]')).forEach(r=>r.style.setProperty('--p',((r.value-r.min)/(r.max-r.min)*100)+'%'))}
+document.addEventListener('input',e=>{if(e.target.type==='range')syncR(e.target)});
+$('#fImg').onchange=e=>{const f=e.target.files[0];e.target.value='';load(pickIdx,f)};
+function setImage(i,im){const z=zones[i];z.img=im;z.fc=null;Object.assign(z,ADJ0);z.rot=0;z.fl=1;fit(z);sel=i;ui()}
+function loadUrl(i,url){const im=new Image();im.crossOrigin='anonymous';
+  im.onload=()=>setImage(i,im);im.onerror=()=>alert(t('loadErr')+url);im.src=url}
+/* ===== Gallery: reads gallery/index.json =====
+   { "hsr":[{"g":"Aha","n":"Aha Eidolon 1","f":"hsr/Aha/Aha Eidolon 1.png"}], "hi3":[...] }
+   f is a path relative to the gallery/ folder. */
+const GAL_DIR='gallery/';let GAL=null,galTab='hsr';
+async function openGal(){
+  $('#gal').hidden=false;$('#gTarget').textContent=t('loadInto')+': '+t(sel===0?'topImg':'botImg');
+  if(!GAL){
+    $('#gBody').textContent=t('loading');
+    GAL={hsr:[],hi3:[]};
+    /* 1) your own files (optional): gallery/index.json */
+    try{const r=await fetch(GAL_DIR+'index.json');if(r.ok){const j=await r.json();GAL.hsr.push(...(j.hsr||[]));GAL.hi3.push(...(j.hi3||[]))}}catch(e){}
+  }
+  drawGal();
+}
+function drawGal(){
+  ['hsr','hi3'].forEach(t=>$('#gT_'+t).classList.toggle('on',t===galTab));
+  const q=$('#gQ').value.trim().toLowerCase(),box=$('#gBody');box.innerHTML='';
+  const list=(GAL&&GAL[galTab]||[]).filter(e=>!q||(e.g+' '+e.n).toLowerCase().includes(q));
+  if(!list.length){box.textContent=galTab==='hi3'?t('noHi3'):t('nothing');return}
+  const groups=new Map();list.forEach(e=>{const k=e.g||'';if(!groups.has(k))groups.set(k,[]);groups.get(k).push(e)});
+  groups.forEach((arr,g)=>{
+    let h=null;if(g){h=document.createElement('h4');h.textContent=g;box.appendChild(h)}
+    const gr=document.createElement('div');gr.className='ggrid';
+    arr.forEach(e=>{const b=document.createElement('button');b.className='gi';b.title=e.n;
+      b.innerHTML='<img loading="lazy" alt=""><span></span>';const im=b.querySelector('img');
+      /* file không tồn tại (có trong index.json nhưng chưa upload) -> tự ẩn, nhóm rỗng thì ẩn luôn tiêu đề */
+      im.onerror=()=>{b.remove();if(!gr.children.length){gr.remove();if(h)h.remove();if(!box.querySelector('.gi'))box.textContent=t('nothing')}};
+      im.src=e.u||GAL_DIR+encodeURI(e.f);b.querySelector('span').textContent=e.n;
+      b.onclick=()=>{$('#gal').hidden=true;loadUrl(sel,e.u||GAL_DIR+encodeURI(e.f))};gr.appendChild(b)});
+    box.appendChild(gr);
+  });
+}
+$('#bGal').onclick=openGal;$('#gX').onclick=()=>$('#gal').hidden=true;
+$('#gal').onclick=e=>{if(e.target.id==='gal')$('#gal').hidden=true};
+$('#gT_hsr').onclick=()=>{galTab='hsr';drawGal()};$('#gT_hi3').onclick=()=>{galTab='hi3';drawGal()};
+$('#gQ').oninput=drawGal;
+function load(i,f){if(!f||!f.type.startsWith('image/'))return;const r=new FileReader();
+  r.onload=()=>{const im=new Image();im.onload=()=>setImage(i,im);im.src=r.result};r.readAsDataURL(f)}
+$('#rZoom').oninput=e=>{const z=zones[sel];z.s=e.target.value/100*cover(z);$('#vZoom').textContent=e.target.value+'%';render()};
+$('#rRot').oninput=e=>{zones[sel].rot=+e.target.value;$('#vRot').textContent=e.target.value+'°';render()};
+$('#rOp').oninput=e=>{zones[sel].op=e.target.value/100;$('#vOp').textContent=e.target.value+'%';render()};
+/* Xuất ảnh hoàn chỉnh (không có gợi ý +) thành PNG blob */
+const exportBlob=()=>new Promise(res=>{render(false);cv.toBlob(b=>{render();res(b)},'image/png')});
+$('#bSave').onclick=()=>exportBlob().then(b=>{count('downloads');const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='framed.png';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1500)});
+/* Copy ảnh vào clipboard (cần https/localhost); đổi chữ nút 1.5s để báo kết quả */
+$('#bCopy').onclick=async e=>{const btn=e.currentTarget;
+  let k='copied';try{await navigator.clipboard.write([new ClipboardItem({'image/png':exportBlob()})])}catch(err){k='copyErr'}
+  btn.textContent=t(k);clearTimeout(btn._t);btn._t=setTimeout(()=>btn.textContent=t('copyImg'),1500)};
+
+[0,1].forEach(i=>$('#rF'+i).oninput=e=>{const q=zones[i];if(!q||!q.img)return;q.fe=+e.target.value;$('#vF'+i).textContent=q.fe+'%';render()});
+$('#rFr').oninput=e=>{frT=e.target.value/100;$('#vFr').textContent=e.target.value+'%';render()};
+$('#bFit').onclick=()=>{const z=zones[sel];if(z&&z.img){fit(z);ui()}};
+$('#bFlip').onclick=()=>{const z=zones[sel];if(z&&z.img){z.fl*=-1;render()}};
+$('#bBlank').onclick=()=>{const c=document.createElement('canvas');c.width=W;c.height=H;drawFrame(c.getContext('2d'));
+  c.toBlob(b=>{const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='blank-frame.png';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1500)},'image/png')};
+/* kéo / chụm */
+const ptrs=new Map();let drag=null,moved=false;
+function pos(e){const r=cv.getBoundingClientRect();return [(e.clientX-r.left)*W/r.width,(e.clientY-r.top)*H/r.height]}
+const d2=()=>{const [a,b]=[...ptrs.values()];return Math.hypot(a[0]-b[0],a[1]-b[1])};
+cv.onpointerdown=e=>{
+  cv.setPointerCapture(e.pointerId);const [x,y]=pos(e);ptrs.set(e.pointerId,[x,y]);moved=false;
+  if(ptrs.size===2&&zones[sel].img){drag={t:'pinch',d0:d2(),s0:zones[sel].s};return}
+  const i=zoneAt(x,y);if(i<0){drag=null;return}
+  if(i!==sel){sel=i;ui()}
+  const z=zones[i];drag=z.img?{t:'pan',sx:x,sy:y,c0:[z.cx,z.cy]}:{t:'tap'};
+};
+cv.onpointermove=e=>{
+  if(!ptrs.has(e.pointerId))return;const [x,y]=pos(e);ptrs.set(e.pointerId,[x,y]);if(!drag)return;
+  const z=zones[sel];moved=true;
+  if(drag.t==='pan'){z.cx=drag.c0[0]+x-drag.sx;z.cy=drag.c0[1]+y-drag.sy}
+  else if(drag.t==='pinch'&&ptrs.size>=2)z.s=Math.max(.001,drag.s0*d2()/drag.d0);
+  render();
+};
+const up=e=>{ptrs.delete(e.pointerId);
+  if(drag&&drag.t==='tap'&&!moved){pickIdx=sel;$('#fImg').click()}
+  if(!ptrs.size){drag=null;ui()}};
+cv.onpointerup=up;cv.onpointercancel=up;
+cv.onwheel=e=>{const z=zones[sel];if(!z||!z.img)return;e.preventDefault();z.s*=Math.exp(-e.deltaY*.001);ui()};
+cv.ondragover=e=>e.preventDefault();
+cv.ondrop=e=>{e.preventDefault();const [x,y]=pos(e),i=zoneAt(x,y);if(i>=0)load(i,e.dataTransfer.files[0])};
+window.onresize=()=>render();
+
+/* ===== Counters (Abacus: https://abacus.jasoncameron.dev) =====
+   Đổi NS thành tên riêng của bạn (3-64 ký tự: chữ, số, _ - .) để không trùng với người khác. */
+const CNT={base:'https://abacus.jasoncameron.dev',ns:'kosma-framecomposer-hsr'};
+const cnts={visits:null,downloads:null};
+function showStats(){
+  const el=$('#stats');
+  const f=v=>v==null?'–':Number(v).toLocaleString();
+  el.innerHTML=`${t('visits')}: <b>${f(cnts.visits)}</b> &nbsp;·&nbsp; ${t('created')}: <b>${f(cnts.downloads)}</b>`;
+}
+async function count(key,onlyRead){
+  try{
+    const r=await fetch(`${CNT.base}/${onlyRead?'get':'hit'}/${CNT.ns}/${key}`);
+    if(r.ok){cnts[key]=(await r.json()).value;showStats()}
+    else if(r.status===404){cnts[key]=0;showStats()}
+  }catch(e){}
+}
+(function(){
+  let seen=false;try{seen=sessionStorage.getItem('fc_seen')==='1';sessionStorage.setItem('fc_seen','1')}catch(e){}
+  count('visits',seen);count('downloads',true);
+})();
+
+$('#cLogo').onchange=e=>{showLogo=e.target.checked;if(W)render()};
+/* ===== animated background: emblem ở giữa, chữ đứng yên, các lớp còn lại xoay quanh tâm ===== */
+(function(){
+  const fx=$('#fx'),em=document.createElement('div');em.id='em';
+  const halo=document.createElement('div');halo.className='halo';fx.appendChild(halo);fx.appendChild(em);
+  const layer=cls=>{const d=document.createElement('div');d.className='ly '+cls;em.appendChild(d);return d};
+  const img=(k,par,css,cls)=>{const i=new Image();i.src=(k in ASSET)?ASSET[k]:k;i.alt='';i.draggable=false;if(cls)i.className=cls;if(css)i.style.cssText=css;par.appendChild(i);return i};
+  img('glass',layer('gl'));
+  img('deco',layer('dc'));
+  const orb=layer('orb'),pos=(x,y)=>`left:${(50+x*100).toFixed(2)}%;top:${(50+y*100).toFixed(2)}%`;
+  img('r2',orb,pos(.345,-.113),'rg');
+  img('r1',orb,pos(-.33,.09)+';animation-delay:-5s','rg');
+  const st=(k,x,y,w,d)=>img(k,orb,pos(x,y)+`;width:${w}%;animation-duration:${(3.5+Math.random()*3).toFixed(1)}s;animation-delay:-${d}s`,'sp');
+  st('s1',-.24,-.33,9,0);st('s3',.355,.21,11,1.5);st('s2',-.30,.32,8,3);
+  let seed=11;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
+  for(let n=0;n<10;n++){const a=rnd()*Math.PI*2,r=.2+rnd()*.3;st(['s1','s2','s3'][n%3],Math.cos(a)*r,Math.sin(a)*r,2.5+rnd()*3,(rnd()*6).toFixed(1))}
+  img(ASSET_LOGO,layer('tx'));
+})();
+applyLang();syncR();
+/* Bố cục PC: (1) kéo giãn khoảng cách dòng --g cho cột phải lấp đầy chiều cao khung, (2) scale cả khối cho vừa màn hình */
+function fitPc(){const r=document.documentElement.style;
+  if(innerWidth<900){r.removeProperty('--sc');r.removeProperty('--g');return}
+  const pn=$('.panel'),rows=pn.querySelectorAll('label:not(.chk)').length+1/* +1: tiêu đề .sec */,G0=8,GMAX=24;
+  r.setProperty('--g',G0+'px');pn.style.minHeight='0';const nat=pn.offsetHeight;pn.style.minHeight='';
+  r.setProperty('--g',Math.max(G0,Math.min(GMAX,G0+((H||900)-nat)/rows))+'px');
+  const w=$('.wrap');r.setProperty('--sc',Math.min(1,(innerWidth-20)/w.offsetWidth,(innerHeight-20)/w.offsetHeight))}
+/* đặt tâm hiệu ứng nền vào giữa cột phải */
+function placeFx(){fitPc();const r=document.documentElement.style;
+  if(innerWidth>=900){const b=$('.panel').getBoundingClientRect();
+    r.setProperty('--ex',((b.left+b.right)/2)+'px');r.setProperty('--ey',((b.top+b.bottom)/2)+'px')}
+  else{r.removeProperty('--ex');r.removeProperty('--ey')}}
+addEventListener('resize',placeFx);placeFx();
+let n=0;const done=()=>{if(++n===4)init()};
+frame.onload=done;frame2.onload=done;lab2Img.onload=done;
+lab2Img.src='assets/label2.png'+V;bg.onload=done;
+frame2.src='assets/blankframe2.png'+V; /* blankframe2 */
+frame.src='assets/blankframe.png'+V;bg.src='assets/frame.png'+V;
+</script>
+</body>
+</html>

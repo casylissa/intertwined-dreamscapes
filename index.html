@@ -18,10 +18,12 @@
 ::-webkit-scrollbar-corner{background:transparent}
 ::-webkit-scrollbar-button{display:none;width:0;height:0}
 body{margin:0;background:radial-gradient(1200px 800px at 15% 0%,#3b2480 0%,transparent 60%),radial-gradient(1000px 700px at 100% 100%,#4a1f7a 0%,transparent 55%),radial-gradient(900px 600px at 80% 20%,#1e2a7a 0%,transparent 60%),var(--bg);background-attachment:fixed;color:var(--tx);font:14px system-ui,sans-serif;min-height:100vh}
-#fx{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+#fx{position:fixed;top:0;left:0;width:100%;height:100vh;overflow:hidden;pointer-events:none;z-index:0}
+/* điện thoại: thanh địa chỉ co/giãn khi cuộn làm viewport đổi cao -> chốt theo viewport lớn nhất (lvh) / nhỏ nhất (svmin) để nền không nhảy */
 #fx img{position:absolute;user-select:none;-webkit-user-drag:none;max-width:none}
 #em{position:absolute;left:var(--ex,50%);top:var(--ey,50%);--S:min(96vmin,880px);width:var(--S);height:var(--S);margin:calc(var(--S)/-2) 0 0 calc(var(--S)/-2);opacity:.9}
 #em .ly{position:absolute;inset:0;display:grid;place-items:center}
+@supports(height:100lvh){#fx{height:100lvh}#em{--S:min(96svmin,880px)}}
 #em img{max-width:none;user-select:none;-webkit-user-drag:none}
 #em .gl{animation:spin 220s linear infinite}#em .gl img{width:100%;opacity:.6}
 #em .dc{animation:spin 140s linear infinite reverse}#em .dc img{width:62%;mix-blend-mode:screen;opacity:.85;animation:glow 9s ease-in-out infinite}

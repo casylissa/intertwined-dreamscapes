@@ -94,10 +94,10 @@ button.seg.on{background:var(--acc);border-color:#c4b5fd;color:#fff;font-weight:
 /* ===== PC: bố cục cố định cỡ ảnh khung (--cw x --ch) + cột phải 400px, cả khối được scale (--sc) cho vừa màn hình ===== */
 @media(min-width:900px){
 html,body{overflow:hidden;height:100%}
-.wrap{position:absolute;left:50%;top:50%;max-width:none;margin:0;padding:0;width:calc(var(--cw,1200px) + 14px + 400px);min-height:var(--ch,900px);display:grid;grid-template-columns:var(--cw,1200px) 400px;gap:14px;align-items:center;transform:translate(-50%,-50%) scale(var(--sc,1));transform-origin:center center}
+.wrap{position:absolute;left:50%;top:50%;max-width:none;margin:0;padding:0;width:calc(var(--cw,1200px) + 14px + 400px*var(--pk,1));min-height:var(--ch,900px);display:grid;grid-template-columns:var(--cw,1200px) calc(400px*var(--pk,1));gap:14px;align-items:center;transform:translate(-50%,-50%) scale(var(--sc,1));transform-origin:center center}
 #stage{display:block;background:#0b0816;width:var(--cw,1200px);height:var(--ch,900px)}
 canvas{width:var(--cw,1200px);height:var(--ch,900px);max-width:none;max-height:none}
-.panel{margin-top:0;min-height:var(--ch,900px);display:flex;flex-direction:column;background:linear-gradient(rgba(6,3,16,.5),rgba(6,3,16,.5)),rgba(29,21,51,var(--pa,.3))}
+.panel{margin-top:0;align-self:start;width:400px;min-height:calc(var(--ch,900px)/var(--pk,1));transform:scale(var(--pk,1));transform-origin:0 0;display:flex;flex-direction:column;background:linear-gradient(rgba(6,3,16,.5),rgba(6,3,16,.5)),rgba(29,21,51,var(--pa,.3))}
 .panel>*{flex:none}
 .ic svg{width:12px;height:12px}
 .credit{font-size:11px;line-height:1.45;margin-top:auto;padding-top:8px}
@@ -192,7 +192,7 @@ const $=s=>document.querySelector(s);
 const V="?v=1";const ASSET_LOGO="assets/logo.webp"+V;
 const ASSET={"glass": "assets/glass.webp", "deco": "assets/deco.webp", "r1": "assets/r1.webp", "r2": "assets/r2.webp", "s1": "assets/s1.webp", "s2": "assets/s2.webp", "s3": "assets/s3.webp"};for(const k in ASSET)ASSET[k]+=V;
 const I18N={
-en:{gallery:'Gallery (HSR / HI3)',topImg:'Top image',botImg:'Bottom image',fit:'Fit',flip:'Flip image',flipFrame:'Flip frame',bigFrame:'Large frame',addText:'Add text',newText:'Text',outline:'Outline',del:'Delete',tsize:'Size',credit:'Idea from <b>老铁工具包</b> on Xiaohongshu, creator of the widget “梦境交织生成器” (Dream Weaving Generator).<br>Web and edited from game screenshot frame made by <b>Khong simp Kosma doi khong ne</b><br>Artwork, frame and characters © miHoYo / HoYoverse; all rights belong to their respective owners. Unofficial, non-commercial fan project, not affiliated with miHoYo.',resetAll:'Reset all',resetAllT:'Reset everything for the selected image',reset:'Reset',zoom:'Zoom',rotate:'Rotate',opacity:'Opacity',bright:'Brightness',contrast:'Contrast',sat:'Saturation',hue:'Hue',feather:'Feather border',frame:'Frame',logo:'Logo',dlBlank:'Download blank frame (self-edit)',copyImg:'Copy combined image',copied:'Copied!',copyErr:'Copy failed',dlPng:'Download combined PNG',search:'Search name...',close:'Close',loadInto:'Load into',loading:'Loading...',noHi3:'No HI3 images yet. Add files to gallery/hi3 and list them in gallery/index.json.',nothing:'Nothing here.',loadErr:'Cannot load image: ',title:'Intertwined Dreamscapes',upload:'Upload',visits:'Visits',created:'Images created'},
+en:{gallery:'Gallery (HSR / HI3)',topImg:'Top image',botImg:'Bottom image',fit:'Fit',flip:'Flip image',flipFrame:'Flip frame',bigFrame:'Large frame',addText:'Add text',newText:'Text',outline:'Outline',del:'Delete',tsize:'Size',credit:'Idea from <b>老铁工具包</b> on Xiaohongshu, creator of the widget “梦境交织生成器” (Dream Weaving Generator).<br>Web and edited from game screenshot frame made by <b>Khong simp Kosma doi khong ne</b>.<br>Artwork, frame and characters © miHoYo / HoYoverse; all rights belong to their respective owners. Unofficial, non-commercial fan project, not affiliated with miHoYo.',resetAll:'Reset all',resetAllT:'Reset everything for the selected image',reset:'Reset',zoom:'Zoom',rotate:'Rotate',opacity:'Opacity',bright:'Brightness',contrast:'Contrast',sat:'Saturation',hue:'Hue',feather:'Feather border',frame:'Frame',logo:'Logo',dlBlank:'Download blank frame (self-edit)',copyImg:'Copy combined image',copied:'Copied!',copyErr:'Copy failed',dlPng:'Download combined PNG',search:'Search name...',close:'Close',loadInto:'Load into',loading:'Loading...',noHi3:'No HI3 images yet. Add files to gallery/hi3 and list them in gallery/index.json.',nothing:'Nothing here.',loadErr:'Cannot load image: ',title:'Intertwined Dreamscapes',upload:'Upload',visits:'Visits',created:'Images created'},
 vi:{gallery:'Thư viện (HSR / HI3)',topImg:'Ảnh trên',botImg:'Ảnh dưới',fit:'Vừa khung',flip:'Lật ảnh',flipFrame:'Lật khung',bigFrame:'Khung lớn',addText:'Thêm chữ',newText:'Chữ mới',outline:'Viền',del:'Xóa',tsize:'Cỡ chữ',credit:'Ý tưởng từ <b>老铁工具包</b> trên Xiaohongshu, tác giả widget “梦境交织生成器” (Dream Weaving Generator).<br> Web và frame ảnh được tái tạo từ chụp màn hình game bởi <b>Không simp Kosma đời không nể</b>.<br>Hình ảnh, khung và nhân vật © miHoYo / HoYoverse; mọi quyền thuộc về chủ sở hữu tương ứng. Dự án fan phi thương mại, không chính thức, không liên kết với miHoYo.',resetAll:'Đặt lại tất cả',resetAllT:'Đặt lại mọi thứ của ảnh đang chọn',reset:'Đặt lại',zoom:'Phóng to',rotate:'Xoay',opacity:'Độ trong suốt',bright:'Độ sáng',contrast:'Tương phản',sat:'Bão hòa',hue:'Sắc độ',feather:'Làm mềm viền',frame:'Khung',logo:'Logo',dlBlank:'Tải khung trống (tự edit)',copyImg:'Sao chép ảnh đã ghép',copied:'Đã sao chép',copyErr:'Không sao chép được',dlPng:'Tải ảnh PNG đã ghép',search:'Tìm theo tên...',close:'Đóng',loadInto:'Nạp vào',loading:'Đang tải...',noHi3:'Chưa có ảnh HI3. Thêm file vào gallery/hi3 và khai báo trong gallery/index.json.',nothing:'Chưa có gì ở đây.',loadErr:'Không tải được ảnh: ',title:'Cõi Mộng Đan Xen',upload:'Tải ảnh lên',visits:'Lượt truy cập',created:'Ảnh đã tạo'}
 };
 let LANG='en';
@@ -257,7 +257,7 @@ async function setSize(lg){
   catch(e){alert('Cannot load: '+e);box.checked=!lg;box.disabled=false;return}
   const o=SETS[key],oW=W,oH=H;frame=o.frame;frame2=o.frame2;bg=o.bg;maskImgs=o.masks;
   W=cv.width=tc.width=mc0.width=frame.naturalWidth;H=cv.height=tc.height=mc0.height=frame.naturalHeight;
-  {const r=document.documentElement.style;r.setProperty('--cw',W+'px');r.setProperty('--ch',H+'px')}
+  {const r=document.documentElement.style;r.setProperty('--cw',W+'px');r.setProperty('--ch',H+'px')}/* preview đổi theo cỡ khung; cột phải tự giãn theo chiều cao (fitPc) */
   const dx=(W-oW)/2,dy=(H-oH)/2;zones.forEach(z=>{z.cx+=dx;z.cy+=dy});texts.forEach(q=>{q.x+=dx;q.y+=dy});
   buildMasks();ui();placeFx();box.disabled=false;
 }
@@ -526,10 +526,11 @@ $('#cLogo').onchange=e=>{showLogo=e.target.checked;if(W)render()};
 applyLang();syncR();
 /* Bố cục PC: (1) kéo giãn khoảng cách dòng --g cho cột phải lấp đầy chiều cao khung, (2) scale cả khối cho vừa màn hình */
 function fitPc(){const r=document.documentElement.style;
-  if(innerWidth<900){r.removeProperty('--sc');r.removeProperty('--g');return}
-  const pn=$('.panel'),rows=pn.querySelectorAll('label:not(.chk)').length+1/* +1: tiêu đề .sec */,G0=8,GMAX=24;
+  if(innerWidth<900){r.removeProperty('--sc');r.removeProperty('--g');r.removeProperty('--pk');return}
+  const pn=$('.panel'),rows=pn.querySelectorAll('label:not(.chk)').length+1/* +1: tiêu đề .sec */,G0=8,GMAX=24;/* cột phải thiết kế cho cao 900: khung cao hơn (vd 1086) thì scale cả cột theo --pk thay vì giãn dòng */
   r.setProperty('--g',G0+'px');pn.style.minHeight='0';const nat=pn.offsetHeight;pn.style.minHeight='';
-  r.setProperty('--g',Math.max(G0,Math.min(GMAX,G0+((H||900)-nat)/rows))+'px');
+  r.setProperty('--g',Math.max(G0,Math.min(GMAX,G0+(900-nat)/rows))+'px');
+  r.setProperty('--pk',((H||900)/900).toFixed(4));
   const w=$('.wrap');r.setProperty('--sc',Math.min(1,(innerWidth-20)/w.offsetWidth,(innerHeight-20)/w.offsetHeight))}
 /* đặt tâm hiệu ứng nền vào giữa cột phải */
 function placeFx(){fitPc();const r=document.documentElement.style;

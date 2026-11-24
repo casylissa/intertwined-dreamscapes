@@ -81,6 +81,7 @@ button.seg.on{background:var(--acc);border-color:#c4b5fd;color:#fff;font-weight:
 #tbar .tk{display:flex;align-items:center;gap:4px;cursor:pointer;white-space:nowrap}
 #tbar .tk input{accent-color:var(--acc);width:16px;height:16px;margin:0}
 #tbar button{padding:6px 10px;font-size:13px}
+#cLg+span{white-space:nowrap!important}
 #tbar label.tk{margin:0;height:auto;min-width:0}
 #tbar .tk span{width:auto}
 #tbar .tk b{min-width:0}
@@ -150,6 +151,7 @@ canvas{width:var(--cw,1200px);height:var(--ch,900px);max-width:none;max-height:n
       <label class="chk" style="margin:0;margin-left:auto"><input type="checkbox" id="cLogo" checked><span data-i="logo">Logo</span></label>
     </div>
     <div class="row two" style="margin-top:8px">
+      <label class="chk" style="margin:0;flex:none;white-space:nowrap"><input type="checkbox" id="cLg"><span data-i="bigFrame">Large frame</span></label>
       <button id="bFlipF" data-i="flipFrame">Flip frame</button>
       <button id="bText" data-i="addText">Add text</button>
     </div>
@@ -190,8 +192,8 @@ const $=s=>document.querySelector(s);
 const V="?v=1";const ASSET_LOGO="assets/logo.webp"+V;
 const ASSET={"glass": "assets/glass.webp", "deco": "assets/deco.webp", "r1": "assets/r1.webp", "r2": "assets/r2.webp", "s1": "assets/s1.webp", "s2": "assets/s2.webp", "s3": "assets/s3.webp"};for(const k in ASSET)ASSET[k]+=V;
 const I18N={
-en:{gallery:'Gallery (HSR / HI3)',topImg:'Top image',botImg:'Bottom image',fit:'Fit',flip:'Flip image',flipFrame:'Flip frame',addText:'Add text',newText:'Text',outline:'Outline',del:'Delete',tsize:'Size',credit:'Idea from <b>老铁工具包</b> on Xiaohongshu, creator of the widget “梦境交织生成器” (Dream Weaving Generator).<br>Web and edited from game screenshot frame made by <b>Khong simp Kosma doi khong ne.</b><br>Artwork, frame and characters © miHoYo / HoYoverse; all rights belong to their respective owners. Unofficial, non-commercial fan project, not affiliated with miHoYo.',resetAll:'Reset all',resetAllT:'Reset everything for the selected image',reset:'Reset',zoom:'Zoom',rotate:'Rotate',opacity:'Opacity',bright:'Brightness',contrast:'Contrast',sat:'Saturation',hue:'Hue',feather:'Feather border',frame:'Frame',logo:'Logo',dlBlank:'Download blank frame (self-edit)',copyImg:'Copy combined image',copied:'Copied!',copyErr:'Copy failed',dlPng:'Download combined PNG',search:'Search name...',close:'Close',loadInto:'Load into',loading:'Loading...',noHi3:'No HI3 images yet. Add files to gallery/hi3 and list them in gallery/index.json.',nothing:'Nothing here.',loadErr:'Cannot load image: ',title:'Intertwined Dreamscapes',upload:'Upload',visits:'Visits',created:'Images created'},
-vi:{gallery:'Thư viện (HSR / HI3)',topImg:'Ảnh trên',botImg:'Ảnh dưới',fit:'Vừa khung',flip:'Lật ảnh',flipFrame:'Lật khung',addText:'Thêm chữ',newText:'Chữ mới',outline:'Viền',del:'Xóa',tsize:'Cỡ chữ',credit:'Ý tưởng từ <b>老铁工具包</b> trên Xiaohongshu, tác giả widget “梦境交织生成器” (Dream Weaving Generator).<br> Web và frame ảnh được tái tạo từ chụp màn hình game bởi <b>Không simp Kosma đời không nể</b>.<br>Hình ảnh, khung và nhân vật © miHoYo / HoYoverse; mọi quyền thuộc về chủ sở hữu tương ứng. Dự án fan phi thương mại, không chính thức, không liên kết với miHoYo.',resetAll:'Đặt lại tất cả',resetAllT:'Đặt lại mọi thứ của ảnh đang chọn',reset:'Đặt lại',zoom:'Phóng to',rotate:'Xoay',opacity:'Độ trong suốt',bright:'Độ sáng',contrast:'Tương phản',sat:'Bão hòa',hue:'Sắc độ',feather:'Làm mềm viền',frame:'Khung',logo:'Logo',dlBlank:'Tải khung trống (tự edit)',copyImg:'Sao chép ảnh đã ghép',copied:'Đã sao chép',copyErr:'Không sao chép được',dlPng:'Tải ảnh PNG đã ghép',search:'Tìm theo tên...',close:'Đóng',loadInto:'Nạp vào',loading:'Đang tải...',noHi3:'Chưa có ảnh HI3. Thêm file vào gallery/hi3 và khai báo trong gallery/index.json.',nothing:'Chưa có gì ở đây.',loadErr:'Không tải được ảnh: ',title:'Cõi Mộng Đan Xen',upload:'Tải ảnh lên',visits:'Lượt truy cập',created:'Ảnh đã tạo'}
+en:{gallery:'Gallery (HSR / HI3)',topImg:'Top image',botImg:'Bottom image',fit:'Fit',flip:'Flip image',flipFrame:'Flip frame',bigFrame:'Large frame',addText:'Add text',newText:'Text',outline:'Outline',del:'Delete',tsize:'Size',credit:'Idea from <b>老铁工具包</b> on Xiaohongshu, creator of the widget “梦境交织生成器” (Dream Weaving Generator).<br>Web and edited from game screenshot frame made by <b>Khong simp Kosma doi khong ne</b><br>Artwork, frame and characters © miHoYo / HoYoverse; all rights belong to their respective owners. Unofficial, non-commercial fan project, not affiliated with miHoYo.',resetAll:'Reset all',resetAllT:'Reset everything for the selected image',reset:'Reset',zoom:'Zoom',rotate:'Rotate',opacity:'Opacity',bright:'Brightness',contrast:'Contrast',sat:'Saturation',hue:'Hue',feather:'Feather border',frame:'Frame',logo:'Logo',dlBlank:'Download blank frame (self-edit)',copyImg:'Copy combined image',copied:'Copied!',copyErr:'Copy failed',dlPng:'Download combined PNG',search:'Search name...',close:'Close',loadInto:'Load into',loading:'Loading...',noHi3:'No HI3 images yet. Add files to gallery/hi3 and list them in gallery/index.json.',nothing:'Nothing here.',loadErr:'Cannot load image: ',title:'Intertwined Dreamscapes',upload:'Upload',visits:'Visits',created:'Images created'},
+vi:{gallery:'Thư viện (HSR / HI3)',topImg:'Ảnh trên',botImg:'Ảnh dưới',fit:'Vừa khung',flip:'Lật ảnh',flipFrame:'Lật khung',bigFrame:'Khung lớn',addText:'Thêm chữ',newText:'Chữ mới',outline:'Viền',del:'Xóa',tsize:'Cỡ chữ',credit:'Ý tưởng từ <b>老铁工具包</b> trên Xiaohongshu, tác giả widget “梦境交织生成器” (Dream Weaving Generator).<br> Web và frame ảnh được tái tạo từ chụp màn hình game bởi <b>Không simp Kosma đời không nể</b>.<br>Hình ảnh, khung và nhân vật © miHoYo / HoYoverse; mọi quyền thuộc về chủ sở hữu tương ứng. Dự án fan phi thương mại, không chính thức, không liên kết với miHoYo.',resetAll:'Đặt lại tất cả',resetAllT:'Đặt lại mọi thứ của ảnh đang chọn',reset:'Đặt lại',zoom:'Phóng to',rotate:'Xoay',opacity:'Độ trong suốt',bright:'Độ sáng',contrast:'Tương phản',sat:'Bão hòa',hue:'Sắc độ',feather:'Làm mềm viền',frame:'Khung',logo:'Logo',dlBlank:'Tải khung trống (tự edit)',copyImg:'Sao chép ảnh đã ghép',copied:'Đã sao chép',copyErr:'Không sao chép được',dlPng:'Tải ảnh PNG đã ghép',search:'Tìm theo tên...',close:'Đóng',loadInto:'Nạp vào',loading:'Đang tải...',noHi3:'Chưa có ảnh HI3. Thêm file vào gallery/hi3 và khai báo trong gallery/index.json.',nothing:'Chưa có gì ở đây.',loadErr:'Không tải được ảnh: ',title:'Cõi Mộng Đan Xen',upload:'Tải ảnh lên',visits:'Lượt truy cập',created:'Ảnh đã tạo'}
 };
 let LANG='en';
 try{LANG=localStorage.getItem('fc_lang')||''}catch(e){}
@@ -211,18 +213,21 @@ function applyLang(){
 document.querySelectorAll('.lang button').forEach(b=>b.onclick=()=>{LANG=b.dataset.l;try{localStorage.setItem('fc_lang',LANG)}catch(e){}applyLang()});
 const cv=$('#cv'),ctx=cv.getContext('2d');
 const logo=new Image();let showLogo=true;logo.onload=()=>{if(W)render()};logo.src=ASSET_LOGO;
-const frame=new Image(),frame2=new Image(),bg=new Image();
+let frame=new Image(),frame2=new Image(),bg=new Image();
 /* ===== MASK: vùng ghép ảnh do 2 file này quy định (alpha > 0 = vùng ảnh; mask1 = Ảnh trên, mask2 = Ảnh dưới).
    Chỉ cần thay 2 file PNG này (cùng tỉ lệ 4:3 với khung, vd 1448x1086) là đổi được vùng; code tự co về W×H và tự tính bbox/tâm. ===== */
 const MASK_FILES=['assets/mask1.png','assets/mask2.png'];
-const maskImgs=[new Image(),new Image()];
+let maskImgs=[new Image(),new Image()];
+/* ===== KHUNG LỚN (tuỳ chọn): bản gốc 1448x1086 chưa crop. Cần 5 file thêm hậu tố _lg (cùng thư mục assets/, cùng cỡ 1448x1086):
+   blankframe_lg.png, blankframe2_lg.png, frame_lg.png, mask1_lg.png, mask2_lg.png. Ảnh luôn vẽ theo cỡ gốc, căn giữa (không co giãn). ===== */
+const SIZE_SUFFIX='_lg';const SETS={};
 let mirror=false;/* true = khung đang lật ngang */
 let frT=1;
 let W=0,H=0,zones=[],sel=0,selT=-1;const texts=[];
 const ADJ0={br:100,co:100,sa:100,hu:0};/* giá trị mặc định của các thanh chỉnh màu */
 const tc=document.createElement('canvas'),tx=tc.getContext('2d');
 
-function drawM(c,img){if(mirror){c.save();c.translate(W,0);c.scale(-1,1);c.drawImage(img,0,0,W,H);c.restore()}else c.drawImage(img,0,0,W,H)}
+function drawM(c,img){const dx=(W-img.naturalWidth)/2,dy=(H-img.naturalHeight)/2;if(mirror){c.save();c.translate(W,0);c.scale(-1,1);c.drawImage(img,dx,dy);c.restore()}else c.drawImage(img,dx,dy)}
 function init(){
   W=cv.width=tc.width=mc0.width=frame.naturalWidth;H=cv.height=tc.height=mc0.height=frame.naturalHeight;{const r=document.documentElement.style;r.setProperty('--cw',W+'px');r.setProperty('--ch',H+'px')}
   zones=maskImgs.map(()=>({mask2:null,a:null,bb:null,c:null,img:null,cx:0,cy:0,s:1,rot:0,op:.75,fl:1,fe:0,fc:null,fk:'',...ADJ0}));
@@ -244,6 +249,18 @@ function buildMasks(){
   buildOuter();
 }
 function zoneAt(x,y){x=Math.round(x);y=Math.round(y);if(x<0||y<0||x>=W||y>=H)return -1;let bi=-1,bv=128;zones.forEach((z,i)=>{const v=z.a[y*W+x];if(v>bv){bv=v;bi=i}});return bi}
+/* chọn khung lớn / thường: khung thường là crop giữa của khung lớn -> đổi bộ chỉ cần dịch vị trí ảnh + chữ nửa phần chênh lệch (không đổi tỉ lệ) */
+async function setSize(lg){
+  const box=$('#cLg'),key=lg?'lg':'n';box.disabled=true;
+  try{if(!SETS[key]){const x=lg?SIZE_SUFFIX:'',o={frame:new Image(),frame2:new Image(),bg:new Image(),masks:[new Image(),new Image()]};
+    await Promise.all([loadImg(o.frame,`assets/blankframe${x}.png`+V),loadImg(o.frame2,`assets/blankframe2${x}.png`+V),loadImg(o.bg,`assets/frame${x}.png`+V),...o.masks.map((im,k)=>loadImg(im,MASK_FILES[k].replace('.png',x+'.png')+V))]);SETS[key]=o}}
+  catch(e){alert('Cannot load: '+e);box.checked=!lg;box.disabled=false;return}
+  const o=SETS[key],oW=W,oH=H;frame=o.frame;frame2=o.frame2;bg=o.bg;maskImgs=o.masks;
+  W=cv.width=tc.width=mc0.width=frame.naturalWidth;H=cv.height=tc.height=mc0.height=frame.naturalHeight;
+  {const r=document.documentElement.style;r.setProperty('--cw',W+'px');r.setProperty('--ch',H+'px')}
+  const dx=(W-oW)/2,dy=(H-oH)/2;zones.forEach(z=>{z.cx+=dx;z.cy+=dy});texts.forEach(q=>{q.x+=dx;q.y+=dy});
+  buildMasks();ui();placeFx();box.disabled=false;
+}
 /* lật ngang khung: mask + frame + nền lật theo, ảnh người dùng cũng lật vị trí theo (nội dung ảnh giữ nguyên) */
 function flipFrame(){mirror=!mirror;zones.forEach(z=>{z.cx=W-z.cx;z.rot=-z.rot});buildMasks();ui()}
 const cover=z=>Math.max(Math.max(...zones.map(q=>q.bb.x1-q.bb.x0))/z.img.width,Math.max(...zones.map(q=>q.bb.y1-q.bb.y0))/z.img.height);
@@ -422,6 +439,7 @@ function selectText(i){selT=i;const bar=$('#tbar');bar.hidden=i<0;if(i>=0){const
 function syncT(){const q=texts[selT];if(!q)return;$('#tSize').value=Math.round(q.size);$('#vtSize').textContent=Math.round(q.size);$('#tRot').value=Math.round(q.rot);$('#vtRot').textContent=Math.round(q.rot)+'°';syncR($('#tSize'));syncR($('#tRot'))}
 $('#bText').onclick=()=>{texts.push({txt:t('newText'),x:W/2,y:H/2,size:Math.round(H/10),rot:0,col:'#ffffff',font:0,bold:true,ol:true});selectText(texts.length-1);render();const a=$('#tTxt');a.focus();a.select()};
 $('#bFlipF').onclick=flipFrame;
+$('#cLg').onchange=e=>setSize(e.target.checked);
 const T=()=>texts[selT];
 $('#tTxt').oninput=e=>{if(T()){T().txt=e.target.value;render()}};
 $('#tFont').onchange=e=>{if(T()){T().font=+e.target.value;render()}};
@@ -521,7 +539,7 @@ function placeFx(){fitPc();const r=document.documentElement.style;
 addEventListener('resize',placeFx);placeFx();
 const loadImg=(im,src)=>new Promise((res,rej)=>{im.onload=res;im.onerror=()=>rej(src);im.src=src});
 Promise.all([loadImg(frame,'assets/blankframe.png'+V),loadImg(frame2,'assets/blankframe2.png'+V),loadImg(bg,'assets/frame.png'+V),
-  ...maskImgs.map((im,k)=>loadImg(im,MASK_FILES[k]+V))]).then(init).catch(f=>alert('Cannot load: '+f));
+  ...maskImgs.map((im,k)=>loadImg(im,MASK_FILES[k]+V))]).then(()=>{SETS.n={frame,frame2,bg,masks:maskImgs};init()}).catch(f=>alert('Cannot load: '+f));
 </script>
 </body>
 </html>

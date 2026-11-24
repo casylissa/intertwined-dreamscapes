@@ -165,11 +165,8 @@ canvas{width:var(--cw,1200px);height:var(--ch,900px);max-width:none;max-height:n
     <label class="nr"><span data-i="botImg">Bottom image</span><input type="range" id="rF1" min="0" max="100" value="0"><b id="vF1">0%</b></label>
     <label class="nr"><span data-i="frame">Frame</span><input type="range" id="rFr" min="0" max="100" value="100"><b id="vFr">100%</b></label>
     <div class="row two" style="margin-top:12px">
-      <button class="out" id="bBlank" data-i="dlBlank" style="flex:1 1 auto;font-size:12px">Download blank frame (self-edit)</button>
-      <button class="out" id="bCopy" data-i="copyImg" style="flex:1 1 auto;font-size:12px">Copy combined image</button>
-    </div>
-    <div class="row two" style="margin-top:8px">
-      <button class="pri" id="bSave" data-i="dlPng">Download combined PNG</button>
+      <button class="out" id="bCopy" data-i="copyImg" style="flex:1 1 0;font-size:12px">Copy combined image</button>
+      <button class="pri" id="bSave" data-i="dlPng" style="flex:1 1 0;font-size:12px">Download combined PNG</button>
     </div>
     <div class="stats" id="stats"></div>
     <div class="credit" data-h="credit"></div>
@@ -395,15 +392,13 @@ const exportBlob=()=>new Promise(res=>{render(false);cv.toBlob(b=>{render();res(
 $('#bSave').onclick=()=>exportBlob().then(b=>{count('downloads');const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='framed.png';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1500)});
 /* Copy ảnh vào clipboard (cần https/localhost); đổi chữ nút 1.5s để báo kết quả */
 $('#bCopy').onclick=async e=>{const btn=e.currentTarget;
-  let k='copied';try{await navigator.clipboard.write([new ClipboardItem({'image/png':exportBlob()})])}catch(err){k='copyErr'}
+  let k='copied';try{await navigator.clipboard.write([new ClipboardItem({'image/png':exportBlob()})]);count('downloads')}catch(err){k='copyErr'}
   btn.textContent=t(k);clearTimeout(btn._t);btn._t=setTimeout(()=>btn.textContent=t('copyImg'),1500)};
 
 [0,1].forEach(i=>$('#rF'+i).oninput=e=>{const q=zones[i];if(!q||!q.img)return;q.fe=+e.target.value;$('#vF'+i).textContent=q.fe+'%';render()});
 $('#rFr').oninput=e=>{frT=e.target.value/100;$('#vFr').textContent=e.target.value+'%';render()};
 $('#bFit').onclick=()=>{const z=zones[sel];if(z&&z.img){fit(z);ui()}};
 $('#bFlip').onclick=()=>{const z=zones[sel];if(z&&z.img){z.fl*=-1;render()}};
-$('#bBlank').onclick=()=>{const c=document.createElement('canvas');c.width=W;c.height=H;drawFrame(c.getContext('2d'));
-  c.toBlob(b=>{const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='blank-frame.png';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1500)},'image/png')};
 
 /* ===== Text box ===== */
 const FONTS=[['Sans (Segoe UI / Arial)','"Segoe UI",Roboto,Arial,sans-serif'],['Serif (Georgia)','Georgia,"Times New Roman",serif'],['Times New Roman','"Times New Roman",Times,serif'],['Impact','Impact,"Arial Black",sans-serif'],['Brush Script','"Brush Script MT","Segoe Script",cursive'],['Courier','"Courier New",monospace']];

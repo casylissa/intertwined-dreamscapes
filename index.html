@@ -293,6 +293,7 @@ function drawFrame(c){
 }
 function render(hint=true){
   ctx.clearRect(0,0,W,H);
+  drawM(ctx,bg);/* lớp nền kín (frame.png): chỗ nào lỗ khung không được mask phủ thì lộ nền này, không còn khe đen/trong suốt */
   zones.forEach((z,i)=>{
     tx.globalCompositeOperation='source-over';tx.clearRect(0,0,W,H);
     drawM(tx,bg);
